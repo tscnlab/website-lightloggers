@@ -11,6 +11,10 @@
 .venue a{display:inline-flex;align-items:center;gap:12px}.venue-logo{display:block;width:100px;height:44px;object-fit:contain;object-position:left center}.venue-logo.cover{width:38px;height:50px}.venue-logo.dark{background:#073b4b;padding:7px;border-radius:2px}.venue{margin-bottom:10px}@media(max-width:640px){.venue-logo{width:80px;height:35px}.venue-logo.cover{width:30px;height:42px}.venue a{gap:10px}}
 
 /* Search documentation stays on the About page. */
+.status-bar{background:var(--wash);border-bottom:1px solid var(--line);color:var(--ink);font-size:12px;line-height:1.5}
+.status-bar .shell{display:flex;align-items:center;justify-content:center;gap:3px 22px;flex-wrap:wrap;padding:8px 0}
+.status-bar strong{font-weight:600}
+.status-bar a{white-space:nowrap}
 .audit-disclosure { margin: 1.25rem 0; border-block: 1px solid var(--line); padding: 1rem 0; }
 .audit-disclosure > summary { cursor: pointer; font-weight: 600; }
 .search-query { white-space: pre-wrap; overflow-wrap: anywhere; font-size: .8rem; background: #f6f7f8; padding: 1rem; }

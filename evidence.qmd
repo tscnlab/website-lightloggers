@@ -30,6 +30,7 @@ for study in studies:
 ```
 
 ```{=html}
+<aside class="status-bar" aria-label="Website status"><div class="shell"><strong>Work in progress</strong><span>Feedback: <a href="mailto:manuel.spitschan@tum.de">manuel.spitschan@tum.de</a></span></div></aside>
 <div class="doc-shell">
 <a class="skip-link" href="#main-content">Skip to page content</a>
 <header class="doc-header">
