@@ -228,7 +228,7 @@ async function main() {
       assert((await record.locator('.study-devices').first().textContent()).includes('Actiwatch Spectrum Plus'), 'Full paper device list remains visible separately');
       await record.locator('.study-detail summary').click();
       assert(await record.locator('.study-detail').evaluate(node => node.open));
-      assert((await record.locator('.study-details').textContent()).includes('Actiwatch Spectrum Plus: Illuminance, Angular response, Temperature'));
+      assert((await record.locator('.study-details').textContent()).includes('Actiwatch Spectrum Plus: Illuminance, Angular response'));
     });
 
     await check('No-match state and clear-search recovery', async () => {

@@ -37,7 +37,7 @@ test('status and metric must be supported by the same device-study pair', () => 
 });
 
 test('historical melanopic illuminance remains distinct from explicitly indexed EDI', () => {
-  assert.deepEqual(names(search({q: 'Ishihara', metric: 'Other circadian metrics'})), ['ActLumus', 'LYS Button']);
+  assert.equal(search({q: 'Ishihara', metric: 'Other circadian metrics'}).length, 0);
   assert.equal(search({q: 'Ishihara', metric: 'Melanopic EDI'}).length, 0);
 });
 
@@ -139,10 +139,7 @@ test('blank optional submission fields produce explicit missing-value text', () 
 });
 
 
-test('CCT is not assigned to ActLumus from its co-tested devices', () => {
-  assert.deepEqual(names(search({q: 'Pilehchi-Ha', metric: 'Correlated colour temperature'})), ['OcuWEAR', 'lido']);
-  assert.equal(search({q: 'ActLumus', metric: 'Correlated colour temperature'}).length, 0);
-});
+
 
 test('LYS and LYS Button share one catalogue entry', () => {
   assert.deepEqual(names(search({q: 'LYS'})), ['LYS Button']);
@@ -150,11 +147,9 @@ test('LYS and LYS Button share one catalogue entry', () => {
   assert.ok(!library.devices.some(d => d.id === 'lys'));
 });
 
-test('classification papers and non-peer-reviewed proceedings retain their scope', () => {
-  assert.equal(search({q: 'Mumu', metric: 'Illuminance'}).length, 0);
-  assert.equal(search({q: 'Mumu', metric: 'Outdoor classification'}).length, 1);
-  assert.equal(library.studies.find(s => s.id === 'dumortier-2019').status, 'Conference paper');
-  assert.equal(search({q: 'Duncan', metric: 'Illuminance'}).length, 0);
+test('only the three requested measurement categories remain', () => {
+  for(const s of library.studies)assert.ok(s.metrics.every(m=>['Illuminance','Melanopic EDI','Angular response'].includes(m)));
+  for(const id of ['flynn-2014','dharani-2012','ye-2019','rhudy-2020','liu-2026','okudaira-1983'])assert.ok(!library.studies.some(s=>s.id===id));
 });
 
 test('coverage counts papers once per device endpoint', () => {

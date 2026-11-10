@@ -81,9 +81,7 @@
       "metrics": [
         "Angular response",
         "Illuminance",
-        "Melanopic EDI",
-        "Spectral response",
-        "Temperature"
+        "Melanopic EDI"
       ],
       "setting": "Laboratory + field",
       "reference": "Calibrated Gigahertz-Optik BTS256 spectroradiometer; cosine-law angular benchmark.",
@@ -96,20 +94,16 @@
         "LYS Button": [
           "Illuminance",
           "Melanopic EDI",
-          "Angular response",
-          "Temperature"
+          "Angular response"
         ],
         "Blue Iris Speck v1.0": [
           "Illuminance",
           "Melanopic EDI",
-          "Spectral response",
-          "Angular response",
-          "Temperature"
+          "Angular response"
         ],
         "Actiwatch Spectrum Plus": [
           "Illuminance",
-          "Angular response",
-          "Temperature"
+          "Angular response"
         ]
       },
       "sourceLocator": "Results: Figures 2–3 (illuminance), 4–5 (Speck spectrum), 6 (melanopic EDI), 7 (angular response); Temperature dependence; Discussion limitations.",
@@ -142,49 +136,6 @@
       }
     },
     {
-      "id": "liu-2026",
-      "title": "From Spectra to Digital Phenotypes: Wearable Multispectral Sensing for Precision Light and Green Space Exposure",
-      "authors": "Liu et al.",
-      "year": 2026,
-      "doi": "10.64898/2026.05.14.724799",
-      "venue": "biorxiv",
-      "devices": [
-        "SpectraVita"
-      ],
-      "deviceMetrics": {
-        "SpectraVita": [
-          "Light-source classification"
-        ]
-      },
-      "metrics": [
-        "Light-source classification"
-      ],
-      "reference": "Labelled light/vegetation classes and image-based green-space estimates, as described in the indexed abstract.",
-      "protocol": "An eleven-band wearable was evaluated for source and vegetation classification, including scenario changes and mixed scenes.",
-      "finding": "The abstract reports high classification performance and agreement with image-derived green-space estimates.",
-      "limitations": "Preprint; abstract inspected. Classification performance is not a validated lux or melanopic EDI output. Full calibration and held-out validation details need checking.",
-      "sourceLocator": "Europe PMC indexed preprint abstract: sensor, classification and validation.",
-      "setting": "Laboratory + field",
-      "evidenceType": "Classification study",
-      "url": "https://www.biorxiv.org/content/10.64898/2026.05.14.724799v1",
-      "access": "Abstract",
-      "status": "Preprint",
-      "notes": "",
-      "provenance": {
-        "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Europe PMC indexed preprint abstract: sensor, classification and validation."
-      },
-      "developerRelationship": {
-        "SpectraVita": {
-          "category": "Developer involved",
-          "reason": "The authors describe development or characterisation of their own research instrument.",
-          "sourceUrl": "https://www.biorxiv.org/content/10.64898/2026.05.14.724799v1",
-          "sourceLocator": "Europe PMC indexed preprint abstract: sensor, classification and validation."
-        }
-      }
-    },
-    {
       "id": "pilehchiha-2026",
       "title": "Cross-validation of wearable light loggers across electric and natural light conditions: focus on illuminance, melanopic EDI, and CCT",
       "authors": "Pilehchi-Ha et al.",
@@ -198,7 +149,6 @@
         "OcuWEAR"
       ],
       "metrics": [
-        "Correlated colour temperature",
         "Illuminance",
         "Melanopic EDI"
       ],
@@ -216,13 +166,11 @@
         ],
         "lido": [
           "Illuminance",
-          "Melanopic EDI",
-          "Correlated colour temperature"
+          "Melanopic EDI"
         ],
         "OcuWEAR": [
           "Illuminance",
-          "Melanopic EDI",
-          "Correlated colour temperature"
+          "Melanopic EDI"
         ]
       },
       "sourceLocator": "Methods and device-specific illuminance, melanopic EDI and CCT comparisons; CCT reported only for lido and OcuWEAR.",
@@ -270,29 +218,23 @@
       ],
       "deviceMetrics": {
         "VEET": [
-          "Illuminance",
-          "Outdoor classification"
+          "Illuminance"
         ],
         "Clouclip (version not reported)": [
-          "Illuminance",
-          "Outdoor classification"
+          "Illuminance"
         ],
         "Actiwatch (model not reported)": [
-          "Illuminance",
-          "Outdoor classification"
+          "Illuminance"
         ],
         "ActLumus": [
-          "Illuminance",
-          "Outdoor classification"
+          "Illuminance"
         ],
         "GENEActiv": [
-          "Illuminance",
-          "Outdoor classification"
+          "Illuminance"
         ]
       },
       "metrics": [
-        "Illuminance",
-        "Outdoor classification"
+        "Illuminance"
       ],
       "reference": "Concurrent wearables and participant activity logs; no absolute illuminance reference.",
       "protocol": "Thirty adults wore five sensors for one day; valid light data from 25 participants were compared across illumination categories and with activity logs.",
@@ -356,13 +298,11 @@
       ],
       "deviceMetrics": {
         "ActLumus": [
-          "Melanopic EDI",
-          "Wear position"
+          "Melanopic EDI"
         ]
       },
       "metrics": [
-        "Melanopic EDI",
-        "Wear position"
+        "Melanopic EDI"
       ],
       "reference": "Simultaneous near-eye ActLumus as reference for chest and wrist ActLumus measurements.",
       "protocol": "A harmonised free-living dataset across seven countries was used to compare contextual errors and 54 daily light-exposure metrics.",
@@ -400,13 +340,12 @@
       "status": "Peer reviewed",
       "devices": [
         "ActLumus",
-        "LYS Button",
         "GENEActiv",
-        "ActiGraph wGT3X-BT"
+        "ActiGraph wGT3X-BT",
+        "LYS Button"
       ],
       "metrics": [
-        "Illuminance",
-        "Other circadian metrics"
+        "Illuminance"
       ],
       "setting": "Laboratory + field",
       "reference": "NIST-calibrated ILT560-A spectrometer; free-living comparison between ActLumus and ActiGraph.",
@@ -417,8 +356,7 @@
       "notes": "Online November 2025; February 2026 issue. Melanopic testing applies only to ActLumus and LYS. The paper uses melanopic illuminance/lux, not explicitly EDI; indexed here as Other circadian metrics. LYS hardware version is unspecified. Between-unit variability is distinct from repeatability. Additional reported endpoints: Dynamic range, Between-device variability. The LYS name is indexed under LYS Button; these are the same device, as clarified by the curator. The paper does not specify a hardware revision.",
       "deviceMetrics": {
         "ActLumus": [
-          "Illuminance",
-          "Other circadian metrics"
+          "Illuminance"
         ],
         "GENEActiv": [
           "Illuminance"
@@ -427,8 +365,7 @@
           "Illuminance"
         ],
         "LYS Button": [
-          "Illuminance",
-          "Other circadian metrics"
+          "Illuminance"
         ]
       },
       "sourceLocator": "Methods: Laboratory assessment; Results: Figures 2–6 and Free-living comparison (Figure 7).",
@@ -482,8 +419,7 @@
         "Clouclip (second generation)"
       ],
       "metrics": [
-        "Illuminance",
-        "Repeatability"
+        "Illuminance"
       ],
       "setting": "Laboratory + field",
       "reference": "Calibrated Konica Minolta CL-200A chroma meter for illumination; ruler for the separate distance assessment.",
@@ -494,12 +430,10 @@
       "notes": "Published 14 February 2025. Exact tested versions were five Vivior Mark 3+ and five second-generation Clouclip units. Agreement in photopic illuminance should not be generalized to other outputs or hardware generations. Outdoor-threshold discussion is not indexed as classification validation.",
       "deviceMetrics": {
         "Vivior Mark 3+": [
-          "Illuminance",
-          "Repeatability"
+          "Illuminance"
         ],
         "Clouclip (second generation)": [
-          "Illuminance",
-          "Repeatability"
+          "Illuminance"
         ]
       },
       "sourceLocator": "Methods: Study 1 and device descriptions; Results: Validation of ambient illumination measurements, Figures 6–7; Discussion (repeatability).",
@@ -537,12 +471,10 @@
       ],
       "deviceMetrics": {
         "LYS Button": [
-          "Illuminance",
-          "Between-unit agreement"
+          "Illuminance"
         ]
       },
       "metrics": [
-        "Between-unit agreement",
         "Illuminance"
       ],
       "reference": "Factory-calibrated RS PRO RS-92 digital light meter.",
@@ -571,54 +503,6 @@
       }
     },
     {
-      "id": "gibaldi-2024",
-      "title": "A Child-Friendly Wearable Device for Quantifying Environmental Risk Factors for Myopia",
-      "authors": "Gibaldi et al.",
-      "year": 2024,
-      "doi": "10.1167/tvst.13.10.28",
-      "venue": "tvst",
-      "devices": [
-        "AS7262 helmet logger (Gibaldi et al.)"
-      ],
-      "deviceMetrics": {
-        "AS7262 helmet logger (Gibaldi et al.)": [
-          "Spectral response",
-          "Visible irradiance / dose",
-          "Wear position"
-        ]
-      },
-      "metrics": [
-        "Spectral response",
-        "Visible irradiance / dose",
-        "Wear position"
-      ],
-      "reference": "Photo Research PR650 SpectraScan colorimeter; matching spectral sensors for the head/wrist comparison.",
-      "protocol": "Monochromator testing covered 380–780 nm in 10-nm steps and five intensities. One adult completed four activities with head and wrist sensors; two children participated in a separate feasibility pilot.",
-      "finding": "Channel responses tracked stimulus intensity. Head and wrist readings differed substantially and depended on activity.",
-      "limitations": "Small prototype study; placement results are not population estimates. The spectral channels measure irradiance, not calibrated photopic lux or melanopic EDI.",
-      "sourceLocator": "Device Testing: Spectral Sensor Calibration, Figure 3; head/wrist comparison, Figure 5.",
-      "setting": "Laboratory + field",
-      "evidenceType": "Characterisation + placement",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11498637/",
-      "access": "Full text",
-      "status": "Peer reviewed",
-      "notes": "",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/39422897/",
-      "provenance": {
-        "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Device Testing: Spectral Sensor Calibration, Figure 3; head/wrist comparison, Figure 5."
-      },
-      "developerRelationship": {
-        "AS7262 helmet logger (Gibaldi et al.)": {
-          "category": "Developer involved",
-          "reason": "The authors describe development or characterisation of their own research instrument.",
-          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11498637/",
-          "sourceLocator": "Device Testing: Spectral Sensor Calibration, Figure 3; head/wrist comparison, Figure 5."
-        }
-      }
-    },
-    {
       "id": "mcdowell-2024",
       "title": "Beyond Lux: methods for species and photoreceptor-specific quantification of ambient light for mammals",
       "authors": "McDowell et al.",
@@ -630,13 +514,11 @@
       ],
       "deviceMetrics": {
         "SpectraWear": [
-          "Melanopic EDI",
-          "Other circadian metrics"
+          "Melanopic EDI"
         ]
       },
       "metrics": [
-        "Melanopic EDI",
-        "Other circadian metrics"
+        "Melanopic EDI"
       ],
       "reference": "Calibrated SpectroCal spectroradiometer; species-specific photoreceptor weighting functions.",
       "protocol": "Ten-channel readings were fitted to reference measurements from 13 spectra, then tested at a wider range of irradiances. Performance was assessed for 12 domestic mammal species and humans.",
@@ -677,16 +559,12 @@
       "deviceMetrics": {
         "SpectraWear": [
           "Melanopic EDI",
-          "Other circadian metrics",
-          "Angular response",
-          "Wear position"
+          "Angular response"
         ]
       },
       "metrics": [
         "Angular response",
-        "Melanopic EDI",
-        "Other circadian metrics",
-        "Wear position"
+        "Melanopic EDI"
       ],
       "reference": "SpectroCAL MKII spectroradiometer and calibrated custom spectral source.",
       "protocol": "Thirteen ten-channel units were calibrated and tested across spectral/intensity conditions, with additional angular-response and body-location experiments.",
@@ -715,49 +593,6 @@
       }
     },
     {
-      "id": "shneor-2024",
-      "title": "Utility of the Actiwatch Spectrum Plus for detecting the outdoor environment and physical activity in children",
-      "authors": "Shneor, Gordon-Shaag, Doron, Benoit & Ostrin",
-      "year": 2024,
-      "doi": "10.1016/j.optom.2023.100483",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10551654/",
-      "status": "Peer reviewed",
-      "devices": [
-        "Actiwatch Spectrum Plus"
-      ],
-      "metrics": [
-        "Outdoor classification"
-      ],
-      "setting": "Field",
-      "reference": "Known indoor and outdoor activity settings; classification endpoint rather than reference illuminance.",
-      "protocol": "Children aged 9–13 wore the device during ten activities in indoor and outdoor conditions. Receiver-operating-characteristic analysis evaluated location classification. Eighteen units underwent inter-device testing.",
-      "finding": "The study’s optimal outdoor threshold was 1,088 lux: sensitivity 93%, specificity 85%, and area under the ROC curve 0.94.",
-      "limitations": "This validates a classification task in the tested setting, not absolute photometric accuracy. Children wore short sleeves to keep the light sensor exposed; thresholds may not transfer across climates, seasons or wearing conditions.",
-      "access": "Full text",
-      "notes": "Journal of Optometry 17(1), 100483; online 2023, issue 2024. Inter-device reliability is separate from repeatability. Light endpoints extracted separately from activity. Additional reported endpoints: Indoor/outdoor classification, Inter-device reliability.",
-      "deviceMetrics": {
-        "Actiwatch Spectrum Plus": [
-          "Outdoor classification"
-        ]
-      },
-      "sourceLocator": "Methods: instrumentation/inter-device reliability; Results and Abstract: outdoor ROC threshold, sensitivity, specificity and AUC.",
-      "provenance": {
-        "researchFile": "data/classic-research.json",
-        "sourceLocator": "Methods: instrumentation/inter-device reliability; Results and Abstract: outdoor ROC threshold, sensitivity, specificity and AUC."
-      },
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/37797567/",
-      "venue": "journal-optometry",
-      "evidenceType": "Reference comparison",
-      "developerRelationship": {
-        "Actiwatch Spectrum Plus": {
-          "category": "Unclear",
-          "reason": "Developer involvement has not been established from the inspected source. This is not a claim of independence.",
-          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10551654/",
-          "sourceLocator": "Methods: instrumentation/inter-device reliability; Results and Abstract: outdoor ROC threshold, sensitivity, specificity and AUC."
-        }
-      }
-    },
-    {
       "id": "stampfli-2023",
       "title": "The Light-Dosimeter: A new device to help advance research on the non-visual responses to light",
       "authors": "Stampfli et al.",
@@ -770,9 +605,7 @@
       ],
       "metrics": [
         "Angular response",
-        "Correlated colour temperature",
-        "Illuminance",
-        "Other circadian metrics"
+        "Illuminance"
       ],
       "setting": "Laboratory + field",
       "reference": "JETI specbos 1201 spectroradiometer; Ocean Insight STS-VIS for a real-world demonstration.",
@@ -784,9 +617,7 @@
       "deviceMetrics": {
         "lido": [
           "Illuminance",
-          "Angular response",
-          "Other circadian metrics",
-          "Correlated colour temperature"
+          "Angular response"
         ]
       },
       "sourceLocator": "Sections 2.5 and 3.1; Figures 8–9 (illuminance/CCT/angular tests); Section 3.3 and Figures 10–11 (melanopic irradiance comparison).",
@@ -819,17 +650,14 @@
       ],
       "deviceMetrics": {
         "HOBO (model not reported)": [
-          "Illuminance",
-          "Wear position"
+          "Illuminance"
         ],
         "Clouclip (version not reported)": [
-          "Illuminance",
-          "Wear position"
+          "Illuminance"
         ]
       },
       "metrics": [
-        "Illuminance",
-        "Wear position"
+        "Illuminance"
       ],
       "reference": "Side-by-side HOBO/Clouclip comparison, then concurrent wrist, chest and spectacle recordings.",
       "protocol": "Devices were compared in 26 light environments. Twenty-nine participants then wore two HOBOs and a Clouclip for one day.",
@@ -875,17 +703,11 @@
       ],
       "deviceMetrics": {
         "MyLyt": [
-          "Illuminance",
-          "Repeatability",
-          "Between-unit agreement",
-          "Outdoor classification"
+          "Illuminance"
         ]
       },
       "metrics": [
-        "Between-unit agreement",
-        "Illuminance",
-        "Outdoor classification",
-        "Repeatability"
+        "Illuminance"
       ],
       "reference": "Factory-calibrated Sinometer LX1330B lux meter; activity diaries for indoor/outdoor classification.",
       "protocol": "Four trackers were tested in a controlled chamber and indoor/outdoor settings. A field phase included 21 adults and eight children.",
@@ -926,20 +748,14 @@
       ],
       "deviceMetrics": {
         "Clouclip (version not reported)": [
-          "Illuminance",
-          "Wear position",
-          "Outdoor classification"
+          "Illuminance"
         ],
         "Actiwatch Spectrum Plus": [
-          "Illuminance",
-          "Wear position",
-          "Outdoor classification"
+          "Illuminance"
         ]
       },
       "metrics": [
-        "Illuminance",
-        "Outdoor classification",
-        "Wear position"
+        "Illuminance"
       ],
       "reference": "Concurrent spectacle-mounted Clouclip, wrist Actiwatch Spectrum Plus, daily logs and questionnaire.",
       "protocol": "Twenty-five adults wore both devices for one week. Illuminance and time above the outdoor threshold were compared with each other and self-reports.",
@@ -985,15 +801,11 @@
       ],
       "deviceMetrics": {
         "MotionWatch 8": [
-          "Illuminance",
-          "Wear position",
-          "Light-source classification"
+          "Illuminance"
         ]
       },
       "metrics": [
-        "Illuminance",
-        "Light-source classification",
-        "Wear position"
+        "Illuminance"
       ],
       "reference": "Extech LT40 LED light meter.",
       "protocol": "Seventeen everyday scenarios were sampled for five minutes each, including tests with and without sleeves. Thresholds classified light/dark, electrical/daylight and bright-light therapy.",
@@ -1034,19 +846,14 @@
       ],
       "deviceMetrics": {
         "Actiwatch 2": [
-          "Illuminance",
-          "Outdoor classification"
+          "Illuminance"
         ],
         "Clouclip (second generation)": [
-          "Illuminance",
-          "Outdoor classification",
-          "Between-unit agreement"
+          "Illuminance"
         ]
       },
       "metrics": [
-        "Between-unit agreement",
-        "Illuminance",
-        "Outdoor classification"
+        "Illuminance"
       ],
       "reference": "Manufacturer-calibrated Hagner S2 universal photometer.",
       "protocol": "Devices on a skeleton were compared with a photometer at matched sensor positions in nine indoor/outdoor settings. Five Clouclip M2 units were also compared concurrently.",
@@ -1097,17 +904,13 @@
         "Mohamed et al. spectrophotometer": [
           "Illuminance",
           "Melanopic EDI",
-          "Other circadian metrics",
-          "Spectral response",
           "Angular response"
         ]
       },
       "metrics": [
         "Angular response",
         "Illuminance",
-        "Melanopic EDI",
-        "Other circadian metrics",
-        "Spectral response"
+        "Melanopic EDI"
       ],
       "reference": "Konica Minolta CL-500A calibrated illuminance spectrophotometer.",
       "protocol": "A pendant/clip spectrophotometer covering 380–780 nm was developed and tested with common light sources; corrections addressed directionality, dark noise, saturation, nonlinearity, stray light and spectral response.",
@@ -1148,15 +951,11 @@
       ],
       "deviceMetrics": {
         "Actiwatch Spectrum Pro": [
-          "Illuminance",
-          "Repeatability",
-          "Between-unit agreement"
+          "Illuminance"
         ]
       },
       "metrics": [
-        "Between-unit agreement",
-        "Illuminance",
-        "Repeatability"
+        "Illuminance"
       ],
       "reference": "Controlled Gretag Macbeth Judge II lightbox; comparison among four watches and two sessions.",
       "protocol": "RGB and white outputs were recorded under simulated daylight D65, illuminant A and cool-white fluorescent light.",
@@ -1197,14 +996,12 @@
       "deviceMetrics": {
         "Spectrace": [
           "Illuminance",
-          "Spectral response",
           "Angular response"
         ]
       },
       "metrics": [
         "Angular response",
-        "Illuminance",
-        "Spectral response"
+        "Illuminance"
       ],
       "reference": "Reference spectra; LMT Pocket-Lux 2 for angular-response measurements.",
       "protocol": "Prototype tests examined spectral reconstruction, angular response and intensity linearity; a separate survey assessed wearability.",
@@ -1243,15 +1040,11 @@
       ],
       "deviceMetrics": {
         "Clouclip (first generation)": [
-          "Illuminance",
-          "Repeatability",
-          "Between-unit agreement"
+          "Illuminance"
         ]
       },
       "metrics": [
-        "Between-unit agreement",
-        "Illuminance",
-        "Repeatability"
+        "Illuminance"
       ],
       "reference": "Konica Minolta T-10 illuminance meter.",
       "protocol": "Fifteen first-generation units were tested in 28 light environments spanning 50–38,000 lx, with repeated measurements. A separate participant study compared device records with questionnaires.",
@@ -1377,49 +1170,6 @@
       }
     },
     {
-      "id": "rhudy-2020",
-      "title": "Wearable light data logger for studying physiological and psychological effects of light data",
-      "authors": "Rhudy et al.",
-      "year": 2020,
-      "doi": "10.1016/j.ohx.2020.e00157",
-      "venue": "hardwarex",
-      "devices": [
-        "Rhudy open-source logger"
-      ],
-      "deviceMetrics": {
-        "Rhudy open-source logger": [
-          "Outdoor classification"
-        ]
-      },
-      "metrics": [
-        "Outdoor classification"
-      ],
-      "reference": "Known indoor/outdoor locations; held-out samples for an artificial neural network classifier.",
-      "protocol": "Static tests generated 3,640 indoor and 1,368 outdoor samples. Individual sensor thresholds and an RGB/UV/light-based classifier were evaluated.",
-      "finding": "The combined sensor information discriminated sampled indoor and outdoor conditions; a wearable demonstration illustrated transitions.",
-      "limitations": "No reference photometer validation. Random sample splitting may not test generalisation to unseen people, locations or days; saturation occurred in direct sunlight.",
-      "sourceLocator": "Section 7: Validation and characterization; Table 4.",
-      "setting": "Field",
-      "evidenceType": "Classification study",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9041241/",
-      "access": "Full text",
-      "status": "Peer reviewed",
-      "notes": "",
-      "provenance": {
-        "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Section 7: Validation and characterization; Table 4."
-      },
-      "developerRelationship": {
-        "Rhudy open-source logger": {
-          "category": "Developer involved",
-          "reason": "The authors describe development or characterisation of their own research instrument.",
-          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9041241/",
-          "sourceLocator": "Section 7: Validation and characterization; Table 4."
-        }
-      }
-    },
-    {
       "id": "stone-2020",
       "title": "Accuracy of the GENEActiv Device for Measuring Light Exposure in Sleep and Circadian Research",
       "authors": "Stone, McGlashan, Facer-Childs, Cain & Phillips",
@@ -1431,8 +1181,7 @@
         "GENEActiv Original"
       ],
       "metrics": [
-        "Illuminance",
-        "Spectral response"
+        "Illuminance"
       ],
       "setting": "Laboratory + field",
       "reference": "J17 Luma Color illuminance meter; MK350N spectrometer for spectral measurements.",
@@ -1443,8 +1192,7 @@
       "notes": "Clocks & Sleep 2(2), 143–152. Inter-device reliability is reported separately from repeatability; findings apply to tested hardware/software. Additional reported endpoints: Low-light response, Inter-device reliability.",
       "deviceMetrics": {
         "GENEActiv Original": [
-          "Illuminance",
-          "Spectral response"
+          "Illuminance"
         ]
       },
       "sourceLocator": "§2.1–2.4: devices, stimuli and protocol; Table 2 and Results: intensity accuracy, spectral/infrared effects and inter-device reliability.",
@@ -1476,15 +1224,11 @@
       ],
       "deviceMetrics": {
         "Kronowise": [
-          "Illuminance",
-          "Other circadian metrics",
-          "Spectral response"
+          "Illuminance"
         ]
       },
       "metrics": [
-        "Illuminance",
-        "Other circadian metrics",
-        "Spectral response"
+        "Illuminance"
       ],
       "reference": "Ocean Optics spectroradiometer with CC-3 cosine corrector; CIE S 026 calculations from reference spectra.",
       "protocol": "Commercial lamps and sunlight were compared with three-channel Kronowise readings; separate calibration relationships were developed for natural and two artificial-light classes.",
@@ -1513,182 +1257,6 @@
       }
     },
     {
-      "id": "dumortier-2019",
-      "title": "One year of use of a light dosimeter",
-      "authors": "Dumortier et al.",
-      "year": 2019,
-      "doi": "10.25039/x46.2019.OP48",
-      "venue": "cie-proceedings",
-      "devices": [
-        "LightWatcher 3.x"
-      ],
-      "deviceMetrics": {
-        "LightWatcher 3.x": [
-          "Spectral response",
-          "Visible irradiance / dose"
-        ]
-      },
-      "metrics": [
-        "Spectral response",
-        "Visible irradiance / dose"
-      ],
-      "reference": "JETI 1211 UV spectroradiometer; modelled spectral extension for the near-infrared channel.",
-      "protocol": "The logger was checked under incandescent light and daylight before a year-long personal recording demonstration; separate channel correction factors were derived.",
-      "finding": "Uncorrected channel responses differed from the reference. The paper reports source-dependent calibration and correction factors for the five channels.",
-      "limitations": "CIE explicitly states that this proceedings paper was not peer reviewed. Type 3.x does not directly output photopic illuminance or melanopic EDI; infrared comparison partly depends on modelled spectra.",
-      "sourceLocator": "Instrument check and calibration section; channel correction table.",
-      "setting": "Laboratory",
-      "evidenceType": "Calibration study",
-      "url": "https://files.cie.co.at/x046_2019/x046-OP48.pdf",
-      "access": "Full text",
-      "status": "Conference paper",
-      "notes": "Full paper presented at the 29th CIE Session, 2019. The year-long record illustrates use; it is not a year-long reference comparison.",
-      "provenance": {
-        "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Instrument check and calibration section; channel correction table."
-      },
-      "developerRelationship": {
-        "LightWatcher 3.x": {
-          "category": "Unclear",
-          "reason": "Developer involvement has not been established from the inspected source. This is not a claim of independence.",
-          "sourceUrl": "https://files.cie.co.at/x046_2019/x046-OP48.pdf",
-          "sourceLocator": "Instrument check and calibration section; channel correction table."
-        }
-      }
-    },
-    {
-      "id": "kwon-2019",
-      "title": "Miniaturized, light-adaptive, wireless dosimeters autonomously monitor exposure to electromagnetic radiation",
-      "authors": "Kwon et al.",
-      "year": 2019,
-      "doi": "10.1126/sciadv.aay2462",
-      "venue": "science-advances",
-      "devices": [
-        "Kwon et al. BLE dosimeter"
-      ],
-      "deviceMetrics": {
-        "Kwon et al. BLE dosimeter": [
-          "Visible irradiance / dose"
-        ]
-      },
-      "metrics": [
-        "Visible irradiance / dose"
-      ],
-      "reference": "Solarmeter Visible Blue Light Meter; integrated reference irradiance for dose.",
-      "protocol": "Blue-channel devices were exposed to clear-sky sunlight and neutral-density-filtered sunlight. Reference dose was compared with charge accumulation and wake-up intervals.",
-      "finding": "Wake-up interval increased as irradiance decreased, supporting adaptive accumulation-based blue-light dosimetry.",
-      "limitations": "Calibration is specific to the tested spectral band and source conditions. It does not validate photopic lux, human melanopic EDI or all spectra encountered indoors.",
-      "sourceLocator": "Figure 2; Materials and Methods: Calibration of outdoor dosimeters.",
-      "setting": "Laboratory",
-      "evidenceType": "Development + calibration",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6910837/",
-      "access": "Full text",
-      "status": "Peer reviewed",
-      "notes": "",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/31853499/",
-      "provenance": {
-        "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Figure 2; Materials and Methods: Calibration of outdoor dosimeters."
-      },
-      "developerRelationship": {
-        "Kwon et al. BLE dosimeter": {
-          "category": "Developer involved",
-          "reason": "The authors describe development or characterisation of their own research instrument.",
-          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6910837/",
-          "sourceLocator": "Figure 2; Materials and Methods: Calibration of outdoor dosimeters."
-        }
-      }
-    },
-    {
-      "id": "ye-2019",
-      "title": "Discrimination of indoor versus outdoor environmental state with machine learning algorithms in myopia observational studies",
-      "authors": "Ye et al.",
-      "year": 2019,
-      "doi": "10.1186/s12967-019-2057-2",
-      "venue": "journal-translational-medicine",
-      "devices": [
-        "Mumu"
-      ],
-      "deviceMetrics": {
-        "Mumu": [
-          "Outdoor classification"
-        ]
-      },
-      "metrics": [
-        "Outdoor classification"
-      ],
-      "reference": "Participant logs in adults and direct supervisor location logs in children.",
-      "protocol": "Light, UV and step features trained a support-vector classifier on data from 12 adults across eight scenes. External testing used 172 children from three schools.",
-      "finding": "The adult-trained classifier achieved 82.67% accuracy in the child dataset, below the within-adult estimate of 99.55%.",
-      "limitations": "Classifier performance depends on population and setting. This does not test absolute light-sensor accuracy; the model also uses non-light features.",
-      "sourceLocator": "Methods: Smart watch, Data collection and Model building; Results: external validation.",
-      "setting": "Field",
-      "evidenceType": "Classification study",
-      "url": "https://link.springer.com/article/10.1186/s12967-019-2057-2",
-      "access": "Full text",
-      "status": "Peer reviewed",
-      "notes": "",
-      "provenance": {
-        "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Methods: Smart watch, Data collection and Model building; Results: external validation."
-      },
-      "developerRelationship": {
-        "Mumu": {
-          "category": "Developer involved",
-          "reason": "The authors describe development or characterisation of their own research instrument.",
-          "sourceUrl": "https://link.springer.com/article/10.1186/s12967-019-2057-2",
-          "sourceLocator": "Methods: Smart watch, Data collection and Model building; Results: external validation."
-        }
-      }
-    },
-    {
-      "id": "heo-2018",
-      "title": "Wireless, battery-free, flexible, miniaturized dosimeters monitor exposure to solar radiation and to light for phototherapy",
-      "authors": "Heo et al.",
-      "year": 2018,
-      "doi": "10.1126/scitranslmed.aau1643",
-      "venue": "science-translational-medicine",
-      "devices": [
-        "Heo et al. NFC dosimeter"
-      ],
-      "deviceMetrics": {
-        "Heo et al. NFC dosimeter": [
-          "Visible irradiance / dose"
-        ]
-      },
-      "metrics": [
-        "Visible irradiance / dose"
-      ],
-      "reference": "Solarmeter Bilirubin Meter for the blue channel; GE Giraffe Blue Spot PT phototherapy source.",
-      "protocol": "Blue-channel calibration accompanied electronic/component characterisation. A clinical demonstration monitored three neonates during approximately 20 hours of phototherapy.",
-      "finding": "The accumulation circuit supported measurement of blue-light intensity and dose with wireless readout; the clinical demonstration captured changes in treatment exposure.",
-      "limitations": "Application-specific spectral response; blue-light dose is not photopic illuminance or melanopic EDI. UV-channel validation is outside this directory’s visible-light scope.",
-      "sourceLocator": "Materials and Methods: calibration of sensors; blue-light phototherapy results.",
-      "setting": "Laboratory + field",
-      "evidenceType": "Development + calibration",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6361379/",
-      "access": "Full text",
-      "status": "Peer reviewed",
-      "notes": "Use the corrected journal/PMC version; a 2019 correction is linked by PMC.",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/30518611/",
-      "provenance": {
-        "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Materials and Methods: calibration of sensors; blue-light phototherapy results."
-      },
-      "developerRelationship": {
-        "Heo et al. NFC dosimeter": {
-          "category": "Developer involved",
-          "reason": "The authors describe development or characterisation of their own research instrument.",
-          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6361379/",
-          "sourceLocator": "Materials and Methods: calibration of sensors; blue-light phototherapy results."
-        }
-      }
-    },
-    {
       "id": "aarts-2017",
       "title": "Performance of personally worn dosimeters to study non-image forming effects of light: Assessment methods",
       "authors": "Aarts et al.",
@@ -1696,24 +1264,17 @@
       "doi": "10.1016/j.buildenv.2017.03.002",
       "venue": "building-environment",
       "devices": [
-        "Anonymised dosimeters (Aarts 2017)",
-        "SFH5711 research rig"
+        "Anonymised dosimeters (Aarts 2017)"
       ],
       "deviceMetrics": {
         "Anonymised dosimeters (Aarts 2017)": [
           "Illuminance",
-          "Angular response",
-          "Temperature"
-        ],
-        "SFH5711 research rig": [
-          "Wear position"
+          "Angular response"
         ]
       },
       "metrics": [
         "Angular response",
-        "Illuminance",
-        "Temperature",
-        "Wear position"
+        "Illuminance"
       ],
       "reference": "Calibrated Hagner E4X illuminance meter; a separate eye-level sensor reference for placement tests.",
       "protocol": "Seven anonymised models underwent photopic linearity, angular and temperature tests. A separate four-sensor SFH5711 rig compared body positions during one person’s indoor/outdoor activities.",
@@ -1733,12 +1294,6 @@
       },
       "developerRelationship": {
         "Anonymised dosimeters (Aarts 2017)": {
-          "category": "Unclear",
-          "reason": "Developer involvement has not been established from the inspected source. This is not a claim of independence.",
-          "sourceUrl": "https://pure.tue.nl/ws/files/59334100/1_s2.0_S0360132317300872_main.pdf",
-          "sourceLocator": "Sections 2.1–2.2 and Tables 3–8."
-        },
-        "SFH5711 research rig": {
           "category": "Unclear",
           "reason": "Developer involvement has not been established from the inspected source. This is not a claim of independence.",
           "sourceUrl": "https://pure.tue.nl/ws/files/59334100/1_s2.0_S0360132317300872_main.pdf",
@@ -1805,8 +1360,7 @@
         "Actiwatch 2"
       ],
       "metrics": [
-        "Angular response",
-        "Spectral response"
+        "Angular response"
       ],
       "setting": "Laboratory",
       "reference": "Photopic and photoreceptor sensitivity functions, cosine response and reference values for dynamic characterization.",
@@ -1817,19 +1371,15 @@
       "notes": "Abstract and Tables 1–4 inspected. Indexed coverage restricted to individually identifiable spectral and angular tests. Additional reported endpoints: Linearity, Dynamic range, Resolution.",
       "deviceMetrics": {
         "MotionWatch 8": [
-          "Spectral response",
           "Angular response"
         ],
         "ActTrust": [
-          "Spectral response",
           "Angular response"
         ],
         "GENEActiv Original": [
-          "Spectral response",
           "Angular response"
         ],
         "Actiwatch 2": [
-          "Spectral response",
           "Angular response"
         ]
       },
@@ -1869,51 +1419,6 @@
       }
     },
     {
-      "id": "cao-2015",
-      "title": "Estimating photoreceptor excitations from spectral outputs of a personal light exposure measurement device",
-      "authors": "Cao & Barrionuevo",
-      "year": 2015,
-      "doi": "10.3109/07420528.2014.966269",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4355054/",
-      "status": "Peer reviewed",
-      "devices": [
-        "Actiwatch Spectrum"
-      ],
-      "metrics": [
-        "Other circadian metrics",
-        "Spectral response"
-      ],
-      "setting": "Laboratory + field",
-      "reference": "PR670 spectroradiometer and measured/previously published Actiwatch spectral sensitivity functions.",
-      "protocol": "Regression models estimated five photoreceptor excitations from RGB and white outputs. Assessment included fluorescent light, outdoor sunlight and a tungsten-halogen calibration lamp.",
-      "finding": "Predictability was better for daylight than fluorescent spectra. Spectral outputs could estimate photoreceptor excitation under some conditions, but source type and nonlinear sensor response affected accuracy.",
-      "limitations": "Requires device-specific spectral calibration and linearization. Bright sunlight exceeded the device’s range and required a neutral-density filter. These historical excitation estimates should not be relabeled as CIE S 026 EDI.",
-      "access": "Full text",
-      "notes": "Chronobiology International 32(2), 270–280. Online publication in 2014; journal issue in 2015. Additional reported endpoints: Light-source classification.",
-      "deviceMetrics": {
-        "Actiwatch Spectrum": [
-          "Spectral response",
-          "Other circadian metrics"
-        ]
-      },
-      "sourceLocator": "Methods: spectral sensitivity and model assessment; Discussion and Tables 2–4: prediction errors and source dependence.",
-      "provenance": {
-        "researchFile": "data/classic-research.json",
-        "sourceLocator": "Methods: spectral sensitivity and model assessment; Discussion and Tables 2–4: prediction errors and source dependence."
-      },
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/25290040/",
-      "venue": "chronobiology-international",
-      "evidenceType": "Characterisation",
-      "developerRelationship": {
-        "Actiwatch Spectrum": {
-          "category": "Unclear",
-          "reason": "Developer involvement has not been established from the inspected source. This is not a claim of independence.",
-          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4355054/",
-          "sourceLocator": "Methods: spectral sensitivity and model assessment; Discussion and Tables 2–4: prediction errors and source dependence."
-        }
-      }
-    },
-    {
       "id": "markvart-2015",
       "title": "Comparison and Correction of the Light Sensor Output from 48 Wearable Light Exposure Devices by Using a Side-by-Side Field Calibration Method",
       "authors": "Markvart et al.",
@@ -1925,12 +1430,10 @@
       ],
       "deviceMetrics": {
         "Actiwatch Spectrum": [
-          "Illuminance",
-          "Between-unit agreement"
+          "Illuminance"
         ]
       },
       "metrics": [
-        "Between-unit agreement",
         "Illuminance"
       ],
       "reference": "Side-by-side comparison among 48 Actiwatch Spectrum units.",
@@ -1959,52 +1462,6 @@
       }
     },
     {
-      "id": "flynn-2014",
-      "title": "Detecting indoor and outdoor environments using the ActiGraph GT3X+ light sensor in children",
-      "authors": "Flynn et al.",
-      "year": 2014,
-      "doi": "10.1249/MSS.0b013e3182a388c0",
-      "venue": "medicine-science-sports-exercise",
-      "devices": [
-        "ActiGraph GT3X+"
-      ],
-      "deviceMetrics": {
-        "ActiGraph GT3X+": [
-          "Between-unit agreement",
-          "Outdoor classification"
-        ]
-      },
-      "metrics": [
-        "Between-unit agreement",
-        "Outdoor classification"
-      ],
-      "reference": "Known indoor/outdoor activity locations; comparison among 20 monitors.",
-      "protocol": "Reliability tests preceded threshold development in 18 children and school-day validation in another 18 preschool children.",
-      "finding": "A 240-lx threshold achieved 97% overall indoor/outdoor classification accuracy in the school-day validation, with lower accuracy outdoors than indoors.",
-      "limitations": "Classification validity is context-specific and does not establish absolute lux accuracy or transfer automatically to other ActiGraph models.",
-      "sourceLocator": "Abstract: Methods and Results.",
-      "setting": "Field",
-      "evidenceType": "Classification study",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/23846164/",
-      "access": "Abstract",
-      "status": "Peer reviewed",
-      "notes": "",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/23846164/",
-      "provenance": {
-        "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Abstract: Methods and Results."
-      },
-      "developerRelationship": {
-        "ActiGraph GT3X+": {
-          "category": "Unclear",
-          "reason": "Developer involvement has not been established from the inspected source. This is not a claim of independence.",
-          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/23846164/",
-          "sourceLocator": "Abstract: Methods and Results."
-        }
-      }
-    },
-    {
       "id": "figueiro-2013",
       "title": "Comparisons of three practical field devices used to measure personal light exposures and activity levels",
       "authors": "Figueiro, Hamner, Bierman & Rea",
@@ -2019,10 +1476,7 @@
       ],
       "metrics": [
         "Angular response",
-        "Illuminance",
-        "Other circadian metrics",
-        "Spectral response",
-        "Wear position"
+        "Illuminance"
       ],
       "setting": "Laboratory + field",
       "reference": "Photopic V(λ), cosine response and calibrated near-eye Daysimeter measurements for placement comparisons.",
@@ -2034,21 +1488,14 @@
       "deviceMetrics": {
         "Daysimeter-S": [
           "Illuminance",
-          "Spectral response",
-          "Angular response",
-          "Wear position",
-          "Other circadian metrics"
+          "Angular response"
         ],
         "Daysimeter-D": [
           "Illuminance",
-          "Spectral response",
-          "Angular response",
-          "Wear position",
-          "Other circadian metrics"
+          "Angular response"
         ],
         "Actiwatch Spectrum": [
           "Illuminance",
-          "Spectral response",
           "Angular response"
         ]
       },
@@ -2082,50 +1529,6 @@
       }
     },
     {
-      "id": "dharani-2012",
-      "title": "Comparison of measurements of time outdoors and light levels as risk factors for myopia in young Singapore children",
-      "authors": "Dharani et al.",
-      "year": 2012,
-      "doi": "10.1038/eye.2012.49",
-      "venue": "eye",
-      "devices": [
-        "HOBO Pendant UA-002-64"
-      ],
-      "deviceMetrics": {
-        "HOBO Pendant UA-002-64": [
-          "Outdoor classification"
-        ]
-      },
-      "metrics": [
-        "Outdoor classification"
-      ],
-      "reference": "Parent-completed outdoor diaries; no calibrated illuminance reference.",
-      "protocol": "One hundred and seventeen children wore a HOBO pendant for one week while parents recorded outdoor activity. Time above 1,000 lx was compared with diary outdoor time.",
-      "finding": "Agreement between diary estimates and light-threshold estimates was poor to fair.",
-      "limitations": "The methods measure different constructs. Diary agreement does not establish lux accuracy; the threshold is not a universal outdoor classifier.",
-      "sourceLocator": "Abstract: Methods, Results and Conclusions.",
-      "setting": "Field",
-      "evidenceType": "Classification comparison",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/22562184/",
-      "access": "Abstract",
-      "status": "Peer reviewed",
-      "notes": "",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/22562184/",
-      "provenance": {
-        "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Abstract: Methods, Results and Conclusions."
-      },
-      "developerRelationship": {
-        "HOBO Pendant UA-002-64": {
-          "category": "Unclear",
-          "reason": "Developer involvement has not been established from the inspected source. This is not a claim of independence.",
-          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/22562184/",
-          "sourceLocator": "Abstract: Methods, Results and Conclusions."
-        }
-      }
-    },
-    {
       "id": "price-2012",
       "title": "Performance assessment of commercial circadian personal exposure devices",
       "authors": "Price, Khazova & O’Hagan",
@@ -2137,8 +1540,7 @@
         "Actiwatch Spectrum"
       ],
       "metrics": [
-        "Angular response",
-        "Spectral response"
+        "Angular response"
       ],
       "setting": "Laboratory",
       "reference": "Optical characterization; abstract does not identify all reference instruments.",
@@ -2149,7 +1551,6 @@
       "notes": "Metadata and abstract verified at the authors’ institution: https://researchportal.ukhsa.gov.uk/en/publications/performance-assessment-of-commercial-circadian-personal-exposure--2/ . Lighting Research & Technology 44(1), 17–26. Additional reported endpoints: Dynamic range.",
       "deviceMetrics": {
         "Actiwatch Spectrum": [
-          "Spectral response",
           "Angular response"
         ]
       },
@@ -2182,17 +1583,14 @@
       ],
       "deviceMetrics": {
         "Actiwatch-L": [
-          "Illuminance",
-          "Wear position"
+          "Illuminance"
         ],
         "Daysimeter (version not reported)": [
-          "Illuminance",
-          "Wear position"
+          "Illuminance"
         ]
       },
       "metrics": [
-        "Illuminance",
-        "Wear position"
+        "Illuminance"
       ],
       "reference": "Eye-level Daysimeter compared with wrist-worn Actiwatch-L.",
       "protocol": "Concurrent light records were compared in postoperative hospital patients.",
@@ -2283,13 +1681,11 @@
       ],
       "deviceMetrics": {
         "Daysimeter (2005 prototype)": [
-          "Illuminance",
-          "Spectral response"
+          "Illuminance"
         ]
       },
       "metrics": [
-        "Illuminance",
-        "Spectral response"
+        "Illuminance"
       ],
       "setting": "Laboratory",
       "evidenceType": "Characterisation",
@@ -2314,82 +1710,9 @@
           "sourceLocator": "Author PDF, Section 3.1.3: Radiation measurement verification; Figure 3."
         }
       }
-    },
-    {
-      "id": "duncan-1995",
-      "title": "The development of personal dosimeters for use in the visible and ultraviolet wavelengths regions. The Salisbury Eye Evaluation Team.",
-      "authors": "Duncan et al.",
-      "year": 1995,
-      "doi": "10.1111/j.1751-1097.1995.tb05244.x",
-      "venue": "photochemistry-photobiology",
-      "devices": [
-        "Duncan et al. ocular dosimeter"
-      ],
-      "deviceMetrics": {
-        "Duncan et al. ocular dosimeter": [
-          "Visible irradiance / dose"
-        ]
-      },
-      "metrics": [
-        "Visible irradiance / dose"
-      ],
-      "reference": "Ambient light monitors; models not reported in the accessible abstract.",
-      "protocol": "A spectacle-mounted visible-light detector and pocket recorder were developed and field evaluated alongside a separate UVB film badge.",
-      "finding": "The abstract reports correspondence with ambient-monitor measurements.",
-      "limitations": "Abstract only; no numerical error, intensity range or calibrated-reference specification is available in the inspected record. Visible and UVB channels are different sensing systems.",
-      "sourceLocator": "PubMed abstract: device design and field evaluation.",
-      "setting": "Laboratory + field",
-      "evidenceType": "Development study",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/7638275/",
-      "access": "Abstract",
-      "status": "Peer reviewed",
-      "notes": "",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/7638275/",
-      "provenance": {
-        "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "PubMed abstract: device design and field evaluation."
-      },
-      "developerRelationship": {
-        "Duncan et al. ocular dosimeter": {
-          "category": "Developer involved",
-          "reason": "The authors describe development or characterisation of their own research instrument.",
-          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/7638275/",
-          "sourceLocator": "PubMed abstract: device design and field evaluation."
-        }
-      }
     }
   ],
   "devices": [
-    {
-      "id": "actigraph-gt3x-plus",
-      "name": "ActiGraph GT3X+",
-      "maker": "ActiGraph",
-      "form": "Hip worn in the indexed study",
-      "description": "The GT3X+ light sensor was evaluated for classifying indoor and outdoor activity in children.",
-      "deviceType": "Commercial model",
-      "family": "ActiGraph",
-      "typeSourceStudyIds": [
-        "flynn-2014"
-      ],
-      "reportedOutputs": {
-        "Illuminance": {
-          "status": "yes",
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/23846164/",
-              "locator": "Abstract, Introduction: the ambient light sensor provides lux measurements."
-            }
-          ],
-          "note": "Output documented in the cited paper; this capability citation is not counted as an illuminance validation."
-        },
-        "Melanopic EDI": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        }
-      }
-    },
     {
       "id": "actigraph-wgt3x-bt",
       "name": "ActiGraph wGT3X-BT",
@@ -2791,30 +2114,6 @@
       }
     },
     {
-      "id": "gibaldi-helmet",
-      "name": "AS7262 helmet logger (Gibaldi et al.)",
-      "maker": "UC Berkeley research prototype",
-      "form": "Head mounted",
-      "description": "Six-channel spectral sensor mounted alongside a depth camera; radiometric measurements, rather than photopic illuminance.",
-      "deviceType": "Research device",
-      "family": "",
-      "typeSourceStudyIds": [
-        "gibaldi-2024"
-      ],
-      "reportedOutputs": {
-        "Illuminance": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        },
-        "Melanopic EDI": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        }
-      }
-    },
-    {
       "id": "blue-iris-speck-v1-0",
       "name": "Blue Iris Speck v1.0",
       "maker": "",
@@ -3085,30 +2384,6 @@
       }
     },
     {
-      "id": "duncan-dosimeter",
-      "name": "Duncan et al. ocular dosimeter",
-      "maker": "Johns Hopkins Applied Physics Laboratory",
-      "form": "Spectacle mounted",
-      "description": "Two-part research instrument described in 1995, with a visible-light photodiode and a separate UVB badge.",
-      "deviceType": "Research device",
-      "family": "",
-      "typeSourceStudyIds": [
-        "duncan-1995"
-      ],
-      "reportedOutputs": {
-        "Illuminance": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        },
-        "Melanopic EDI": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        }
-      }
-    },
-    {
       "id": "geneactiv",
       "name": "GENEActiv",
       "maker": "Activinsights",
@@ -3188,30 +2463,6 @@
       }
     },
     {
-      "id": "heo-nfc",
-      "name": "Heo et al. NFC dosimeter",
-      "maker": "Northwestern University research prototype",
-      "form": "Skin mounted / clip on",
-      "description": "Battery-free accumulation dosimeter; the visible-light record concerns its blue-light channel.",
-      "deviceType": "Research device",
-      "family": "",
-      "typeSourceStudyIds": [
-        "heo-2018"
-      ],
-      "reportedOutputs": {
-        "Illuminance": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        },
-        "Melanopic EDI": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        }
-      }
-    },
-    {
       "id": "hobo-unspecified",
       "name": "HOBO (model not reported)",
       "maker": "Onset",
@@ -3233,35 +2484,6 @@
             }
           ],
           "note": "The cited paper reports this quantity from the device or its documented calibration/processing workflow. This does not by itself establish accuracy."
-        },
-        "Melanopic EDI": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        }
-      }
-    },
-    {
-      "id": "hobo-ua-002-64",
-      "name": "HOBO Pendant UA-002-64",
-      "maker": "Onset",
-      "form": "Pendant",
-      "description": "Model explicitly reported by Dharani et al. (2012).",
-      "deviceType": "Commercial model",
-      "family": "HOBO",
-      "typeSourceStudyIds": [
-        "dharani-2012"
-      ],
-      "reportedOutputs": {
-        "Illuminance": {
-          "status": "yes",
-          "sources": [
-            {
-              "url": "https://doi.org/10.1038/eye.2012.49",
-              "locator": "Methods: pendant light readings in lux and the 1,000-lx threshold."
-            }
-          ],
-          "note": "Output documented in the cited paper; this capability citation is not counted as an illuminance validation."
         },
         "Melanopic EDI": {
           "status": "not documented",
@@ -3331,30 +2553,6 @@
       }
     },
     {
-      "id": "kwon-ble",
-      "name": "Kwon et al. BLE dosimeter",
-      "maker": "Northwestern University research prototype",
-      "form": "Skin mounted / clip on",
-      "description": "Light-adaptive, Bluetooth-enabled accumulation dosimeter, distinct from the earlier NFC platform.",
-      "deviceType": "Research device",
-      "family": "",
-      "typeSourceStudyIds": [
-        "kwon-2019"
-      ],
-      "reportedOutputs": {
-        "Illuminance": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        },
-        "Melanopic EDI": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        }
-      }
-    },
-    {
       "id": "lido",
       "name": "lido",
       "maker": "",
@@ -3393,30 +2591,6 @@
             }
           ],
           "note": "The cited paper reports this quantity from the device or its documented calibration/processing workflow. This does not by itself establish accuracy."
-        }
-      }
-    },
-    {
-      "id": "lightwatcher-3",
-      "name": "LightWatcher 3.x",
-      "maker": "EUClock research consortium",
-      "form": "Pendant",
-      "description": "Type 3.x tested by Dumortier et al.; this evidence is not assigned to later LightWatcher versions.",
-      "deviceType": "Research device",
-      "family": "",
-      "typeSourceStudyIds": [
-        "dumortier-2019"
-      ],
-      "reportedOutputs": {
-        "Illuminance": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        },
-        "Melanopic EDI": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
       }
     },
@@ -3542,30 +2716,6 @@
       }
     },
     {
-      "id": "mumu",
-      "name": "Mumu",
-      "maker": "Shanghai research team",
-      "form": "Wrist worn",
-      "description": "Multisensor watch studied for indoor/outdoor classification using light, UV and activity information.",
-      "deviceType": "Research device",
-      "family": "",
-      "typeSourceStudyIds": [
-        "ye-2019"
-      ],
-      "reportedOutputs": {
-        "Illuminance": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        },
-        "Melanopic EDI": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        }
-      }
-    },
-    {
       "id": "mylyt",
       "name": "MyLyt",
       "maker": "L V Prasad Eye Institute",
@@ -3632,54 +2782,6 @@
       }
     },
     {
-      "id": "rhudy-logger",
-      "name": "Rhudy open-source logger",
-      "maker": "Penn State Berks",
-      "form": "Clip / portable",
-      "description": "Arduino-based prototype evaluated for indoor/outdoor classification, rather than traceable illuminance accuracy.",
-      "deviceType": "Research device",
-      "family": "",
-      "typeSourceStudyIds": [
-        "rhudy-2020"
-      ],
-      "reportedOutputs": {
-        "Illuminance": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        },
-        "Melanopic EDI": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        }
-      }
-    },
-    {
-      "id": "sfh5711-rig",
-      "name": "SFH5711 research rig",
-      "maker": "Eindhoven University of Technology",
-      "form": "Multiple positions",
-      "description": "Four calibrated Osram SFH5711 sensor cells in a research rig; used for the separate wearing-position experiment in Aarts et al. (2017).",
-      "deviceType": "Research device",
-      "family": "",
-      "typeSourceStudyIds": [
-        "aarts-2017"
-      ],
-      "reportedOutputs": {
-        "Illuminance": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        },
-        "Melanopic EDI": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        }
-      }
-    },
-    {
       "id": "spectrace",
       "name": "Spectrace",
       "maker": "EPFL LIPID",
@@ -3701,30 +2803,6 @@
             }
           ],
           "note": "The cited paper reports this quantity from the device or its documented calibration/processing workflow. This does not by itself establish accuracy."
-        },
-        "Melanopic EDI": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        }
-      }
-    },
-    {
-      "id": "spectravita",
-      "name": "SpectraVita",
-      "maker": "Liu et al. research prototype",
-      "form": "Wearable",
-      "description": "Eleven-band multispectral prototype described in a 2026 preprint. Abstract-level evidence for light-source classification.",
-      "deviceType": "Research device",
-      "family": "",
-      "typeSourceStudyIds": [
-        "liu-2026"
-      ],
-      "reportedOutputs": {
-        "Illuminance": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         },
         "Melanopic EDI": {
           "status": "not documented",

@@ -81,8 +81,7 @@ After rendering, `python scripts/package.py` creates `../lightloggers-quarto.zip
 with the sources, rendered site, data and verification artifacts. Local virtual
 environments and caches are excluded.
 
-The expanded audit includes 45 papers (40 peer reviewed, 4 preprints and one
-non-peer-reviewed conference paper). All have DOI/source links; PubMed links are
+The narrowed directory includes 33 papers covering photopic illuminance, melanopic EDI or angle dependence. Classification-only papers are excluded. All have DOI/source links; PubMed links are
 included when a verified record was found. Twelve summaries rely on abstracts;
 one uses a verified partial full-text passage. Exact search accounting, unresolved
 candidates and scope decisions appear on the About page.
@@ -104,3 +103,7 @@ all 733 abstracts. Broad, capped pilot responses are retained only for provenanc
 queries with pagination into a new folder, preserving the original snapshot.
 The date cutoff remains as written in the queries until explicitly updated.
 New search results do not automatically modify the reviewed library.
+
+## PDF snapshot
+
+After rendering, run `node scripts/export-pdf.cjs` to create `output/pdf/lightlogger-evidence.pdf`. It uses Playwright and Chrome (the same environment overrides as the browser checks).

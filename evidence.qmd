@@ -59,7 +59,7 @@ print(f'<p class="audit-stamp">Literature checked {esc(updated)} · '
 
 “Reports” describes a documented device output, including the paper’s calibration or processing workflow. Yes and No require a literature source; a dash means that reporting capability has not been documented in the inspected sources, not that the device cannot provide it. Output capability is stored separately from validation evidence, with its own source links. Angle dependence is a tested property, not a reported output.
 
-Each square represents one paper testing that model for that measurement; 0 means no indexed test for that endpoint. Counts describe coverage, not accuracy. The overview shows photopic illuminance, melanopic EDI and angle dependence. A paper can appear in several columns. Additional endpoints remain in the study details. Families group related names without pooling results across models.
+Each square represents one paper testing that model for that measurement; 0 means no indexed test for that endpoint. Counts describe coverage, not accuracy. The overview shows photopic illuminance, melanopic EDI and angle dependence. A paper can appear in several columns. Only these three endpoints are indexed. Families group related names without pooling results across models.
 
 Squares count studies; orange hatching highlights documented developer involvement. This highlight is specific to the device–paper pair. Checked independent authorship is noted in study details with its source. An unhighlighted square makes no claim about independence: authorship/disclosure review is still incomplete. Independent authorship does not guarantee absence of manufacturer assistance or bias.
 
@@ -67,9 +67,9 @@ Squares count studies; orange hatching highlights documented developer involveme
 
 ## Scope
 
-This directory brings together primary research that evaluates light measurements from wearable devices against a reference instrument, characterises sensor performance, tests wearing position, or evaluates light-based classification. The expanded search is documented below. It is not an exhaustive systematic review: some known candidates still need extraction, and the search can miss relevant work.
+This directory includes primary studies with extracted direct tests of photopic illuminance, melanopic EDI or angle dependence. Indoor/outdoor and light-source classification papers are excluded unless the paper separately tests one of those three measurements. Spectral-only, dose-only and other-endpoint papers are outside this narrowed scope. The expanded search is documented below. It is not an exhaustive systematic review: some known candidates still need extraction, and the search can miss relevant work.
 
-Development papers are included when they report measurement tests. Each entry states the evidence type, reference, source access and limits. Inclusion does not certify a device. Agreement between wearables, classification accuracy and absolute measurement accuracy are different forms of evidence.
+Development papers are included when they report measurement tests. Each entry states the evidence type, reference, source access and limits. Inclusion does not certify a device. Reference comparisons, between-device agreement, repeatability and wearing-position studies are labelled separately; they do not provide interchangeable evidence of absolute accuracy.
 
 Sources are research publications and explicitly labelled preprints. Manufacturer specifications and marketing claims are not used as validation evidence. Studies concerned only with sleep, activity, or physiological outcomes do not establish the accuracy of a device's light sensor and are outside this collection's measurement scope.
 

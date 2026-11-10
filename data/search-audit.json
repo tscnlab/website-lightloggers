@@ -218,6 +218,102 @@
       "decision": "Excluded by curator",
       "reason": "Removed from the directory at the curator’s request on 10 November 2026.",
       "sourceInspected": "Abstract"
+    },
+    {
+      "citation": "Liu et al. (2026). From Spectra to Digital Phenotypes: Wearable Multispectral Sensing for Precision Light and Green Space Exposure",
+      "doi": "10.64898/2026.05.14.724799",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.14.724799v1",
+      "decision": "Outside narrowed scope",
+      "reason": "No extracted direct test of photopic illuminance, melanopic EDI or angle dependence. Classification-only and other-endpoint records are excluded from this directory.",
+      "sourceInspected": "Abstract"
+    },
+    {
+      "citation": "Gibaldi et al. (2024). A Child-Friendly Wearable Device for Quantifying Environmental Risk Factors for Myopia",
+      "doi": "10.1167/tvst.13.10.28",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11498637/",
+      "decision": "Outside narrowed scope",
+      "reason": "No extracted direct test of photopic illuminance, melanopic EDI or angle dependence. Classification-only and other-endpoint records are excluded from this directory.",
+      "sourceInspected": "Full text"
+    },
+    {
+      "citation": "Shneor, Gordon-Shaag, Doron, Benoit & Ostrin (2024). Utility of the Actiwatch Spectrum Plus for detecting the outdoor environment and physical activity in children",
+      "doi": "10.1016/j.optom.2023.100483",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10551654/",
+      "decision": "Outside narrowed scope",
+      "reason": "No extracted direct test of photopic illuminance, melanopic EDI or angle dependence. Classification-only and other-endpoint records are excluded from this directory.",
+      "sourceInspected": "Full text"
+    },
+    {
+      "citation": "Rhudy et al. (2020). Wearable light data logger for studying physiological and psychological effects of light data",
+      "doi": "10.1016/j.ohx.2020.e00157",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9041241/",
+      "decision": "Outside narrowed scope",
+      "reason": "No extracted direct test of photopic illuminance, melanopic EDI or angle dependence. Classification-only and other-endpoint records are excluded from this directory.",
+      "sourceInspected": "Full text"
+    },
+    {
+      "citation": "Dumortier et al. (2019). One year of use of a light dosimeter",
+      "doi": "10.25039/x46.2019.OP48",
+      "url": "https://files.cie.co.at/x046_2019/x046-OP48.pdf",
+      "decision": "Outside narrowed scope",
+      "reason": "No extracted direct test of photopic illuminance, melanopic EDI or angle dependence. Classification-only and other-endpoint records are excluded from this directory.",
+      "sourceInspected": "Full text"
+    },
+    {
+      "citation": "Kwon et al. (2019). Miniaturized, light-adaptive, wireless dosimeters autonomously monitor exposure to electromagnetic radiation",
+      "doi": "10.1126/sciadv.aay2462",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6910837/",
+      "decision": "Outside narrowed scope",
+      "reason": "No extracted direct test of photopic illuminance, melanopic EDI or angle dependence. Classification-only and other-endpoint records are excluded from this directory.",
+      "sourceInspected": "Full text"
+    },
+    {
+      "citation": "Ye et al. (2019). Discrimination of indoor versus outdoor environmental state with machine learning algorithms in myopia observational studies",
+      "doi": "10.1186/s12967-019-2057-2",
+      "url": "https://link.springer.com/article/10.1186/s12967-019-2057-2",
+      "decision": "Outside narrowed scope",
+      "reason": "No extracted direct test of photopic illuminance, melanopic EDI or angle dependence. Classification-only and other-endpoint records are excluded from this directory.",
+      "sourceInspected": "Full text"
+    },
+    {
+      "citation": "Heo et al. (2018). Wireless, battery-free, flexible, miniaturized dosimeters monitor exposure to solar radiation and to light for phototherapy",
+      "doi": "10.1126/scitranslmed.aau1643",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6361379/",
+      "decision": "Outside narrowed scope",
+      "reason": "No extracted direct test of photopic illuminance, melanopic EDI or angle dependence. Classification-only and other-endpoint records are excluded from this directory.",
+      "sourceInspected": "Full text"
+    },
+    {
+      "citation": "Cao & Barrionuevo (2015). Estimating photoreceptor excitations from spectral outputs of a personal light exposure measurement device",
+      "doi": "10.3109/07420528.2014.966269",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4355054/",
+      "decision": "Outside narrowed scope",
+      "reason": "No extracted direct test of photopic illuminance, melanopic EDI or angle dependence. Classification-only and other-endpoint records are excluded from this directory.",
+      "sourceInspected": "Full text"
+    },
+    {
+      "citation": "Flynn et al. (2014). Detecting indoor and outdoor environments using the ActiGraph GT3X+ light sensor in children",
+      "doi": "10.1249/MSS.0b013e3182a388c0",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23846164/",
+      "decision": "Outside narrowed scope",
+      "reason": "No extracted direct test of photopic illuminance, melanopic EDI or angle dependence. Classification-only and other-endpoint records are excluded from this directory.",
+      "sourceInspected": "Abstract"
+    },
+    {
+      "citation": "Dharani et al. (2012). Comparison of measurements of time outdoors and light levels as risk factors for myopia in young Singapore children",
+      "doi": "10.1038/eye.2012.49",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22562184/",
+      "decision": "Outside narrowed scope",
+      "reason": "No extracted direct test of photopic illuminance, melanopic EDI or angle dependence. Classification-only and other-endpoint records are excluded from this directory.",
+      "sourceInspected": "Abstract"
+    },
+    {
+      "citation": "Duncan et al. (1995). The development of personal dosimeters for use in the visible and ultraviolet wavelengths regions. The Salisbury Eye Evaluation Team.",
+      "doi": "10.1111/j.1751-1097.1995.tb05244.x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7638275/",
+      "decision": "Outside narrowed scope",
+      "reason": "No extracted direct test of photopic illuminance, melanopic EDI or angle dependence. Classification-only and other-endpoint records are excluded from this directory.",
+      "sourceInspected": "Abstract"
     }
   ],
   "queries": [
@@ -245,9 +341,9 @@
     "uniqueBibliographicRecords": 733,
     "titlePrefilterRetained": 361,
     "titlePrefilterOmitted": 372,
-    "includedPapers": 45,
-    "deviceEntries": 45,
-    "otherCandidateRecords": 23
+    "includedPapers": 33,
+    "deviceEntries": 34,
+    "otherCandidateRecords": 35
   },
   "titlePrefilterRegex": "light|illumin|dosimet|clouclip|mylyt|daysimet|spectrace|spectrawear|kronowise|actlumus|ocuwear"
 }
