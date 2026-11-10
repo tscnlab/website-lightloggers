@@ -25,6 +25,19 @@
   function coverageStudies(studies, name, metric) {
     return unique(studies.filter(s => (s.deviceMetrics[name] || []).some(m => m===metric)));
   }
+  function sortDevices(devices, pairs, sort) {
+    const counts = new Map();
+    for (const {device, study} of pairs) {
+      if (!counts.has(device.id)) counts.set(device.id, new Set());
+      counts.get(device.id).add(study.id);
+    }
+    return [...devices].sort((a,b) => {
+      const difference=(counts.get(a.id)?.size || 0)-(counts.get(b.id)?.size || 0);
+      if (difference && sort==='most') return -difference;
+      if (difference && sort==='fewest') return difference;
+      return a.name.localeCompare(b.name);
+    });
+  }
   function sourceIsValid(value) {
     const source = value.trim();
     if (/^10\.\d{4,9}\/\S+$/i.test(source)) return true;
@@ -33,13 +46,13 @@
   function submissionText(values) {
     return ['Suggested validation for Light Logger Evidence', '', `Paper: ${values.title.trim()}`, `DOI / URL: ${values.source.trim()}`, `Device and model: ${values.device.trim()}`, `Publication status: ${values.status}`, '', 'Validation details / correction:', values.notes.trim() || 'Not provided.', '', `Suggested by: ${values.name.trim() || 'Not provided.'}`, '', 'Please review the source and model-specific evidence before inclusion.'].join('\n');
   }
-  if (typeof module !== 'undefined' && module.exports) module.exports = {filterPairs, coverageStudies, sourceIsValid, submissionText};
+  if (typeof module !== 'undefined' && module.exports) module.exports = {filterPairs, coverageStudies, sortDevices, sourceIsValid, submissionText};
   if (typeof document === 'undefined') return;
 
   const $ = selector => document.querySelector(selector);
   const library = JSON.parse($('#library-data').textContent);
   const config = JSON.parse($('#site-config').textContent);
-  let state = {q:'',metric:'',type:'',view:'devices'}, lastSubmission='';
+  let state = {q:'',metric:'',type:'',view:'devices',sort:'manufacturer'}, lastSubmission='';
   const plural = (n,word) => `${n} ${n===1?word:word==='study'?'studies':word+'s'}`;
   const studySort = (a,b) => b.year-a.year || a.authors.localeCompare(b.authors);
   function venueDisplay(study) {
@@ -58,7 +71,7 @@
   }
   function studyRecord(study,device=null,pairs=null) {
     const key = device ? `${device.id}-${study.id}` : study.id;
-    const fields = [['Evidence type',study.evidenceType],['Reference',study.reference],['Protocol',study.protocol],['Limitations',study.limitations]];
+    const fields = [['Reference',study.reference],['Protocol',study.protocol]];
     const coverage = device ? `${device.name}: ${study.deviceMetrics[device.name].join(', ')}` : study.devices.map(name=>`${name}: ${study.deviceMetrics[name].join(', ')}`).join('; ');
     fields.push(['Measurements',coverage]);
     const reviewed=(device?[device.name]:study.devices).filter(name=>relationship(study,name).category!=='Unclear');
@@ -76,37 +89,42 @@
       return `<span class="metric-check-cell ${kind}" data-label="${label}" data-metric="${escape(metric)}"><span class="${confirmed?'confirmed-check':'no-check'}" aria-label="${escape(label)}: ${confirmed?meaning:'not established'}" title="${escape(label)}: ${confirmed?meaning:'not established in this collection'}">${confirmed?'✓':'—'}</span></span>`;
     };
     const checks=columns.slice(0,2).map(([m,l])=>checkCell(m,l,'feature')).join('')+columns.map(([m,l])=>checkCell(m,l,'examined')).join('');
-    return `<details class="device-record" id="device-${escape(device.id)}"><summary><div><h3 class="device-name">${escape(device.name)}</h3></div><span class="device-count"><span>${plural(studies.length,'validation')}</span><span class="study-squares" aria-label="${plural(studies.length,'validation')}">${squares}</span></span><span class="coverage-grid"><span class="mobile-group outputs-title">Device outputs</span><span class="mobile-group examined-title">Examined in studies</span>${checks}</span></summary><div class="device-studies"><p class="device-note">${escape(device.deviceType)}</p>${studies.map(s=>studyRecord(s,device)).join('')}</div></details>`;
+    return `<details class="device-record" id="device-${escape(device.id)}"><summary><div><h3 class="device-name">${escape(device.name)}</h3>${state.sort!=='manufacturer'?`<span class="device-maker">${escape(device.manufacturerGroup || device.maker)}</span>`:''}</div><span class="device-count"><span>${plural(studies.length,'validation')}</span><span class="study-squares" aria-label="${plural(studies.length,'validation')}">${squares}</span></span><span class="coverage-grid"><span class="mobile-group outputs-title">Device outputs</span><span class="mobile-group examined-title">Examined in studies</span>${checks}</span></summary><div class="device-studies"><p class="device-note">${escape(device.deviceType)}</p>${studies.map(s=>studyRecord(s,device)).join('')}</div></details>`;
+  }
+  function listHeading(name) {
+    return `<div class="family-heading"><h2>${escape(name)}</h2><span class="validation-heading">Validations</span><div class="coverage-grid"><span class="outputs-title">Device outputs</span><span class="examined-title">Examined in studies</span>${columns.slice(0,2).map(([m,l])=>`<span class="feature">${l}</span>`).join('')}${columns.map(([m,l])=>`<span class="examined">${l}</span>`).join('')}</div><span></span></div>`;
   }
   function groupedRecords(devices,pairs) {
     const groups=new Map();
     for(const d of devices){const name=d.manufacturerGroup || d.maker || 'Manufacturer not identified';if(!groups.has(name))groups.set(name,[]);groups.get(name).push(d);}
     return [...groups].sort(([a],[b])=>a.localeCompare(b)).flatMap(([name,items])=>[
-      `<div class="family-heading"><h2>${escape(name)}</h2><span class="validation-heading">Validations</span><div class="coverage-grid"><span class="outputs-title">Device outputs</span><span class="examined-title">Examined in studies</span>${columns.slice(0,2).map(([m,l])=>`<span class="feature">${l}</span>`).join('')}${columns.map(([m,l])=>`<span class="examined">${l}</span>`).join('')}</div><span></span></div>`, ...items.map(d=>deviceRecord(d,pairs))]);
+      listHeading(name), ...items.map(d=>deviceRecord(d,pairs))]);
   }
 
   function syncUrl() {
     const url=new URL(location.href);
-    ['q','metric','type','view'].forEach(k=>state[k] && !(k==='view'&&state[k]==='devices')?url.searchParams.set(k,state[k]):url.searchParams.delete(k));
-    ['device','study','status','setting','sort','compare'].forEach(k=>url.searchParams.delete(k));
+    ['q','metric','type','view','sort'].forEach(k=>state[k] && !(k==='view'&&state[k]==='devices') && !(k==='sort'&&state[k]==='manufacturer')?url.searchParams.set(k,state[k]):url.searchParams.delete(k));
+    ['device','study','status','setting','compare'].forEach(k=>url.searchParams.delete(k));
     try{history.replaceState({},'',url);}catch{}
   }
   function render() {
-    const pairs=filterPairs(library,state), devices=unique(pairs.map(p=>p.device)).sort((a,b)=>a.name.localeCompare(b.name)), studies=unique(pairs.map(p=>p.study)).sort(studySort);
+    const pairs=filterPairs(library,state), devices=sortDevices(unique(pairs.map(p=>p.device)),pairs,state.sort), studies=unique(pairs.map(p=>p.study)).sort(studySort);
     $('#devices-tab').setAttribute('aria-pressed',String(state.view==='devices'));
     $('#studies-tab').setAttribute('aria-pressed',String(state.view==='studies'));
     $('#result-count').textContent=`${devices.length} device ${devices.length===1?'entry':'entries'} · ${plural(studies.length,'study')}`;
     $('#reset').hidden=!state.q&&!state.metric&&!state.type;
-    const entries=state.view==='devices'?groupedRecords(devices,pairs):studies.map(s=>studyRecord(s,null,pairs));
+    const entries=state.view==='devices'?(state.sort==='manufacturer'?groupedRecords(devices,pairs):devices.length?[listHeading('Device'),...devices.map(d=>deviceRecord(d,pairs))]:[]):studies.map(s=>studyRecord(s,null,pairs));
+    $('#sort-control').hidden=state.view!=='devices';
     $('#coverage-legend').hidden=state.view!=='devices';
     $('#results').innerHTML=entries.length?entries.join(''):'<div class="empty"><h3>No matching records</h3><p>Change the search terms or clear the filters.</p><button class="button" data-reset>Clear search</button></div>';
   }
   function readUrl() {
     const params=new URL(location.href).searchParams;
-    state={q:params.get('q')||'',metric:params.get('metric')||'',type:params.get('type')||'',view:params.get('view')==='studies'||params.has('study')?'studies':'devices'};
+    state={q:params.get('q')||'',metric:params.get('metric')||'',type:params.get('type')||'',sort:params.get('sort')||'manufacturer',view:params.get('view')==='studies'||params.has('study')?'studies':'devices'};
     if(![...$('#metric').options].some(o=>o.value===state.metric))state.metric='';
     if(![...$('#device-type').options].some(o=>o.value===state.type))state.type='';
-    $('#search').value=state.q;$('#metric').value=state.metric;$('#device-type').value=state.type;render();
+    if(![...$('#sort').options].some(o=>o.value===state.sort))state.sort='manufacturer';
+    $('#search').value=state.q;$('#metric').value=state.metric;$('#device-type').value=state.type;$('#sort').value=state.sort;render();
     const requestedDevice=params.get('device'),deviceId=library.devices.find(d=>d.aliasIds?.includes(requestedDevice))?.id||requestedDevice,studyId=params.get('study');
     if(deviceId){const target=document.getElementById('device-'+deviceId);if(target)target.open=true;}
     if(studyId){const target=document.getElementById(studyId);if(target)target.querySelector('details').open=true;}
@@ -123,6 +141,7 @@
   $('#search').addEventListener('input',()=>{state.q=$('#search').value;syncUrl();render();});
   $('#metric').addEventListener('change',()=>{state.metric=$('#metric').value;syncUrl();render();});
   $('#device-type').addEventListener('change',()=>{state.type=$('#device-type').value;syncUrl();render();});
+  $('#sort').addEventListener('change',()=>{state.sort=$('#sort').value;syncUrl();render();});
   $('#reset').addEventListener('click',reset);
   document.addEventListener('click',event=>{const button=event.target.closest('button');if(!button)return;if(button.hasAttribute('data-view')){state.view=button.dataset.view;syncUrl();render();}else if(button.hasAttribute('data-reset'))reset();else if(button.hasAttribute('data-submit')){$('#submit-dialog').showModal();document.body.style.overflow='hidden';}else if(button.hasAttribute('data-close'))$('#submit-dialog').close();});
   $('#submit-dialog').addEventListener('close',()=>{document.body.style.overflow='';});

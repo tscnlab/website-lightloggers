@@ -3,11 +3,39 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const library = require('../data/library.json');
-const {filterPairs, sourceIsValid, submissionText} = require('../assets/app.js');
+const {filterPairs, sortDevices, sourceIsValid, submissionText} = require('../assets/app.js');
 
 const search = state => filterPairs(library, state);
 const names = pairs => [...new Set(pairs.map(pair => pair.device.name))].sort();
 const studyIds = pairs => [...new Set(pairs.map(pair => pair.study.id))].sort();
+
+test('validation sorting counts distinct papers, breaks ties by name and preserves the input', () => {
+  const alpha={id:'a',name:'Alpha'}, beta={id:'b',name:'Beta'}, gamma={id:'c',name:'Gamma'};
+  const devices=[gamma,alpha,beta];
+  const pairs=[
+    {device:alpha,study:{id:'paper-1'}},
+    {device:alpha,study:{id:'paper-1'}},
+    {device:beta,study:{id:'paper-1'}},
+    {device:beta,study:{id:'paper-2'}},
+    {device:gamma,study:{id:'paper-2'}},
+    {device:gamma,study:{id:'paper-3'}}
+  ];
+  assert.deepEqual(sortDevices(devices,pairs,'most').map(d=>d.name),['Beta','Gamma','Alpha']);
+  assert.deepEqual(sortDevices(devices,pairs,'fewest').map(d=>d.name),['Alpha','Beta','Gamma']);
+  assert.deepEqual(sortDevices(devices,pairs,'name').map(d=>d.name),['Alpha','Beta','Gamma']);
+  assert.deepEqual(devices,[gamma,alpha,beta]);
+});
+
+test('validation sorting follows matching studies after a measurement filter', () => {
+  const pairs=search({metric:'Melanopic EDI'});
+  const devices=[...new Set(pairs.map(p=>p.device))];
+  const sorted=sortDevices(devices,pairs,'most');
+  assert.deepEqual(sorted.slice(0,2).map(d=>d.name),['ActLumus','SpectraWear']);
+  for(const device of sorted) {
+    const expected=library.studies.filter(s=>s.deviceMetrics[device.name]?.includes('Melanopic EDI'));
+    assert.equal(new Set(pairs.filter(p=>p.device===device).map(p=>p.study.id)).size,expected.length);
+  }
+});
 
 // These are scientific regression checks against the curated literature snapshot.
 // If new evidence changes an expectation, review the source before updating it.

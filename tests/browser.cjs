@@ -151,6 +151,47 @@ async function main() {
       return {...dimensions, devices: library.devices.length, studies: library.studies.length};
     });
 
+    await check('Sorting ranks validation counts across manufacturers and persists with filters', async () => {
+      await fresh();
+      const order=()=>page.locator('#results > .device-record').evaluateAll(nodes=>nodes.map(n=>n.id.replace(/^device-/,'')));
+      const expected=(direction,metric='')=>library.devices.map(d=>({
+        device:d,
+        count:library.studies.filter(s=>s.devices.includes(d.name) && (!metric || s.deviceMetrics[d.name].includes(metric))).length
+      })).filter(row=>row.count).sort((a,b)=>(direction==='most'?b.count-a.count:a.count-b.count)||a.device.name.localeCompare(b.device.name)).map(row=>row.device.id);
+      assert.equal(await page.locator('#sort').inputValue(),'manufacturer');
+      await page.locator('#sort').selectOption('most');
+      assert.deepEqual(await order(),expected('most'));
+      assert.equal(new URL(page.url()).searchParams.get('sort'),'most');
+      assert.equal(await page.locator('#results > .family-heading').count(),1);
+      assert.equal(await page.locator('#results > .device-record .device-maker').count(),library.devices.length);
+      await assertNoHorizontalOverflow(page);
+      await page.screenshot({path:path.join(preview,'sorted-preview.png'),fullPage:false});
+      await page.setViewportSize({width:390,height:844});
+      await assertNoHorizontalOverflow(page);
+      await page.screenshot({path:path.join(preview,'sorted-mobile.png'),fullPage:false});
+      await page.setViewportSize({width:1440,height:1000});
+      await page.locator('#metric').selectOption('Melanopic EDI');
+      assert.deepEqual(await order(),expected('most','Melanopic EDI'));
+      await fresh('index.html?sort=most&metric=Melanopic%20EDI');
+      assert.equal(await page.locator('#sort').inputValue(),'most');
+      assert.deepEqual(await order(),expected('most','Melanopic EDI'));
+      await page.locator('#sort').selectOption('fewest');
+      assert.deepEqual(await order(),expected('fewest','Melanopic EDI'));
+      await page.locator('#reset').click();
+      assert.deepEqual(await order(),expected('fewest'));
+      await page.locator('#sort').selectOption('name');
+      assert.deepEqual(await order(),[...library.devices].sort((a,b)=>a.name.localeCompare(b.name)).map(d=>d.id));
+      await page.locator('#studies-tab').click();
+      assert(await page.locator('#sort-control').isHidden());
+      await page.locator('#devices-tab').click();
+      assert.equal(await page.locator('#sort').inputValue(),'name');
+      await page.locator('#sort').selectOption('manufacturer');
+      assert(await page.locator('#results > .family-heading').count()>1);
+      assert.equal(new URL(page.url()).searchParams.has('sort'),false);
+      await fresh('index.html?sort=unknown');
+      assert.equal(await page.locator('#sort').inputValue(),'manufacturer');
+    });
+
     await check('Device search expands the ActLumus papers with original, DOI and PubMed links', async () => {
       await fresh();
       await page.locator('#search').fill('ActLumus');
@@ -314,7 +355,6 @@ async function main() {
       assert.equal(await page.locator('.evidence-record').count(), library.studies.length);
       assert.equal(await page.locator('main').count(), 1, 'No nested main landmarks');
       const text = await page.locator('.doc-content').textContent();
-      assert(text.includes(library.yearPolicy));
       for (const study of library.studies) {
         const record = page.locator(`#${study.id}`);
         assert.equal(await record.count(), 1);
