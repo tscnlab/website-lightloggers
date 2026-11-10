@@ -314,6 +314,38 @@
       "decision": "Outside narrowed scope",
       "reason": "No extracted direct test of photopic illuminance, melanopic EDI or angle dependence. Classification-only and other-endpoint records are excluded from this directory.",
       "sourceInspected": "Abstract"
+    },
+    {
+      "citation": "Aarts et al. (2017). Performance of personally worn dosimeters to study non-image forming effects of light: Assessment methods",
+      "doi": "10.1016/j.buildenv.2017.03.002",
+      "url": "https://pure.tue.nl/ws/files/59334100/1_s2.0_S0360132317300872_main.pdf",
+      "decision": "Excluded by curator",
+      "reason": "Anonymised device models cannot support lookup of identifiable light loggers; removed at the curator’s request.",
+      "sourceInspected": "Full text"
+    },
+    {
+      "citation": "Zauner et al. (2026). Sensor placement causes outcome-dependent bias in ambulatory light-exposure estimates",
+      "doi": "10.64898/2026.07.28.741277",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.28.741277v1",
+      "decision": "Outside narrowed scope",
+      "reason": "Placement-only study excluded at the curator’s request; direct device-performance studies remain.",
+      "sourceInspected": "Full text"
+    },
+    {
+      "citation": "Wen et al. (2023). Effect of mount location on the quantification of light intensity in myopia study",
+      "doi": "10.1136/bmjophth-2023-001409",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10759099/",
+      "decision": "Outside narrowed scope",
+      "reason": "Placement-only study excluded at the curator’s request; direct device-performance studies remain.",
+      "sourceInspected": "Full text"
+    },
+    {
+      "citation": "Jardim et al. (2011). Validating the use of wrist-level light monitoring for in-hospital circadian studies",
+      "doi": "10.3109/07420528.2011.611603",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21936617/",
+      "decision": "Outside narrowed scope",
+      "reason": "Placement-only study excluded at the curator’s request; direct device-performance studies remain.",
+      "sourceInspected": "Abstract"
     }
   ],
   "queries": [
@@ -341,9 +373,9 @@
     "uniqueBibliographicRecords": 733,
     "titlePrefilterRetained": 361,
     "titlePrefilterOmitted": 372,
-    "includedPapers": 33,
-    "deviceEntries": 34,
-    "otherCandidateRecords": 35
+    "includedPapers": 29,
+    "deviceEntries": 30,
+    "otherCandidateRecords": 39
   },
   "titlePrefilterRegex": "light|illumin|dosimet|clouclip|mylyt|daysimet|spectrace|spectrawear|kronowise|actlumus|ocuwear"
 }

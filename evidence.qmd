@@ -1,5 +1,5 @@
 ---
-pagetitle: "About this directory · Light Logger Evidence · TSCN Lab"
+pagetitle: "About this directory · Light Logger Evidence · Translational Sensory & Circadian Neuroscience Unit"
 description: "Scope, inclusion criteria, provenance and reproducible evidence inventory for the Light Logger Evidence literature directory."
 ---
 
@@ -57,17 +57,15 @@ print(f'<p class="audit-stamp">Literature checked {esc(updated)} · '
 
 ## Reading the directory
 
-“Reports” describes a documented device output, including the paper’s calibration or processing workflow. Yes and No require a literature source; a dash means that reporting capability has not been documented in the inspected sources, not that the device cannot provide it. Output capability is stored separately from validation evidence, with its own source links. Angle dependence is a tested property, not a reported output.
+Each square represents one validation study for that device. Orange hatching marks documented developer involvement. Green checks show confirmed photopic illuminance and melanopic EDI outputs; the angle-dependence check means this property has been tested. Counts are not accuracy ratings.
 
-Each square represents one paper testing that model for that measurement; 0 means no indexed test for that endpoint. Counts describe coverage, not accuracy. The overview shows photopic illuminance, melanopic EDI and angle dependence. A paper can appear in several columns. Only these three endpoints are indexed. Families group related names without pooling results across models.
+Manufacturers and research developers group related models. Results remain specific to each tested model. “Commercial model” and “Research device” describe the instruments in the cited literature, rather than current purchasing availability.
 
-Squares count studies; orange hatching highlights documented developer involvement. This highlight is specific to the device–paper pair. Checked independent authorship is noted in study details with its source. An unhighlighted square makes no claim about independence: authorship/disclosure review is still incomplete. Independent authorship does not guarantee absence of manufacturer assistance or bias.
-
-“Commercial model” and “Research device” describe the devices in the indexed literature. Research devices include prototypes and research platforms. These categories do not establish current stock, support or availability for purchase.
+Output capability and validation are stored separately, with literature sources. A dash means capability has not been established in the inspected sources. Checked independent authorship is noted in study details; unhighlighted squares do not imply independence.
 
 ## Scope
 
-This directory includes primary studies with extracted direct tests of photopic illuminance, melanopic EDI or angle dependence. Indoor/outdoor and light-source classification papers are excluded unless the paper separately tests one of those three measurements. Spectral-only, dose-only and other-endpoint papers are outside this narrowed scope. The expanded search is documented below. It is not an exhaustive systematic review: some known candidates still need extraction, and the search can miss relevant work.
+This directory includes primary studies with extracted direct tests of photopic illuminance, melanopic EDI or angle dependence. Indoor/outdoor and light-source classification papers are excluded unless the paper separately tests one of those three measurements. Placement-only, spectral-only, dose-only and other-endpoint papers are outside this scope. The expanded search is documented below. It is not an exhaustive systematic review: some known candidates still need extraction, and the search can miss relevant work.
 
 Development papers are included when they report measurement tests. Each entry states the evidence type, reference, source access and limits. Inclusion does not certify a device. Reference comparisons, between-device agreement, repeatability and wearing-position studies are labelled separately; they do not provide interchangeable evidence of absolute accuracy.
 

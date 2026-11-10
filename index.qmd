@@ -1,5 +1,5 @@
 ---
-pagetitle: "Light Logger Evidence · Wearable light logger validation · TSCN Lab"
+pagetitle: "Light Logger Evidence · Wearable light logger validation · Translational Sensory & Circadian Neuroscience Unit"
 description: "Explore published validation evidence for wearable light loggers. Search devices, compare tested measurements, and inspect the original literature."
 ---
 

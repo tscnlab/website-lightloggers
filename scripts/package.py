@@ -4,7 +4,7 @@ from zipfile import ZIP_DEFLATED, ZipFile
 
 root = Path(__file__).resolve().parents[1]
 target = root.parent / "lightloggers-quarto.zip"
-excluded = {".venv", ".quarto", "__pycache__", ".git", ".DS_Store"}
+excluded = {".venv", ".quarto", "__pycache__", ".git", ".DS_Store", "output"}
 with ZipFile(target, "w", ZIP_DEFLATED) as archive:
     for path in sorted(root.rglob("*")):
         relative = path.relative_to(root)

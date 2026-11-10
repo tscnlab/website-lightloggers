@@ -21,7 +21,7 @@ project:
     - evidence.qmd
 
 website:
-  title: "Light Logger Evidence · TSCN Lab"
+  title: "Light Logger Evidence · Translational Sensory & Circadian Neuroscience Unit"
   site-url: https://lightloggers.tscnlab.org
   search: false
 

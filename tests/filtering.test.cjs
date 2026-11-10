@@ -32,7 +32,7 @@ test('status and metric must be supported by the same device-study pair', () => 
   assert.equal(search({q: 'ActLumus', status: 'Peer reviewed', metric: 'Melanopic EDI'}).length, 0);
   assert.deepEqual(
     studyIds(search({q: 'ActLumus', status: 'Preprint', metric: 'Melanopic EDI'})),
-    ['gemici-2026', 'pilehchiha-2026', 'zauner-2026-placement']
+    ['gemici-2026', 'pilehchiha-2026']
   );
 });
 

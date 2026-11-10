@@ -287,50 +287,6 @@
       }
     },
     {
-      "id": "zauner-2026-placement",
-      "title": "Sensor placement causes outcome-dependent bias in ambulatory light-exposure estimates",
-      "authors": "Zauner et al.",
-      "year": 2026,
-      "doi": "10.64898/2026.07.28.741277",
-      "venue": "biorxiv",
-      "devices": [
-        "ActLumus"
-      ],
-      "deviceMetrics": {
-        "ActLumus": [
-          "Melanopic EDI"
-        ]
-      },
-      "metrics": [
-        "Melanopic EDI"
-      ],
-      "reference": "Simultaneous near-eye ActLumus as reference for chest and wrist ActLumus measurements.",
-      "protocol": "A harmonised free-living dataset across seven countries was used to compare contextual errors and 54 daily light-exposure metrics.",
-      "finding": "Placement effects depended on the outcome: timing metrics were more robust than exposure-level and temporal-dynamics metrics; wrist deviations were generally larger.",
-      "limitations": "Preprint; relative placement study using one model, not a traceable absolute-accuracy test. Analysis samples differ by required contextual and completeness criteria.",
-      "sourceLocator": "Author manuscript: Methods, Instruments, preprocessing and Results.",
-      "setting": "Field",
-      "evidenceType": "Wear-position comparison",
-      "url": "https://www.biorxiv.org/content/10.64898/2026.07.28.741277v1",
-      "access": "Full text",
-      "status": "Preprint",
-      "notes": "Full author manuscript inspected in the public source repository. Main measurement-level analysis includes 108 participants; this is not the full 191-participant source cohort.",
-      "fullTextUrl": "https://tscnlab.github.io/ZaunerDeVriesEtAl_bioRxiv_2026/",
-      "provenance": {
-        "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Author manuscript: Methods, Instruments, preprocessing and Results."
-      },
-      "developerRelationship": {
-        "ActLumus": {
-          "category": "Unclear",
-          "reason": "Developer involvement has not been established from the inspected source. This is not a claim of independence.",
-          "sourceUrl": "https://www.biorxiv.org/content/10.64898/2026.07.28.741277v1",
-          "sourceLocator": "Author manuscript: Methods, Instruments, preprocessing and Results."
-        }
-      }
-    },
-    {
       "id": "ishihara-2025",
       "title": "Performance of wearable light sensors for measuring photopic and melanopic illuminance under laboratory and free-living conditions",
       "authors": "Ishihara et al.",
@@ -634,60 +590,6 @@
           "reason": "The authors describe development or characterisation of their own research instrument.",
           "sourceUrl": "https://journals.sagepub.com/doi/10.1177/14771535221147140",
           "sourceLocator": "Sections 2.5 and 3.1; Figures 8–9 (illuminance/CCT/angular tests); Section 3.3 and Figures 10–11 (melanopic irradiance comparison)."
-        }
-      }
-    },
-    {
-      "id": "wen-2023",
-      "title": "Effect of mount location on the quantification of light intensity in myopia study",
-      "authors": "Wen et al.",
-      "year": 2023,
-      "doi": "10.1136/bmjophth-2023-001409",
-      "venue": "bmj-open-ophthalmology",
-      "devices": [
-        "HOBO (model not reported)",
-        "Clouclip (version not reported)"
-      ],
-      "deviceMetrics": {
-        "HOBO (model not reported)": [
-          "Illuminance"
-        ],
-        "Clouclip (version not reported)": [
-          "Illuminance"
-        ]
-      },
-      "metrics": [
-        "Illuminance"
-      ],
-      "reference": "Side-by-side HOBO/Clouclip comparison, then concurrent wrist, chest and spectacle recordings.",
-      "protocol": "Devices were compared in 26 light environments. Twenty-nine participants then wore two HOBOs and a Clouclip for one day.",
-      "finding": "Side-by-side outputs were strongly related, but real-life measurements differed by position; eye-level records were lower than chest and wrist records in this sample.",
-      "limitations": "Different devices at different positions partly confound the placement comparison. HOBO model and Clouclip generation are not specified in the inspected text.",
-      "sourceLocator": "Methods: assessment of agreement; Results: mount-location comparisons.",
-      "setting": "Laboratory + field",
-      "evidenceType": "Wear-position comparison",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10759099/",
-      "access": "Full text",
-      "status": "Peer reviewed",
-      "notes": "",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/38154910/",
-      "provenance": {
-        "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Methods: assessment of agreement; Results: mount-location comparisons."
-      },
-      "developerRelationship": {
-        "HOBO (model not reported)": {
-          "category": "Unclear",
-          "reason": "Developer involvement has not been established from the inspected source. This is not a claim of independence.",
-          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10759099/",
-          "sourceLocator": "Methods: assessment of agreement; Results: mount-location comparisons."
-        },
-        "Clouclip (version not reported)": {
-          "category": "Unclear",
-          "reason": "Developer involvement has not been established from the inspected source. This is not a claim of independence.",
-          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10759099/",
-          "sourceLocator": "Methods: assessment of agreement; Results: mount-location comparisons."
         }
       }
     },
@@ -1257,51 +1159,6 @@
       }
     },
     {
-      "id": "aarts-2017",
-      "title": "Performance of personally worn dosimeters to study non-image forming effects of light: Assessment methods",
-      "authors": "Aarts et al.",
-      "year": 2017,
-      "doi": "10.1016/j.buildenv.2017.03.002",
-      "venue": "building-environment",
-      "devices": [
-        "Anonymised dosimeters (Aarts 2017)"
-      ],
-      "deviceMetrics": {
-        "Anonymised dosimeters (Aarts 2017)": [
-          "Illuminance",
-          "Angular response"
-        ]
-      },
-      "metrics": [
-        "Angular response",
-        "Illuminance"
-      ],
-      "reference": "Calibrated Hagner E4X illuminance meter; a separate eye-level sensor reference for placement tests.",
-      "protocol": "Seven anonymised models underwent photopic linearity, angular and temperature tests. A separate four-sensor SFH5711 rig compared body positions during one person’s indoor/outdoor activities.",
-      "finding": "Optical performance differed across the seven models. The separate placement experiment found smaller deviations near the side of the head than at the wrist.",
-      "limitations": "One unit per commercial model and one participant in the placement experiment. Model identities are deliberately undisclosed; placement results are not assigned to the anonymous commercial devices.",
-      "sourceLocator": "Sections 2.1–2.2 and Tables 3–8.",
-      "setting": "Laboratory + field",
-      "evidenceType": "Characterisation + placement",
-      "url": "https://pure.tue.nl/ws/files/59334100/1_s2.0_S0360132317300872_main.pdf",
-      "access": "Full text",
-      "status": "Peer reviewed",
-      "notes": "",
-      "provenance": {
-        "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Sections 2.1–2.2 and Tables 3–8."
-      },
-      "developerRelationship": {
-        "Anonymised dosimeters (Aarts 2017)": {
-          "category": "Unclear",
-          "reason": "Developer involvement has not been established from the inspected source. This is not a claim of independence.",
-          "sourceUrl": "https://pure.tue.nl/ws/files/59334100/1_s2.0_S0360132317300872_main.pdf",
-          "sourceLocator": "Sections 2.1–2.2 and Tables 3–8."
-        }
-      }
-    },
-    {
       "id": "ostrin-2017",
       "title": "Objectively Measured Light Exposure in Emmetropic and Myopic Adults",
       "authors": "Ostrin",
@@ -1571,60 +1428,6 @@
       }
     },
     {
-      "id": "jardim-2011",
-      "title": "Validating the use of wrist-level light monitoring for in-hospital circadian studies",
-      "authors": "Jardim et al.",
-      "year": 2011,
-      "doi": "10.3109/07420528.2011.611603",
-      "venue": "chronobiology-international",
-      "devices": [
-        "Actiwatch-L",
-        "Daysimeter (version not reported)"
-      ],
-      "deviceMetrics": {
-        "Actiwatch-L": [
-          "Illuminance"
-        ],
-        "Daysimeter (version not reported)": [
-          "Illuminance"
-        ]
-      },
-      "metrics": [
-        "Illuminance"
-      ],
-      "reference": "Eye-level Daysimeter compared with wrist-worn Actiwatch-L.",
-      "protocol": "Concurrent light records were compared in postoperative hospital patients.",
-      "finding": "Agreement depended on illumination and time of day; discrepancies were greater at high illuminance. Wrist placement was better tolerated.",
-      "limitations": "Device type and wearing position changed together, so their contributions cannot be separated. This is not a comparison with a traceable laboratory photometer.",
-      "sourceLocator": "Abstract: methods, paired-measurement findings and tolerability.",
-      "setting": "Field",
-      "evidenceType": "Wear-position comparison",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/21936617/",
-      "access": "Abstract",
-      "status": "Peer reviewed",
-      "notes": "",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/21936617/",
-      "provenance": {
-        "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Abstract: methods, paired-measurement findings and tolerability."
-      },
-      "developerRelationship": {
-        "Actiwatch-L": {
-          "category": "Unclear",
-          "reason": "Developer involvement has not been established from the inspected source. This is not a claim of independence.",
-          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/21936617/",
-          "sourceLocator": "Abstract: methods, paired-measurement findings and tolerability."
-        },
-        "Daysimeter (version not reported)": {
-          "category": "Unclear",
-          "reason": "Developer involvement has not been established from the inspected source. This is not a claim of independence.",
-          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/21936617/",
-          "sourceLocator": "Abstract: methods, paired-measurement findings and tolerability."
-        }
-      }
-    },
-    {
       "id": "higgins-2007",
       "title": "Light measurement in the hospital: A comparison of two methods",
       "authors": "Higgins et al.",
@@ -1747,7 +1550,8 @@
           ],
           "note": "The tested device provides no melanopic output in the cited study."
         }
-      }
+      },
+      "manufacturerGroup": "ActiGraph"
     },
     {
       "id": "actiwatch-unspecified",
@@ -1777,7 +1581,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
+      },
+      "manufacturerGroup": "Philips Respironics / Mini Mitter"
     },
     {
       "id": "actiwatch-2",
@@ -1814,7 +1619,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
+      },
+      "manufacturerGroup": "Philips Respironics / Mini Mitter"
     },
     {
       "id": "actiwatch-spectrum",
@@ -1858,7 +1664,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
+      },
+      "manufacturerGroup": "Philips Respironics / Mini Mitter"
     },
     {
       "id": "actiwatch-spectrum-plus",
@@ -1901,7 +1708,8 @@
           ],
           "note": "The tested device provides no melanopic output in the cited study."
         }
-      }
+      },
+      "manufacturerGroup": "Philips Respironics / Mini Mitter"
     },
     {
       "id": "actiwatch-spectrum-pro",
@@ -1931,37 +1739,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
-    },
-    {
-      "id": "actiwatch-l",
-      "name": "Actiwatch-L",
-      "maker": "Mini Mitter / Philips Respironics",
-      "form": "Wrist worn",
-      "description": "Legacy model used in the hospital comparison by Jardim et al. (2011).",
-      "deviceType": "Commercial model",
-      "family": "Actiwatch",
-      "typeSourceStudyIds": [
-        "jardim-2011"
-      ],
-      "reportedOutputs": {
-        "Illuminance": {
-          "status": "yes",
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/21936617/",
-              "locator": "Abstract: methods, paired-measurement findings and tolerability.",
-              "studyId": "jardim-2011"
-            }
-          ],
-          "note": "The cited paper reports this quantity from the device or its documented calibration/processing workflow. This does not by itself establish accuracy."
-        },
-        "Melanopic EDI": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        }
-      }
+      },
+      "manufacturerGroup": "Philips Respironics / Mini Mitter"
     },
     {
       "id": "actlumus",
@@ -2026,7 +1805,8 @@
           ],
           "note": "The cited paper reports this quantity from the device or its documented calibration/processing workflow. This does not by itself establish accuracy."
         }
-      }
+      },
+      "manufacturerGroup": "Condor Instruments"
     },
     {
       "id": "acttrust",
@@ -2050,7 +1830,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
+      },
+      "manufacturerGroup": "Condor Instruments"
     },
     {
       "id": "acttrust2",
@@ -2080,43 +1861,13 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
-    },
-    {
-      "id": "aarts-anonymised",
-      "name": "Anonymised dosimeters (Aarts 2017)",
-      "maker": "Not disclosed",
-      "form": "Multiple positions",
-      "description": "Seven commercial models were anonymised in the paper. This is one unresolved group, not one device model.",
-      "entryType": "Unresolved group",
-      "deviceType": "Commercial model",
-      "family": "",
-      "typeSourceStudyIds": [
-        "aarts-2017"
-      ],
-      "reportedOutputs": {
-        "Illuminance": {
-          "status": "yes",
-          "sources": [
-            {
-              "url": "https://pure.tue.nl/ws/files/59334100/1_s2.0_S0360132317300872_main.pdf",
-              "locator": "Sections 2.1–2.2 and Tables 3–8.",
-              "studyId": "aarts-2017"
-            }
-          ],
-          "note": "The cited paper reports this quantity from the device or its documented calibration/processing workflow. This does not by itself establish accuracy."
-        },
-        "Melanopic EDI": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        }
-      }
+      },
+      "manufacturerGroup": "Condor Instruments"
     },
     {
       "id": "blue-iris-speck-v1-0",
       "name": "Blue Iris Speck v1.0",
-      "maker": "",
+      "maker": "Blue Iris Labs",
       "form": "",
       "description": "Version 1.0 tested in Kore et al. Findings are not transferred to Speck v2.0.",
       "deviceType": "Commercial model",
@@ -2147,6 +1898,11 @@
           ],
           "note": "The cited paper reports this quantity from the device or its documented calibration/processing workflow. This does not by itself establish accuracy."
         }
+      },
+      "manufacturerGroup": "Blue Iris Labs",
+      "manufacturerSource": {
+        "url": "https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-34490.pdf",
+        "locator": "Methods: manufacturer of Speck instruments."
       }
     },
     {
@@ -2177,7 +1933,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
+      },
+      "manufacturerGroup": "Glasson Technology"
     },
     {
       "id": "clouclip-second-generation",
@@ -2219,7 +1976,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
+      },
+      "manufacturerGroup": "Glasson Technology"
     },
     {
       "id": "clouclip-unspecified",
@@ -2261,7 +2019,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
+      },
+      "manufacturerGroup": "Glasson Technology"
     },
     {
       "id": "daysimeter-original",
@@ -2291,37 +2050,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
-    },
-    {
-      "id": "daysimeter-unspecified",
-      "name": "Daysimeter (version not reported)",
-      "maker": "Lighting Research Center, Rensselaer Polytechnic Institute",
-      "form": "Head mounted",
-      "description": "Version not resolved in the accessible Jardim et al. record; not assigned to Daysimeter-S or Daysimeter-D.",
-      "deviceType": "Research device",
-      "family": "Daysimeter",
-      "typeSourceStudyIds": [
-        "jardim-2011"
-      ],
-      "reportedOutputs": {
-        "Illuminance": {
-          "status": "yes",
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/21936617/",
-              "locator": "Abstract: methods, paired-measurement findings and tolerability.",
-              "studyId": "jardim-2011"
-            }
-          ],
-          "note": "The cited paper reports this quantity from the device or its documented calibration/processing workflow. This does not by itself establish accuracy."
-        },
-        "Melanopic EDI": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        }
-      }
+      },
+      "manufacturerGroup": "Lighting Research Center"
     },
     {
       "id": "daysimeter-d",
@@ -2351,7 +2081,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
+      },
+      "manufacturerGroup": "Lighting Research Center"
     },
     {
       "id": "daysimeter-s",
@@ -2381,7 +2112,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
+      },
+      "manufacturerGroup": "Lighting Research Center"
     },
     {
       "id": "geneactiv",
@@ -2423,7 +2155,8 @@
           ],
           "note": "The tested device provides no melanopic output in the cited study."
         }
-      }
+      },
+      "manufacturerGroup": "Activinsights"
     },
     {
       "id": "geneactiv-original",
@@ -2460,37 +2193,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
-    },
-    {
-      "id": "hobo-unspecified",
-      "name": "HOBO (model not reported)",
-      "maker": "Onset",
-      "form": "Wrist / chest worn",
-      "description": "Wen et al. (2023) name HOBO without a model number; the model is not inferred from a photograph.",
-      "deviceType": "Commercial model",
-      "family": "HOBO",
-      "typeSourceStudyIds": [
-        "wen-2023"
-      ],
-      "reportedOutputs": {
-        "Illuminance": {
-          "status": "yes",
-          "sources": [
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10759099/",
-              "locator": "Methods: assessment of agreement; Results: mount-location comparisons.",
-              "studyId": "wen-2023"
-            }
-          ],
-          "note": "The cited paper reports this quantity from the device or its documented calibration/processing workflow. This does not by itself establish accuracy."
-        },
-        "Melanopic EDI": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        }
-      }
+      },
+      "manufacturerGroup": "Activinsights"
     },
     {
       "id": "higgins-wrist",
@@ -2520,7 +2224,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
+      },
+      "manufacturerGroup": "Manufacturer not identified"
     },
     {
       "id": "kronowise",
@@ -2550,12 +2255,13 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
+      },
+      "manufacturerGroup": "University of Murcia / Kronohealth"
     },
     {
       "id": "lido",
       "name": "lido",
-      "maker": "",
+      "maker": "Lucerne School of Engineering and Architecture",
       "form": "",
       "description": "Light-Dosimeter (lido), as named in the indexed literature. Endpoints differ across its development paper and later cross-validation.",
       "deviceType": "Commercial model",
@@ -2592,6 +2298,11 @@
           ],
           "note": "The cited paper reports this quantity from the device or its documented calibration/processing workflow. This does not by itself establish accuracy."
         }
+      },
+      "manufacturerGroup": "Lucerne School of Engineering and Architecture",
+      "manufacturerSource": {
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.06.26364836v1.full",
+        "locator": "Methods: Experimental set-ups."
       }
     },
     {
@@ -2646,7 +2357,8 @@
           ],
           "note": "The cited paper reports this quantity from the device or its documented calibration/processing workflow. This does not by itself establish accuracy."
         }
-      }
+      },
+      "manufacturerGroup": "LYS Technologies"
     },
     {
       "id": "mohamed-spectrophotometer",
@@ -2682,7 +2394,8 @@
           ],
           "note": "The cited paper reports this quantity from the device or its documented calibration/processing workflow. This does not by itself establish accuracy."
         }
-      }
+      },
+      "manufacturerGroup": "Monash University"
     },
     {
       "id": "motionwatch-8",
@@ -2713,7 +2426,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
+      },
+      "manufacturerGroup": "CamNtech"
     },
     {
       "id": "mylyt",
@@ -2743,12 +2457,13 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
+      },
+      "manufacturerGroup": "L V Prasad Eye Institute"
     },
     {
       "id": "ocuwear",
       "name": "OcuWEAR",
-      "maker": "",
+      "maker": "Ocutune",
       "form": "",
       "description": "Exact model as named in the indexed literature.",
       "deviceType": "Commercial model",
@@ -2779,6 +2494,11 @@
           ],
           "note": "The cited paper reports this quantity from the device or its documented calibration/processing workflow. This does not by itself establish accuracy."
         }
+      },
+      "manufacturerGroup": "Ocutune",
+      "manufacturerSource": {
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.06.26364836v1.full",
+        "locator": "Methods: Experimental set-ups."
       }
     },
     {
@@ -2809,7 +2529,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
+      },
+      "manufacturerGroup": "EPFL LIPID"
     },
     {
       "id": "spectrawear",
@@ -2850,7 +2571,8 @@
           ],
           "note": "The cited paper reports this quantity from the device or its documented calibration/processing workflow. This does not by itself establish accuracy."
         }
-      }
+      },
+      "manufacturerGroup": "University of Manchester"
     },
     {
       "id": "veet",
@@ -2880,7 +2602,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
+      },
+      "manufacturerGroup": "Meta Reality Labs"
     },
     {
       "id": "vivior-mark-3-plus",
@@ -2910,7 +2633,8 @@
           "sources": [],
           "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
         }
-      }
+      },
+      "manufacturerGroup": "Vivior"
     }
   ],
   "venues": {

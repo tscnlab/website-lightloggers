@@ -132,6 +132,10 @@ async function main() {
         assert.equal(await record.locator(':scope > summary img, :scope > summary svg').count(), 0, device.name + ' text-only record');
         assert.equal(await record.locator('.device-name').textContent(), device.name);
       }
+      assert.equal(await page.locator('.output-sources').count(), 0);
+      assert.equal(await page.locator('#device-aarts-anonymised').count(), 0);
+      const condor=await page.locator('.family-heading').evaluateAll(nodes=>{const h=nodes.find(n=>n.textContent.includes('Condor Instruments'));const ids=[];for(let n=h?.nextElementSibling;n?.classList.contains('device-record');n=n.nextElementSibling)ids.push(n.id);return ids;});
+      assert.deepEqual(condor,['device-actlumus','device-acttrust','device-acttrust2']);
       const dimensions = await assertNoHorizontalOverflow(page);
       await assertVisibleImagesLoaded(page);
       await page.evaluate(() => window.scrollTo(0, 0));
@@ -164,7 +168,7 @@ async function main() {
         }
       }
       await record.locator('.study-detail').first().locator('summary').click();
-      assert((await record.textContent()).includes(expected[0].sourceLocator));
+      assert((await record.textContent()).includes(expected[0].protocol));
       await assertVisibleImagesLoaded(page);
       await assertNoHorizontalOverflow(page);
       assert.equal(await page.locator('dialog[open]').count(), 0, 'Evidence expands inline');
