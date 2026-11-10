@@ -1,13 +1,13 @@
 ---
-pagetitle: "Light Logger Evidence · Wearable light logger validation · Translational Sensory & Circadian Neuroscience Unit"
+pagetitle: "Wearable light logger inventory · Translational Sensory & Circadian Neuroscience Unit"
 description: "Find published validation studies of wearable light loggers: photopic illuminance, melanopic EDI and angle dependence."
 open-graph:
-  title: "Wearable light logger validations"
+  title: "Wearable light logger inventory"
 twitter-card:
-  title: "Wearable light logger validations"
+  title: "Wearable light logger inventory"
 header-includes:
-  - '<link rel="canonical" href="https://lightloggers.tscnlab.org/">'
-  - '<meta property="og:url" content="https://lightloggers.tscnlab.org/">'
+  - '<link rel="canonical" href="https://resources.tscnlab.org/lightloggers/">'
+  - '<meta property="og:url" content="https://resources.tscnlab.org/lightloggers/">'
 ---
 
 ```{python}

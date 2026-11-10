@@ -1,13 +1,13 @@
 ---
-pagetitle: "About this directory · Light Logger Evidence · Translational Sensory & Circadian Neuroscience Unit"
+pagetitle: "About this directory · Light Logger Inventory · Translational Sensory & Circadian Neuroscience Unit"
 description: "A literature directory of wearable light logger validations."
 open-graph:
-  title: "About the light logger validation directory"
+  title: "About the light logger inventory"
 twitter-card:
-  title: "About the light logger validation directory"
+  title: "About the light logger inventory"
 header-includes:
-  - '<link rel="canonical" href="https://lightloggers.tscnlab.org/evidence.html">'
-  - '<meta property="og:url" content="https://lightloggers.tscnlab.org/evidence.html">'
+  - '<link rel="canonical" href="https://resources.tscnlab.org/lightloggers/evidence.html">'
+  - '<meta property="og:url" content="https://resources.tscnlab.org/lightloggers/evidence.html">'
 ---
 
 ```{python}

@@ -1,6 +1,8 @@
 project:
   type: website
-  output-dir: _site
+  output-dir: _site/lightloggers
+  post-render:
+    - python3 scripts/build-resources-home.py
   render:
     - index.qmd
     - evidence.qmd
@@ -22,10 +24,10 @@ project:
     - evidence.qmd
 
 website:
-  title: "Light Logger Evidence · Translational Sensory & Circadian Neuroscience Unit"
-  site-url: https://lightloggers.tscnlab.org
+  title: "Light Logger Inventory · Translational Sensory & Circadian Neuroscience Unit"
+  site-url: https://resources.tscnlab.org/lightloggers/
   image: assets/social-preview.png
-  image-alt: "Wearable light logger validations — Photopic illuminance, Melanopic EDI and Angle dependence. Translational Sensory & Circadian Neuroscience Unit."
+  image-alt: "Light logger inventory — Translational Sensory & Circadian Neuroscience Unit (MPS/TUM/TUMCREATE)."
   open-graph:
     locale: en_GB
     site-name: "Translational Sensory & Circadian Neuroscience Unit"

@@ -44,7 +44,7 @@
     try { const url = new URL(source); return url.protocol === 'https:' && !!url.hostname && !url.username && !url.password; } catch { return false; }
   }
   function submissionText(values) {
-    return ['Suggested validation for Light Logger Evidence', '', `Paper: ${values.title.trim()}`, `DOI / URL: ${values.source.trim()}`, `Device and model: ${values.device.trim()}`, `Publication status: ${values.status}`, '', 'Validation details / correction:', values.notes.trim() || 'Not provided.', '', `Suggested by: ${values.name.trim() || 'Not provided.'}`, '', 'Please review the source and model-specific evidence before inclusion.'].join('\n');
+    return ['Suggested validation for Light Logger Inventory', '', `Paper: ${values.title.trim()}`, `DOI / URL: ${values.source.trim()}`, `Device and model: ${values.device.trim()}`, `Publication status: ${values.status}`, '', 'Validation details / correction:', values.notes.trim() || 'Not provided.', '', `Suggested by: ${values.name.trim() || 'Not provided.'}`, '', 'Please review the source and model-specific evidence before inclusion.'].join('\n');
   }
   if (typeof module !== 'undefined' && module.exports) module.exports = {filterPairs, coverageStudies, sortDevices, sourceIsValid, submissionText};
   if (typeof document === 'undefined') return;

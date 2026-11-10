@@ -19,7 +19,7 @@ try {
 }
 
 const root = path.resolve(__dirname, '..');
-const site = path.join(root, '_site');
+const site = path.join(root, '_site', 'lightloggers');
 const preview = path.join(root, 'preview');
 const library = JSON.parse(fs.readFileSync(path.join(root, 'data/library.json'), 'utf8'));
 const checks = [];
@@ -97,7 +97,7 @@ async function main() {
     const page = await context.newPage();
     page.on('console', message => { if (message.type() === 'error') consoleErrors.push(message.text()); });
     page.on('pageerror', error => pageErrors.push(error.message));
-    let base = process.env.BASE_URL || 'http://127.0.0.1:4173/';
+    let base = process.env.BASE_URL || 'http://127.0.0.1:4173/lightloggers/';
     try {
       const response = await page.goto(pageUrl(base), {waitUntil: 'load', timeout: 10000});
       if (response) assert(response.ok(), `HTTP ${response.status()} for ${response.url()}`);
@@ -125,7 +125,7 @@ async function main() {
       assert.equal(await page.locator('main').count(), 1, 'Exactly one main landmark');
       assert.equal(await page.evaluate(() => getComputedStyle(document.body).backgroundColor), 'rgb(255, 255, 255)');
       assert(await page.locator('#page-title').isVisible(), 'Page title is visible');
-      assert.equal(await page.locator('#page-title').textContent(), 'Wearable light logger validations');
+      assert.equal(await page.locator('#page-title').textContent(), 'Wearable light logger inventory');
       for (const device of library.devices) {
         const record = page.locator(`#device-${device.id}`);
         assert.equal(await record.locator(':scope > summary').count(), 1, device.name + ' native disclosure summary');

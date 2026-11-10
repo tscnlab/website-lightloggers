@@ -28,7 +28,7 @@ The logo and institutional marks remain subject to their owners' rights.
 
 ## Social preview
 
-`social-preview.png` is the 1200 × 630 sharing image, composed from the unchanged unit logo, the website's typography and its three measurement labels. Its source is `social-preview.html`; run `node scripts/render-social-preview.cjs` from the project root to regenerate it. The PNG is checked in so normal Quarto builds do not need a browser. Quarto emits Open Graph and large-image Twitter Card metadata for both pages.
+`social-preview.png` is the 1200 × 630 sharing image, adapted from the [Join website template](https://github.com/tscnlab/website-join/blob/main/templates/social-preview.html), using the same unchanged unit logo, layout, colours and typography. The title and URL identify the light logger directory. Its source is `social-preview.html`; run `node scripts/render-social-preview.cjs` from the project root to regenerate it. The PNG is checked in so normal Quarto builds do not need a browser. Quarto emits Open Graph and large-image Twitter Card metadata for both pages.
 
 ## Device wireframes
 

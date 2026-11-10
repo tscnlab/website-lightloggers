@@ -136,7 +136,7 @@ test('submission output is deterministic plain text and preserves user details',
     name: '  Zoë Example  '
   };
   const expected = [
-    'Suggested validation for Light Logger Evidence',
+    'Suggested validation for Light Logger Inventory',
     '',
     'Paper: Light & spectrum: <pilot>',
     'DOI / URL: https://doi.org/10.1111/opo.13457',
