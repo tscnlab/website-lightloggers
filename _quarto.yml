@@ -1,0 +1,50 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - evidence.qmd
+  resources:
+    - assets/site.css
+    - assets/app.js
+    - assets/tscn-logo.png
+    - assets/favicon.png
+    - assets/venues/**
+    - data/library.json
+    - data/validations.csv
+    - data/references.bib
+    - data/search-audit.json
+    - data/search-decisions.csv
+    - data/title-triage.csv
+    - data/search/2026-11-10/*titles.json
+    - index.qmd
+    - evidence.qmd
+
+website:
+  title: "Light Logger Evidence · TSCN Lab"
+  site-url: https://lightloggers.tscnlab.org
+  search: false
+
+lang: en
+jupyter: python3
+
+format:
+  html:
+    theme: none
+    minimal: true
+    css: assets/site.css
+    page-layout: full
+    toc: false
+    anchor-sections: false
+    html-math-method: plain
+    include-in-header:
+      text: |
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+
+execute:
+  echo: false
+  warning: false
+  error: false
+  cache: false
+  freeze: false
+  daemon: false

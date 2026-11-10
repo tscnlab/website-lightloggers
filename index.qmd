@@ -1,0 +1,15 @@
+---
+pagetitle: "Light Logger Evidence · Wearable light logger validation · TSCN Lab"
+description: "Explore published validation evidence for wearable light loggers. Search devices, compare tested measurements, and inspect the original literature."
+---
+
+```{python}
+#| label: build-directory
+#| output: asis
+
+# All records, counts, downloads and interface content are derived from the
+# versioned literature inventory. No network request is needed to render.
+from scripts.build import build_site
+
+print("```{=html}\n" + build_site() + "\n```")
+```
