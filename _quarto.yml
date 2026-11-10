@@ -9,6 +9,7 @@ project:
     - assets/app.js
     - assets/tscn-logo.png
     - assets/favicon.png
+    - assets/social-preview.png
     - assets/venues/**
     - data/library.json
     - data/validations.csv
@@ -23,6 +24,17 @@ project:
 website:
   title: "Light Logger Evidence · Translational Sensory & Circadian Neuroscience Unit"
   site-url: https://lightloggers.tscnlab.org
+  image: assets/social-preview.png
+  image-alt: "Wearable light logger validations — Photopic illuminance, Melanopic EDI and Angle dependence. Translational Sensory & Circadian Neuroscience Unit."
+  open-graph:
+    locale: en_GB
+    site-name: "Translational Sensory & Circadian Neuroscience Unit"
+    image-width: 1200
+    image-height: 630
+  twitter-card:
+    card-style: summary_large_image
+    image-width: 1200
+    image-height: 630
   search: false
 
 lang: en
@@ -40,6 +52,8 @@ format:
     include-in-header:
       text: |
         <link rel="icon" type="image/png" href="assets/favicon.png">
+        <meta property="og:type" content="website">
+        <meta property="og:image:type" content="image/png">
 
 execute:
   echo: false

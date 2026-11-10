@@ -26,6 +26,10 @@ The asset is displayed with its original aspect ratio and colours.
 
 The logo and institutional marks remain subject to their owners' rights.
 
+## Social preview
+
+`social-preview.png` is the 1200 × 630 sharing image, composed from the unchanged unit logo, the website's typography and its three measurement labels. Its source is `social-preview.html`; run `node scripts/render-social-preview.cjs` from the project root to regenerate it. The PNG is checked in so normal Quarto builds do not need a browser. Quarto emits Open Graph and large-image Twitter Card metadata for both pages.
+
 ## Device wireframes
 
 These historical assets are retained in the source project for provenance. They are not displayed, copied as website resources, or generated during the Quarto build.
