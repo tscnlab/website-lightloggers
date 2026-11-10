@@ -133,6 +133,13 @@ async function main() {
         assert.equal(await record.locator('.device-name').textContent(), device.name);
       }
       assert.equal(await page.locator('.output-sources').count(), 0);
+      const spectra=page.locator('#device-spectrawear > summary');
+      assert.equal(await spectra.locator('.feature[data-metric="Illuminance"] .confirmed-check').count(),1);
+      assert.equal(await spectra.locator('.examined[data-metric="Illuminance"] .confirmed-check').count(),0);
+      assert.equal(await spectra.locator('.examined[data-metric="Melanopic EDI"] .confirmed-check').count(),1);
+      assert.equal(await spectra.locator('.evidence-square').count(),library.studies.filter(s=>s.devices.includes('SpectraWear')).length);
+      assert.equal(await page.locator('#device-higgins-wrist').count(),0);
+
       assert.equal(await page.locator('#device-aarts-anonymised').count(), 0);
       const condor=await page.locator('.family-heading').evaluateAll(nodes=>{const h=nodes.find(n=>n.textContent.includes('Condor Instruments'));const ids=[];for(let n=h?.nextElementSibling;n?.classList.contains('device-record');n=n.nextElementSibling)ids.push(n.id);return ids;});
       assert.deepEqual(condor,['device-actlumus','device-acttrust','device-acttrust2']);

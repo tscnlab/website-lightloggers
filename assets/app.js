@@ -69,20 +69,20 @@
   }
   function deviceRecord(device,pairs) {
     const studies=unique(pairs.filter(p=>p.device.id===device.id).map(p=>p.study)).sort(studySort);
-    const allStudies=library.studies.filter(s=>s.devices.includes(device.name));
     const squares=studies.map(s=>`<span class="evidence-square ${relationshipClass(relationship(s,device.name).category)}" title="${escape(`${s.authors} (${s.year}) · ${s.status}${relationship(s,device.name).category==='Unclear'?'':' · '+relationship(s,device.name).category}`)}"></span>`).join('');
-    const checks=columns.map(([metric,label])=>{
-      const confirmed=metric==='Angular response'?coverageStudies(allStudies,device.name,metric).length>0:device.reportedOutputs?.[metric]?.status==='yes';
-      const meaning=metric==='Angular response'?'tested':'reported';
-      return `<span class="metric-check-cell" data-label="${label}"><span class="${confirmed?'confirmed-check':'no-check'}" aria-label="${escape(label)}: ${confirmed?meaning:'not established in the listed studies'}" title="${escape(label)} ${confirmed?meaning:'not established in the listed studies'}">${confirmed?'✓':'—'}</span></span>`;
-    }).join('');
-    return `<details class="device-record" id="device-${escape(device.id)}"><summary><div><h3 class="device-name">${escape(device.name)}</h3></div><span class="device-count"><span>${plural(studies.length,'validation')}</span><span class="study-squares" aria-label="${plural(studies.length,'validation')}">${squares}</span></span><span class="coverage-grid">${checks}</span></summary><div class="device-studies"><p class="device-note">${escape(device.deviceType)}</p>${studies.map(s=>studyRecord(s,device)).join('')}</div></details>`;
+    const checkCell=(metric,label,kind)=>{
+      const confirmed=kind==='feature'?device.reportedOutputs?.[metric]?.status==='yes':coverageStudies(studies,device.name,metric).length>0;
+      const meaning=kind==='feature'?'output confirmed':'examined in the listed studies';
+      return `<span class="metric-check-cell ${kind}" data-label="${label}" data-metric="${escape(metric)}"><span class="${confirmed?'confirmed-check':'no-check'}" aria-label="${escape(label)}: ${confirmed?meaning:'not established'}" title="${escape(label)}: ${confirmed?meaning:'not established in this collection'}">${confirmed?'✓':'—'}</span></span>`;
+    };
+    const checks=columns.slice(0,2).map(([m,l])=>checkCell(m,l,'feature')).join('')+columns.map(([m,l])=>checkCell(m,l,'examined')).join('');
+    return `<details class="device-record" id="device-${escape(device.id)}"><summary><div><h3 class="device-name">${escape(device.name)}</h3></div><span class="device-count"><span>${plural(studies.length,'validation')}</span><span class="study-squares" aria-label="${plural(studies.length,'validation')}">${squares}</span></span><span class="coverage-grid"><span class="mobile-group outputs-title">Device outputs</span><span class="mobile-group examined-title">Examined in studies</span>${checks}</span></summary><div class="device-studies"><p class="device-note">${escape(device.deviceType)}</p>${studies.map(s=>studyRecord(s,device)).join('')}</div></details>`;
   }
   function groupedRecords(devices,pairs) {
     const groups=new Map();
     for(const d of devices){const name=d.manufacturerGroup || d.maker || 'Manufacturer not identified';if(!groups.has(name))groups.set(name,[]);groups.get(name).push(d);}
     return [...groups].sort(([a],[b])=>a.localeCompare(b)).flatMap(([name,items])=>[
-      `<div class="family-heading"><h2>${escape(name)}</h2><span class="validation-heading">Validations</span><div class="coverage-grid">${columns.map(([metric,label])=>`<span title="${escape(metric==='Other'?'All remaining indexed measurements; expand a row for details':metric)}">${label}</span>`).join('')}</div><span></span></div>`, ...items.map(d=>deviceRecord(d,pairs))]);
+      `<div class="family-heading"><h2>${escape(name)}</h2><span class="validation-heading">Validations</span><div class="coverage-grid"><span class="outputs-title">Device outputs</span><span class="examined-title">Examined in studies</span>${columns.slice(0,2).map(([m,l])=>`<span class="feature">${l}</span>`).join('')}${columns.map(([m,l])=>`<span class="examined">${l}</span>`).join('')}</div><span></span></div>`, ...items.map(d=>deviceRecord(d,pairs))]);
   }
 
   function syncUrl() {

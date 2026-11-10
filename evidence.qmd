@@ -57,7 +57,7 @@ print(f'<p class="audit-stamp">Literature checked {esc(updated)} · '
 
 ## Reading the directory
 
-Each square represents one validation study for that device. Orange hatching marks documented developer involvement. Green checks show confirmed photopic illuminance and melanopic EDI outputs; the angle-dependence check means this property has been tested. Counts are not accuracy ratings.
+Each square represents one validation study for that device. Orange hatching marks documented developer involvement. The Device outputs columns show confirmed photopic illuminance and melanopic EDI features. Separate Examined in studies columns show whether the listed studies test photopic illuminance, melanopic EDI or angle dependence. Output checks remain fixed when filtering; examination checks follow the matching studies. Counts are not accuracy ratings.
 
 Manufacturers and research developers group related models. Results remain specific to each tested model. “Commercial model” and “Research device” describe the instruments in the cited literature, rather than current purchasing availability.
 
