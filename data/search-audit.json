@@ -346,6 +346,14 @@
       "decision": "Outside narrowed scope",
       "reason": "Placement-only study excluded at the curator’s request; direct device-performance studies remain.",
       "sourceInspected": "Abstract"
+    },
+    {
+      "citation": "Higgins et al. (2007). Light measurement in the hospital: A comparison of two methods",
+      "doi": "10.1002/nur.20167",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17243121/",
+      "decision": "Excluded by curator",
+      "reason": "Unnamed hospital logger removed at the curator’s request; its model cannot be identified.",
+      "sourceInspected": "Abstract"
     }
   ],
   "queries": [
@@ -373,9 +381,9 @@
     "uniqueBibliographicRecords": 733,
     "titlePrefilterRetained": 361,
     "titlePrefilterOmitted": 372,
-    "includedPapers": 29,
-    "deviceEntries": 30,
-    "otherCandidateRecords": 39
+    "includedPapers": 28,
+    "deviceEntries": 29,
+    "otherCandidateRecords": 40
   },
   "titlePrefilterRegex": "light|illumin|dosimet|clouclip|mylyt|daysimet|spectrace|spectrawear|kronowise|actlumus|ocuwear"
 }

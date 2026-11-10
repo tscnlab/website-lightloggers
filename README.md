@@ -81,7 +81,7 @@ After rendering, `python scripts/package.py` creates `../lightloggers-quarto.zip
 with the sources, rendered site, data and verification artifacts. Local virtual
 environments and caches are excluded.
 
-The narrowed directory includes 29 papers covering photopic illuminance, melanopic EDI or angle dependence. Classification-only papers are excluded. All have DOI/source links; PubMed links are
+The narrowed directory includes 28 papers covering photopic illuminance, melanopic EDI or angle dependence. Classification-only papers are excluded. All have DOI/source links; PubMed links are
 included when a verified record was found. Twelve summaries rely on abstracts;
 one uses a verified partial full-text passage. Exact search accounting, unresolved
 candidates and scope decisions appear on the About page.

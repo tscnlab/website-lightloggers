@@ -1428,50 +1428,6 @@
       }
     },
     {
-      "id": "higgins-2007",
-      "title": "Light measurement in the hospital: A comparison of two methods",
-      "authors": "Higgins et al.",
-      "year": 2007,
-      "doi": "10.1002/nur.20167",
-      "venue": "research-nursing-health",
-      "devices": [
-        "Hospital wrist logger (Higgins 2007)"
-      ],
-      "deviceMetrics": {
-        "Hospital wrist logger (Higgins 2007)": [
-          "Illuminance"
-        ]
-      },
-      "metrics": [
-        "Illuminance"
-      ],
-      "reference": "Standalone light meter; model not identified in the accessible abstract.",
-      "protocol": "Twenty hospital light trials in 17 patients yielded 480 paired measurements from wrist and standalone meters.",
-      "finding": "Both devices tracked lighting changes; the authors report congruence using Bland–Altman plots.",
-      "limitations": "Abstract-level extraction. Exact devices, numerical bias and limits of agreement remain unresolved; the summary does not establish accuracy under other conditions.",
-      "sourceLocator": "Abstract: sample, paired measurements and Bland–Altman results.",
-      "setting": "Field",
-      "evidenceType": "Reference comparison",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17243121/",
-      "access": "Abstract",
-      "status": "Peer reviewed",
-      "notes": "",
-      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/17243121/",
-      "provenance": {
-        "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Abstract: sample, paired measurements and Bland–Altman results."
-      },
-      "developerRelationship": {
-        "Hospital wrist logger (Higgins 2007)": {
-          "category": "Unclear",
-          "reason": "Developer involvement has not been established from the inspected source. This is not a claim of independence.",
-          "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/17243121/",
-          "sourceLocator": "Abstract: sample, paired measurements and Bland–Altman results."
-        }
-      }
-    },
-    {
       "id": "bierman-2005",
       "title": "The Daysimeter: a device for measuring optical radiation as a stimulus for the human circadian system",
       "authors": "Bierman, Klein & Rea",
@@ -2195,37 +2151,6 @@
         }
       },
       "manufacturerGroup": "Activinsights"
-    },
-    {
-      "id": "higgins-wrist",
-      "name": "Hospital wrist logger (Higgins 2007)",
-      "maker": "Model unresolved",
-      "form": "Wrist worn",
-      "description": "The accessible abstract does not identify the wrist device. Kept as an unresolved entry, not assigned to an Actiwatch model.",
-      "deviceType": "Unresolved",
-      "family": "",
-      "typeSourceStudyIds": [
-        "higgins-2007"
-      ],
-      "reportedOutputs": {
-        "Illuminance": {
-          "status": "yes",
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17243121/",
-              "locator": "Abstract: sample, paired measurements and Bland–Altman results.",
-              "studyId": "higgins-2007"
-            }
-          ],
-          "note": "The cited paper reports this quantity from the device or its documented calibration/processing workflow. This does not by itself establish accuracy."
-        },
-        "Melanopic EDI": {
-          "status": "not documented",
-          "sources": [],
-          "note": "This output has not been established in the inspected literature for this exact model; absence of documentation does not establish absence of capability."
-        }
-      },
-      "manufacturerGroup": "Manufacturer not identified"
     },
     {
       "id": "kronowise",
