@@ -1,0 +1,253 @@
+{
+  "checked": "2026-11-10",
+  "description": "Expanded targeted literature audit; not a systematic review or claim of exhaustive coverage.",
+  "databases": [
+    "Europe PMC (includes PubMed/MEDLINE and indexed preprints)"
+  ],
+  "supplementaryDiscovery": [
+    "Targeted web searches for named devices and validation terms",
+    "Publisher and institutional-repository records",
+    "Backward citation checking from V3 framework, device reviews and included primary papers"
+  ],
+  "discoveryReviews": [
+    {
+      "doi": "10.1177/20552076221144858",
+      "role": "V3 framework and validation citations"
+    },
+    {
+      "doi": "10.1016/j.buildenv.2025.112771",
+      "role": "Device survey and bibliography; manufacturer specifications not used as evidence"
+    },
+    {
+      "doi": "10.2147/OPTH.S420631",
+      "role": "Myopia light-meter methods review and bibliography"
+    }
+  ],
+  "screening": "Three bounded queries were retrieved in full and deduplicated by source plus accession. A light/device title prefilter selected titles for inspection. Selected relevant records received primary-source checking. This was not independent dual screening, and the omitted records did not receive exhaustive abstract screening.",
+  "deduplication": "Search counts use database source plus accession. Included papers are unique by DOI. Preprint/journal versions require curator checks, not just automatic DOI deduplication.",
+  "limitations": [
+    "English search terms; no comprehensive non-English search.",
+    "No subscription Scopus, Web of Science or Embase search.",
+    "Database indexing delays, title prefilter and focused device vocabulary can miss studies.",
+    "Some entries rely on abstracts; exact hardware and reference models may remain unresolved.",
+    "Conference abstracts and theses identified but not comprehensively extracted.",
+    "Known candidates awaiting extraction are listed below; included-paper counts are not all retrieved hits."
+  ],
+  "pilotQueries": "Three broad pilot files (named-devices.json, actigraphy-validation.json, wearable-validation.json) each contain only the first 1,000 results. They are not counted as complete searches or included in the final query accounting.",
+  "otherCandidates": [
+    {
+      "citation": "Read et al. (2014). Light exposure and physical activity in myopic and emmetropic children",
+      "doi": "10.1097/OPX.0000000000000160",
+      "url": "https://doi.org/10.1097/OPX.0000000000000160",
+      "decision": "Awaiting full-text check",
+      "reason": "Application paper may contain device calibration checks; abstract does not resolve whether it adds original performance data.",
+      "sourceInspected": "Abstract / citation chain"
+    },
+    {
+      "citation": "Schmid et al. (2013). Assessment of daily light and ultraviolet exposure in young adults",
+      "doi": "10.1097/OPX.0b013e31827cda5b",
+      "url": "https://doi.org/10.1097/OPX.0b013e31827cda5b",
+      "decision": "Awaiting full-text check",
+      "reason": "HOBO application; determine whether original calibration or classifier testing is reported.",
+      "sourceInspected": "Citation / abstract"
+    },
+    {
+      "citation": "Aarts et al. (2020). Can Special Light Glasses Reduce Sleepiness and Improve Sleep of Nightshift Workers?",
+      "doi": "10.3390/clockssleep2020018",
+      "url": "https://doi.org/10.3390/clockssleep2020018",
+      "decision": "Awaiting supplement check",
+      "reason": "LightWatcher calibration supplement may add relevant sensor tests; treatment outcome findings alone are outside scope.",
+      "sourceInspected": "Citation chain / supplement description"
+    },
+    {
+      "citation": "Huss et al. (2019). Shedding Some Light in the Dark",
+      "doi": "10.1289/EHP3431",
+      "url": "https://doi.org/10.1289/EHP3431",
+      "decision": "Awaiting calibration extraction",
+      "reason": "Main comparison evaluates satellite estimates. Determine whether LightWatcher stability/calibration data justify a separate hardware record.",
+      "sourceInspected": "Primary study description / indexed passages"
+    },
+    {
+      "citation": "Gourraud et al. (2024). Instrumented eyewear with regular design",
+      "doi": "10.1117/12.3017149",
+      "url": "https://doi.org/10.1117/12.3017149",
+      "decision": "Awaiting full-text check",
+      "reason": "Proceedings report of ocular visible-light sensing; quantitative performance and reference instrument not yet extracted.",
+      "sourceInspected": "Publisher metadata"
+    },
+    {
+      "citation": "Xu et al. (2026). Validation of a Multimodal Wearable Device for Assessing Environmental and Behavioral Risk Factors of Myopia in Children and Adolescents",
+      "doi": "10.1007/s44402-026-00148-7",
+      "url": "https://doi.org/10.1007/s44402-026-00148-7",
+      "decision": "Awaiting full-text check",
+      "reason": "Abstract validates activity and sleep components and describes environmental spectra; it does not establish an independent light-measurement reference test.",
+      "sourceInspected": "PubMed abstract"
+    },
+    {
+      "citation": "Yoshimura et al. (online 2020; issue 2022). Relationship between Indoor Daytime Light Exposure and Circadian Phase Response under Laboratory Free-Living Conditions",
+      "doi": "10.1080/09291016.2020.1782691",
+      "url": "https://doi.org/10.1080/09291016.2020.1782691",
+      "decision": "Awaiting full-text check",
+      "reason": "Check for original position or reference-instrument comparison before assigning sensor-validation endpoints.",
+      "sourceInspected": "Citation chain"
+    },
+    {
+      "citation": "Verkicharla et al. (2017). Development of the FitSight Fitness Tracker to Increase Time Outdoors to Prevent Myopia",
+      "doi": "10.1167/tvst.6.3.20",
+      "url": "https://doi.org/10.1167/tvst.6.3.20",
+      "decision": "Limited measurement report",
+      "reason": "Results state that readings were of the same order of magnitude as an in-house meter, but give no quantitative accuracy test or reference model. Usability and wear-time outcomes are not light-sensor validation.",
+      "sourceInspected": "Full text: Methods and Results"
+    },
+    {
+      "citation": "Alvarez & Wildsoet (2013). Quantifying light exposure patterns in young adult students",
+      "doi": "10.1080/09500340.2013.845700",
+      "url": "https://doi.org/10.1080/09500340.2013.845700",
+      "decision": "Application / no extracted sensor validation",
+      "reason": "HOBO exposure profiles and questionnaire/environmental context; no independent quantitative sensor calibration identified in the inspected text.",
+      "sourceInspected": "Full text"
+    },
+    {
+      "citation": "Dickey AK, Berkovich J, Leaf RK, Jiang PY, Lopez-Galmiche G, Rebeiz L, Wheeden K, Kochevar I, Savage W, Zhao S, Campisi E, Heo SY, Trueb J, LaRochelle EPM, Rogers J, Banks A, Chang JK. (2024). Observational pilot study of multi-wavelength wearable light dosimetry for erythropoietic protoporphyria.",
+      "doi": "10.1111/ijd.17166",
+      "url": "https://doi.org/10.1111/ijd.17166",
+      "decision": "Clinical association / related application",
+      "reason": "Clinical symptom association is not independent light-sensor accuracy. Hardware platform development is represented by Heo and Kwon.",
+      "sourceInspected": "Full text / abstract"
+    },
+    {
+      "citation": "Heil DP, Mathis SR. (2002). Characterizing free-living light exposure using a wrist-worn light monitor.",
+      "doi": "10.1016/S0003-6870(02)00007-8",
+      "url": "https://doi.org/10.1016/S0003-6870(02)00007-8",
+      "decision": "Application / abstract inconclusive",
+      "reason": "Accessible abstract describes occupational exposure patterns without an independent light-measurement validation. Full text could contain additional technical checks.",
+      "sourceInspected": "PubMed abstract"
+    },
+    {
+      "citation": "Ulaganathan et al. (2017). Measurement Duration and Frequency Impact Objective Light Exposure Measures",
+      "doi": "10.1097/OPX.0000000000001041",
+      "url": "https://doi.org/10.1097/OPX.0000000000001041",
+      "decision": "Related sampling methods",
+      "reason": "Sampling-duration reliability concerns exposure summaries; not a standalone absolute sensor-accuracy test.",
+      "sourceInspected": "Citation / abstract"
+    },
+    {
+      "citation": "de Vries et al. (2026). Light exposure measurement and body geometry",
+      "doi": "10.1038/s44323-026-00073-5",
+      "url": "https://doi.org/10.1038/s44323-026-00073-5",
+      "decision": "Related simulation methods",
+      "reason": "Uses body geometry and simulated illumination; no measured wearable-hardware validation.",
+      "sourceInspected": "Full text"
+    },
+    {
+      "citation": "de Vries et al. (2026). Hybrid light-exposure measurement framework",
+      "doi": "10.1038/s44323-026-00079-z",
+      "url": "https://doi.org/10.1038/s44323-026-00079-z",
+      "decision": "Related simulation methods",
+      "reason": "Body scans and simulated placement/occlusion effects; not a separate empirical sensor-validation dataset.",
+      "sourceInspected": "Full text"
+    },
+    {
+      "citation": "Patterson Gentile C, Thomas A, Shah R, Marquez De Prado B, Raj N, Szperka CL, Aguirre GK. (2026). Evaluating chest-worn light logger adherence: development and application of a wear/non-wear model.",
+      "doi": "10.1038/s41598-026-54493-1",
+      "url": "https://doi.org/10.1038/s41598-026-54493-1",
+      "decision": "Related adherence methods",
+      "reason": "Validates nonwear detection rather than light-measurement accuracy. Preprint 10.1101/2025.09.29.25336898 is not counted again.",
+      "sourceInspected": "Indexed journal record / abstract"
+    },
+    {
+      "citation": "Zhang Y, Wijeratne LOH, Talebi S, Lary DJ. (2021). Machine Learning for Light Sensor Calibration.",
+      "doi": "10.3390/s21186259",
+      "url": "https://doi.org/10.3390/s21186259",
+      "decision": "Outside wearable scope",
+      "reason": "Stationary environmental light sensor network rather than wearable personal dosimetry.",
+      "sourceInspected": "Full text"
+    },
+    {
+      "citation": "Cole et al. (1990). Ambulatory monitoring of light exposure: comparison of measurements at forehead and wrist",
+      "doi": "",
+      "url": "",
+      "decision": "Limited report; not yet extracted",
+      "reason": "Sleep Research 19:364 conference abstract found through citations; primary abstract and device details not retrieved.",
+      "sourceInspected": "Secondary citation only"
+    },
+    {
+      "citation": "Deuring et al. (2026). Wearable Light Dosimeter with RGB Sensors: A Practical Approach to Determine Melanopic EDI for Daylight Measures",
+      "doi": "",
+      "url": "https://www.mdpi.com/2624-5175/8/1/2",
+      "decision": "Limited report; not yet extracted",
+      "reason": "Conference abstract within Clocks & Sleep 8(1):2; ActTrust2. Not a full validation paper.",
+      "sourceInspected": "Conference abstract listing"
+    },
+    {
+      "citation": "Nishanth et al. (2022). Accurate Measurement of Outdoor Activities in Children with Myopia: Development of an Affordable Wearable Device",
+      "doi": "",
+      "url": "",
+      "decision": "Limited report; not yet extracted",
+      "reason": "IOVS 63(7):2144–A0172 meeting abstract; determine overlap with subsequent full papers before counting independently.",
+      "sourceInspected": "Citation chain"
+    },
+    {
+      "citation": "Hubalek (2007). Light measurement / LuxBlick doctoral thesis",
+      "doi": "",
+      "url": "",
+      "decision": "Thesis not yet assessed",
+      "reason": "Original thesis may contain validation data; eligibility and overlap with journal publications remain unresolved.",
+      "sourceInspected": "Review bibliography"
+    },
+    {
+      "citation": "Moafa (2019). Quantifying Risk Factors for Myopia: Instrument Validation and Establishing Dosage for Light Intensity and Duration",
+      "doi": "",
+      "url": "",
+      "decision": "Thesis not yet assessed",
+      "reason": "Thesis may contain additional validation experiments; full-text extraction and publication-overlap assessment remain open.",
+      "sourceInspected": "Review bibliography"
+    },
+    {
+      "citation": "Philips (2008). Characterization of Light Sensor Performance for Three Models of Actiwatch",
+      "doi": "",
+      "url": "",
+      "decision": "Manufacturer material excluded",
+      "reason": "Manufacturer white paper, not an indexed research publication in the present literature-only collection.",
+      "sourceInspected": "Citation chain"
+    },
+    {
+      "citation": "Okudaira, Kripke & Webster (1983). Naturalistic studies of human light exposure",
+      "doi": "10.1152/ajpregu.1983.245.4.R613",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6624956/",
+      "decision": "Excluded by curator",
+      "reason": "Removed from the directory at the curator’s request on 10 November 2026.",
+      "sourceInspected": "Abstract"
+    }
+  ],
+  "queries": [
+    {
+      "file": "data/search/2026-11-10/actigraphy-light-titles.json",
+      "query": "TITLE_ABS:((Actiwatch OR ActTrust OR GENEActiv OR MotionWatch OR HOBO OR ActiGraph) AND (light OR illuminance OR photometric) AND (validat* OR calibrat* OR accuracy OR spectral OR agreement OR characteri*)) AND FIRST_PDATE:[1900-01-01 TO 2026-11-10]",
+      "hits": 391,
+      "retrieved": 391
+    },
+    {
+      "file": "data/search/2026-11-10/light-logger-titles.json",
+      "query": "TITLE:((light OR illuminance OR photometric OR melanopic) AND (dosimeter OR logger OR wearable OR wrist OR sensor OR monitor)) AND TITLE_ABS:(validat* OR calibrat* OR accuracy OR characteri*) AND FIRST_PDATE:[1900-01-01 TO 2026-11-10]",
+      "hits": 306,
+      "retrieved": 306
+    },
+    {
+      "file": "data/search/2026-11-10/named-device-titles.json",
+      "query": "TITLE_ABS:(Clouclip OR MyLyt OR Daysimeter OR Spectrace OR SpectraWear OR ActLumus OR OcuWEAR OR \"LYS Button\" OR (Kronowise AND light)) AND FIRST_PDATE:[1900-01-01 TO 2026-11-10]",
+      "hits": 54,
+      "retrieved": 54
+    }
+  ],
+  "accounting": {
+    "retrievedAcrossQueries": 751,
+    "uniqueBibliographicRecords": 733,
+    "titlePrefilterRetained": 361,
+    "titlePrefilterOmitted": 372,
+    "includedPapers": 45,
+    "deviceEntries": 45,
+    "otherCandidateRecords": 23
+  },
+  "titlePrefilterRegex": "light|illumin|dosimet|clouclip|mylyt|daysimet|spectrace|spectrawear|kronowise|actlumus|ocuwear"
+}

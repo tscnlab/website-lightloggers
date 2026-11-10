@@ -81,7 +81,7 @@ After rendering, `python scripts/package.py` creates `../lightloggers-quarto.zip
 with the sources, rendered site, data and verification artifacts. Local virtual
 environments and caches are excluded.
 
-The expanded audit includes 46 papers (41 peer reviewed, 4 preprints and one
+The expanded audit includes 45 papers (40 peer reviewed, 4 preprints and one
 non-peer-reviewed conference paper). All have DOI/source links; PubMed links are
 included when a verified record was found. Twelve summaries rely on abstracts;
 one uses a verified partial full-text passage. Exact search accounting, unresolved

@@ -1,0 +1,9 @@
+/_site/
+/.quarto/
+/_freeze/
+/_generated/
+/.venv/
+__pycache__/
+*.pyc
+.DS_Store
+/preview/

@@ -55,6 +55,16 @@ print(f'<p class="audit-stamp">Literature checked {esc(updated)} · '
       f'{counts.get("Conference paper", 0)} conference paper</p>')
 ```
 
+## Reading the directory
+
+“Reports” describes a documented device output, including the paper’s calibration or processing workflow. Yes and No require a literature source; a dash means that reporting capability has not been documented in the inspected sources, not that the device cannot provide it. Output capability is stored separately from validation evidence, with its own source links. Angle dependence is a tested property, not a reported output.
+
+Each square represents one paper testing that model for that measurement; 0 means no indexed test for that endpoint. Counts describe coverage, not accuracy. The overview shows photopic illuminance, melanopic EDI and angle dependence. A paper can appear in several columns. Additional endpoints remain in the study details. Families group related names without pooling results across models.
+
+Squares count studies; orange hatching highlights documented developer involvement. This highlight is specific to the device–paper pair. Checked independent authorship is noted in study details with its source. An unhighlighted square makes no claim about independence: authorship/disclosure review is still incomplete. Independent authorship does not guarantee absence of manufacturer assistance or bias.
+
+“Commercial model” and “Research device” describe the devices in the indexed literature. Research devices include prototypes and research platforms. These categories do not establish current stock, support or availability for purchase.
+
 ## Scope
 
 This directory brings together primary research that evaluates light measurements from wearable devices against a reference instrument, characterises sensor performance, tests wearing position, or evaluates light-based classification. The expanded search is documented below. It is not an exhaustive systematic review: some known candidates still need extraction, and the search can miss relevant work.
