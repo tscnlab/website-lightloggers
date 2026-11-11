@@ -32,7 +32,7 @@ The parent `tscnlab/website-lightloggers` repository renders this subproject aft
 
 Authoritative sources: [ENLIGHT statement](https://enlight-statement.org/) and [Spitschan et al. (2023)](https://doi.org/10.1016/j.ebiom.2023.104889). `data/checklist.json` records the source commit, SHA-256 hashes, item-to-form-field mapping, and helper descriptions. Item IDs such as A1.1 are stable wizard IDs; the official PDF numbers sections only.
 
-The official PDFs are unchanged and retain their specific CC-BY-NC-ND notice. See `sources/README.md` for provenance and the paper's item-count discrepancy. Helper descriptions are concise application guidance; the original E&E document remains linked for detail. PDF-lib and fontkit licences are in `assets/vendor/`; font attribution is in `assets/fonts/`. The TSCN logo/favicon are reused unchanged from the Lightloggers site.
+The official PDFs are unchanged and retain their specific CC-BY-NC-ND notice. See `sources/README.md` for provenance and the paper's item-count discrepancy. Helper descriptions are concise application guidance; the original E&E document remains linked for detail. PDF-lib and fontkit licences are in `assets/vendor/`; font attribution is in `assets/fonts/`. The official ENLIGHT logo heads the page, with a smaller TSCN Unit logo and an AI disclosure in the footer. The TSCN logo/favicon are reused unchanged from the Lightloggers site. Asset sources and checksums are in `assets/PROVENANCE.md`.
 
 ## Verification
 
