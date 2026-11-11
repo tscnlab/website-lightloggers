@@ -11,7 +11,7 @@ project:
     - index.qmd
 
 website:
-  title: "ENLIGHT checklist wizard · TSCN Lab"
+  title: "ENLIGHT Checklist Wizard · TSCN Lab"
   site-url: https://resources.tscnlab.org/enlight/
   search: false
 

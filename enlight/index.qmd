@@ -1,5 +1,5 @@
 ---
-pagetitle: "ENLIGHT checklist wizard"
+pagetitle: "ENLIGHT Checklist Wizard"
 description: "Work through the ENLIGHT reporting checklist and download a completed PDF. Your draft stays in your browser."
 ---
 
