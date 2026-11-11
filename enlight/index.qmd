@@ -1,10 +1,10 @@
 ---
-pagetitle: "ENLIGHT Checklist Wizard"
+pagetitle: "ENLIGHT Checklist Wizard 🪄"
 description: "Complete the 25-item ENLIGHT reporting checklist with step-by-step guidance and download your completed PDF."
 open-graph:
-  title: "ENLIGHT Checklist Wizard"
+  title: "ENLIGHT Checklist Wizard 🪄"
 twitter-card:
-  title: "ENLIGHT Checklist Wizard"
+  title: "ENLIGHT Checklist Wizard 🪄"
 ---
 
 ```{python}

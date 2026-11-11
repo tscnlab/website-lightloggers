@@ -1,4 +1,4 @@
-# ENLIGHT Checklist Wizard
+# ENLIGHT Checklist Wizard 🪄
 
 A browser-local wizard for the ENLIGHT Checklist v1.0.2 (16 October 2023), published at https://resources.tscnlab.org/enlight/ alongside the Light Logger Inventory.
 
