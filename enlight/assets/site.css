@@ -8,6 +8,8 @@
 
 @media(max-width:760px){.sidebar-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:14px 0 0;padding:10px 0 0}.sidebar-actions .text-button{font-size:10px}}
 
+.ai-disclosure p+p{margin-top:8px}
+.ai-disclosure code{font-size:inherit;overflow-wrap:anywhere}
 /* Persistent citation reminder above the checklist. */
 .citation-callout{margin:0 0 26px;padding:18px 22px;border:1px solid #ead080;border-left:4px solid #d7b74d;border-radius:3px;background:#fff6ce;color:var(--text)}
 .citation-callout summary{display:flex;align-items:center;justify-content:space-between;gap:16px;font:600 14px/1.5 var(--sans);color:var(--ink);cursor:pointer;list-style:none}

@@ -38,6 +38,20 @@ The official PDFs are unchanged and retain their specific CC-BY-NC-ND notice. Se
 
 ## Verification
 
+### AI development disclosure
+
+Recorded on 11 November 2026:
+
+- Provider and tool: OpenAI Codex.
+- Model identifier recorded in the development session: `gpt-6-astra`; reasoning effort: `ultra`. A dated model snapshot was not recorded, so none is inferred.
+- Codex desktop version: `26.1029.61003`, build `24614`, verified from the installed app.
+- Codex agent version: `0.166.0-alpha.6`, recorded in the development session metadata.
+- AI assistance: interface design, implementation of the published ENLIGHT checklist, PDF export, reference downloads, and testing.
+
+These are the versions observed during development, not automatically updated deployment metadata. The deployed wizard fills the PDF directly from entered responses, using local JavaScript and vendored PDF libraries. It does not invoke an AI model. This disclosure concerns the website implementation and does not attribute the original ENLIGHT paper or checklist to AI.
+
+### Checks
+
 ```sh
 node --test tests/*.test.*
 ```
