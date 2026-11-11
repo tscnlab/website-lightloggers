@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-10",
-  "scope": "Primary literature on wearable light-sensor characterisation, calibration, agreement, placement and classification. Targeted expanded search; not an exhaustive systematic review.",
+  "updated": "2026-11-11",
+  "scope": "Literature on wearable light logger characterisation, reference comparisons, comparisons during wear, and within-unit or between-unit repeatability.",
   "yearPolicy": "Years follow the checked research records. Some use journal issue year and some online-first year; discrepancies are identified in each record’s notes. Publication year is not the date of testing.",
   "provenance": {
     "researchFiles": [
@@ -30,7 +30,7 @@
       "setting": "Field",
       "reference": "JETI Spectraval 1501 in Tübingen; Konica Minolta CL-500A in Izmir.",
       "protocol": "Fixed tripod rig sampled 433 indoor/outdoor scenes across daylight, artificial and mixed lighting in Tübingen and Izmir. Bootstrap resampling assessed sampling requirements.",
-      "finding": "High association with reference measurements coexisted with systematic underestimation. Bias depended on the lighting condition and scene characteristics. Performance estimates stabilized at approximately 100 sampled scenes in this dataset.",
+      "finding": "Across 433 scenes, both devices tracked the spectral reference measurements closely but systematically underestimated light levels.",
       "limitations": "Preprint. Tripod measurements do not establish continuous on-body accuracy. Only one ActTrust2 unit and two ActLumus units were tested, with one ActLumus at each site.",
       "access": "Full text",
       "notes": "arXiv v1, 16 June 2026. Both devices measured photopic illuminance; only ActLumus measured melanopic EDI. The same ActTrust2 unit was used at both sites.",
@@ -86,7 +86,7 @@
       "setting": "Laboratory + field",
       "reference": "Calibrated Gigahertz-Optik BTS256 spectroradiometer; cosine-law angular benchmark.",
       "protocol": "Three units per model tested under controlled LEDs (0–570 lx) and partly cloudy daylight (42,000–78,000 lx), with separate angular and temperature tests.",
-      "finding": "Speck showed the strongest overall measurement agreement in this comparison. LYS Button overestimated low-light melanopic EDI. Actiwatch had substantial photometric variability. All models showed difficulties under high daylight levels.",
+      "finding": "Speck had the closest photopic agreement of the three models overall; all three showed poorer performance under high daylight levels. Melanopic EDI was tested for Speck and LYS Button under LED lighting. Agreement was poorer for LYS at low light levels. Angle tests used photopic illuminance, with Speck closest to the cosine reference.",
       "limitations": "Three units per type; one short daylight session; spectral reconstruction evaluated for only one Speck; no on-body position or occlusion testing. Daylight variability limits interpretation as a strict linearity test.",
       "access": "Full text",
       "notes": "Published 21 July 2026. Results concern Speck v1.0, not v2.0. Melanopic EDI was evaluated only for LYS Button and Speck under LEDs; Actiwatch was excluded because it lacks melanopic outputs. Spectral reconstruction testing applies only to Speck.",
@@ -133,7 +133,21 @@
           "sourceUrl": "https://www.nature.com/articles/s44323-026-00088-y",
           "sourceLocator": "Author affiliations, Acknowledgements, Contributions and Competing interests."
         }
-      }
+      },
+      "findings": [
+        {
+          "text": "Speck had the closest photopic agreement of the three models overall; all three showed poorer performance under high daylight levels.",
+          "field": "finding"
+        },
+        {
+          "text": "Melanopic EDI was tested for Speck and LYS Button under LED lighting. Agreement was poorer for LYS at low light levels.",
+          "field": "Melanopic EDI"
+        },
+        {
+          "text": "Angle tests used photopic illuminance, with Speck closest to the cosine reference.",
+          "field": "Angular response"
+        }
+      ]
     },
     {
       "id": "pilehchiha-2026",
@@ -155,7 +169,7 @@
       "setting": "Laboratory + field",
       "reference": "Gigahertz-Optik CSS-45 reference spectroradiometer.",
       "protocol": "Comparison under fluorescent, incandescent and multiple LED sources, plus dynamic daylight exposure.",
-      "finding": "Performance depended on both the source spectrum and output metric. Illuminance varied less than melanopic EDI and colour temperature. Bias under dim conditions could change exposure-threshold classification.",
+      "finding": "Performance depended on illuminance level and spectrum. ActLumus and lido had more stable photopic measurements, while melanopic EDI was more sensitive to narrowband and atypical spectra.",
       "limitations": "Preprint. Bias varies with spectrum and metric; not every device was tested in every source condition. No universal accuracy bound or general ranking follows from these comparisons.",
       "access": "Full text",
       "notes": "CCT performance is indexed only for lido and OcuWEAR; it is not assigned to ActLumus.",
@@ -238,11 +252,11 @@
       ],
       "reference": "Concurrent wearables and participant activity logs; no absolute illuminance reference.",
       "protocol": "Thirty adults wore five sensors for one day; valid light data from 25 participants were compared across illumination categories and with activity logs.",
-      "finding": "Outdoor-photopic categories agreed well between devices, while low-light categories and activity-log estimates differed.",
+      "finding": "The five worn sensors agreed most closely in the highest illuminance bin (≥1000 lux); agreement differed at lower light levels.",
       "limitations": "Authors explicitly assess mutual agreement, not absolute validation. Anatomical position and sensor characteristics differ. Unreported model revisions remain unresolved.",
       "sourceLocator": "Abstract; Results: Table 2; Introduction (scope); Methods: wearable sensors.",
       "setting": "Field",
-      "evidenceType": "Wearable-to-wearable comparison",
+      "evidenceType": "Comparison during wear",
       "url": "https://www.nature.com/articles/s44323-026-00113-0",
       "access": "Full text",
       "status": "Peer reviewed",
@@ -306,7 +320,7 @@
       "setting": "Laboratory + field",
       "reference": "NIST-calibrated ILT560-A spectrometer; free-living comparison between ActLumus and ActiGraph.",
       "protocol": "Eight units per manufacturer tested under warm/cool LEDs (2–1,000 lx) and daylight (5,000–100,000 lx). Twenty-one adults wore ActLumus and ActiGraph concurrently for one week.",
-      "finding": "ActLumus had the widest tested response range and lowest between-unit variability. LYS showed larger melanopic errors under warm light. GENEActiv and ActiGraph underestimated illuminance; limited sensitivity and saturation produced large differences in daily exposure estimates.",
+      "finding": "Average photopic errors across the tested intensities were 3.3% for ActLumus, 19.5% for LYS, −35.7% for GENEActiv and −68.0% for ActiGraph wGT3X-BT. The study separately examined detection thresholds, linearity and saturation.",
       "limitations": "Two indoor spectra and selected daylight conditions do not cover all lighting environments. The field component compared two wrist devices without a continuously worn reference spectrometer.",
       "access": "Full text",
       "notes": "Online November 2025; February 2026 issue. Melanopic testing applies only to ActLumus and LYS. The paper uses melanopic illuminance/lux, not explicitly EDI; indexed here as Other circadian metrics. LYS hardware version is unspecified. Between-unit variability is distinct from repeatability. Additional reported endpoints: Dynamic range, Between-device variability. The LYS name is indexed under LYS Button; these are the same device, as clarified by the curator. The paper does not specify a hardware revision.",
@@ -360,7 +374,17 @@
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13396946/",
           "sourceLocator": "Methods: Laboratory assessment; Results: Figures 2–6 and Free-living comparison (Figure 7)."
         }
-      }
+      },
+      "findings": [
+        {
+          "text": "Average photopic errors across the tested intensities were 3.3% for ActLumus, 19.5% for LYS, −35.7% for GENEActiv and −68.0% for ActiGraph wGT3X-BT.",
+          "field": "finding"
+        },
+        {
+          "text": "The study separately examined detection thresholds, linearity and saturation.",
+          "field": "Dynamic range"
+        }
+      ]
     },
     {
       "id": "sarkar-2025",
@@ -380,7 +404,7 @@
       "setting": "Laboratory + field",
       "reference": "Calibrated Konica Minolta CL-200A chroma meter for illumination; ruler for the separate distance assessment.",
       "protocol": "Five units of each model attached to spectacles on a mannequin. Light measurements were repeated across seven indoor/outdoor locations on three days. A separate study tested viewing distance in 13 young adults.",
-      "finding": "Both devices tracked the luxmeter; individual differences became more variable above roughly 3,500–4,000 lx. Some bright indoor locations exceeded the 1,000-lx outdoor threshold.",
+      "finding": "Both devices tracked the calibrated lux meter. Differences became more variable above about 3500 lux for Clouclip and 4000 lux for Vivior.",
       "limitations": "The participant component assessed viewing distance rather than light-measurement accuracy during unrestricted wear. The study did not validate melanopic or spectral outputs; sleep mode and spectacle use can affect deployment.",
       "access": "Full text",
       "notes": "Published 14 February 2025. Exact tested versions were five Vivior Mark 3+ and five second-generation Clouclip units. Agreement in photopic illuminance should not be generalized to other outputs or hardware generations. Outdoor-threshold discussion is not indexed as classification validation.",
@@ -514,21 +538,23 @@
       ],
       "deviceMetrics": {
         "SpectraWear": [
+          "Illuminance",
           "Melanopic EDI",
           "Angular response"
         ]
       },
       "metrics": [
         "Angular response",
+        "Illuminance",
         "Melanopic EDI"
       ],
       "reference": "SpectroCAL MKII spectroradiometer and calibrated custom spectral source.",
       "protocol": "Thirteen ten-channel units were calibrated and tested across spectral/intensity conditions, with additional angular-response and body-location experiments.",
-      "finding": "Mean absolute errors in α-opic EDI were below 0.07 log lx; between-unit correlations were at least 0.99 under the reported conditions.",
+      "finding": "For photopic illuminance and α-opic EDIs above 1 lux, the average mean absolute error was below 0.07 log units; between-unit correlations were at least 0.99.",
       "limitations": "Laboratory calibration and limited wear demonstrations do not establish equal performance under every real-world spectrum or placement.",
       "sourceLocator": "Sections II-D, III-B and IV: calibration, EDI accuracy, directional response and wearing position.",
       "setting": "Laboratory + field",
-      "evidenceType": "Characterisation + placement",
+      "evidenceType": "Characterisation",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11100858/",
       "access": "Full text",
       "status": "Peer reviewed",
@@ -561,19 +587,21 @@
       ],
       "metrics": [
         "Angular response",
-        "Illuminance"
+        "Illuminance",
+        "Melanopic EDI"
       ],
       "setting": "Laboratory + field",
-      "reference": "JETI specbos 1201 spectroradiometer; Ocean Insight STS-VIS for a real-world demonstration.",
-      "protocol": "Integrating-sphere calibration; tests under incandescent, LED, fluorescent and daylight sources; illuminance/CCT and angular-response characterization; near-corneal melanopic irradiance compared with a portable spectroradiometer.",
-      "finding": "The development study reports satisfactory agreement with commercial reference equipment and demonstrates coordinated near-corneal light recording during a field experiment.",
+      "reference": "METAS laboratory reference instruments; JETI specbos 1201 for calibration.",
+      "protocol": "Laboratory spectral and geometric tests; α-opic EDI and photopic illuminance compared under white light sources, with a separate angular-response test.",
+      "finding": "Under the tested white light sources, photopic illuminance deviations were below 5%, and α-opic EDI deviations were about 10%. The study compared angular response with an ideal cosine response.",
       "limitations": "Developer-led characterization and a limited demonstration; the reported results do not establish performance under every spectrum, wearing position or field condition.",
       "access": "Full text",
-      "notes": "Published online 13 February 2023. The article describes lido and its calibration workflow. Its field demonstration concerns melanopic irradiance, which should not be relabeled melanopic EDI.",
+      "notes": "Laboratory tests examine α-opic EDI (Section 3.1). The separate field demonstration measures melanopic irradiance.",
       "deviceMetrics": {
         "lido": [
           "Illuminance",
-          "Angular response"
+          "Angular response",
+          "Melanopic EDI"
         ]
       },
       "sourceLocator": "Sections 2.5 and 3.1; Figures 8–9 (illuminance/CCT/angular tests); Section 3.3 and Figures 10–11 (melanopic irradiance comparison).",
@@ -591,7 +619,17 @@
           "sourceUrl": "https://journals.sagepub.com/doi/10.1177/14771535221147140",
           "sourceLocator": "Sections 2.5 and 3.1; Figures 8–9 (illuminance/CCT/angular tests); Section 3.3 and Figures 10–11 (melanopic irradiance comparison)."
         }
-      }
+      },
+      "findings": [
+        {
+          "text": "Under the tested white light sources, photopic illuminance deviations were below 5%, and α-opic EDI deviations were about 10%.",
+          "field": "finding"
+        },
+        {
+          "text": "The study compared angular response with an ideal cosine response.",
+          "field": "Angular response"
+        }
+      ]
     },
     {
       "id": "dhakal-2022",
@@ -613,7 +651,7 @@
       ],
       "reference": "Factory-calibrated Sinometer LX1330B lux meter; activity diaries for indoor/outdoor classification.",
       "protocol": "Four trackers were tested in a controlled chamber and indoor/outdoor settings. A field phase included 21 adults and eight children.",
-      "finding": "Repeated and between-unit measurements were consistent. Reference agreement varied by setting; diary-based indoor/outdoor classification had high sensitivity and specificity in this sample.",
+      "finding": "Four MyLyt units showed high within-unit and between-unit repeatability. Photopic readings were compared with a factory-calibrated lux meter in controlled and natural lighting.",
       "limitations": "Classification uses self-reported location. Illuminance agreement is not proof of accuracy for spectra or melanopic quantities.",
       "sourceLocator": "Methods: Phase 1/2 validation; Results: Figures 3–5 and Tables 2–4.",
       "setting": "Laboratory + field",
@@ -660,12 +698,12 @@
         "Illuminance"
       ],
       "reference": "Concurrent spectacle-mounted Clouclip, wrist Actiwatch Spectrum Plus, daily logs and questionnaire.",
-      "protocol": "Twenty-five adults wore both devices for one week. Illuminance and time above the outdoor threshold were compared with each other and self-reports.",
-      "finding": "Wrist Actiwatch illuminance was systematically lower than Clouclip. Questionnaire estimates of outdoor time exceeded both device estimates.",
+      "protocol": "Twenty-five adults wore both devices for one week. Mean daily illuminance was compared using regression and Bland–Altman analysis.",
+      "finding": "Mean daily illuminance from the wrist-worn Actiwatch was 126 lux lower than the spectacle-mounted Clouclip; the reported limits of agreement were −160 to 413 lux.",
       "limitations": "Placement and device are confounded. This study evaluates agreement and behaviour estimates, not absolute sensor accuracy against a photometer.",
       "sourceLocator": "Sections 2.2–2.3 and light-exposure results.",
       "setting": "Field",
-      "evidenceType": "Wearable-to-wearable comparison",
+      "evidenceType": "Comparison during wear",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8587946/",
       "access": "Full text",
       "status": "Peer reviewed",
@@ -711,7 +749,7 @@
       ],
       "reference": "Extech LT40 LED light meter.",
       "protocol": "Seventeen everyday scenarios were sampled for five minutes each, including tests with and without sleeves. Thresholds classified light/dark, electrical/daylight and bright-light therapy.",
-      "finding": "The watch distinguished some lighting classes but had poor absolute agreement and did not reliably identify bright-light therapy. Sleeves commonly reduced readings.",
+      "finding": "MotionWatch 8 tended to underestimate illuminance, particularly when covered by sleeves. Without sleeves, readings were significantly lower than the reference in seven of nine conditions.",
       "limitations": "Scenario-specific thresholds are not universal. A small controlled wear demonstration cannot establish general free-living accuracy.",
       "sourceLocator": "Methods; Table 3; Figures 1–4.",
       "setting": "Laboratory + field",
@@ -759,7 +797,7 @@
       ],
       "reference": "Manufacturer-calibrated Hagner S2 universal photometer.",
       "protocol": "Devices on a skeleton were compared with a photometer at matched sensor positions in nine indoor/outdoor settings. Five Clouclip M2 units were also compared concurrently.",
-      "finding": "Both devices underestimated illuminance despite high correlations. Clouclip more closely reproduced the reference in the tested range; its between-unit illuminance ICC was 0.85.",
+      "finding": "Bland–Altman mean differences were about 431 lux for Actiwatch 2 and 79 lux for Clouclip; agreement limits were wider for Actiwatch 2.",
       "limitations": "Device-reference trials were separate and covered different ranges. Indoor locations can exceed 1,000 lx; an illuminance category is not necessarily an outdoor location.",
       "sourceLocator": "Methods: Devices employed and Validity; Results: Tables 2–4, Figures 3–5.",
       "setting": "Field",
@@ -816,7 +854,7 @@
       ],
       "reference": "Konica Minolta CL-500A calibrated illuminance spectrophotometer.",
       "protocol": "A pendant/clip spectrophotometer covering 380–780 nm was developed and tested with common light sources; corrections addressed directionality, dark noise, saturation, nonlinearity, stray light and spectral response.",
-      "finding": "After correction, the reported α-opic EDI errors were below 7% for the four tested source types. Optical modification improved angular response; remaining spectral errors differed by source.",
+      "finding": "For four tested source types, α-opic EDI errors were below 7% after calibration. Adding a diffuser brought the sensor’s angular response closer to a cosine curve.",
       "limitations": "Bench testing of a prototype with four source types does not establish accuracy for every spectrum or wearing condition. No equivalence to a later branded device is inferred.",
       "sourceLocator": "Sections 2.2 and 3; Table 1 (angular response), Table 2 and Figure 8 (source comparisons).",
       "setting": "Laboratory",
@@ -839,7 +877,17 @@
           "sourceUrl": "https://research.monash.edu/en/publications/wearable-light-spectral-sensor-optimized-for-measuring-daily-%CE%B1-op/",
           "sourceLocator": "Sections 2.2 and 3; Table 1 (angular response), Table 2 and Figure 8 (source comparisons)."
         }
-      }
+      },
+      "findings": [
+        {
+          "text": "For four tested source types, α-opic EDI errors were below 7% after calibration.",
+          "field": "finding"
+        },
+        {
+          "text": "Adding a diffuser brought the sensor’s angular response closer to a cosine curve.",
+          "field": "Angular response"
+        }
+      ]
     },
     {
       "id": "nagra-2021",
@@ -861,11 +909,11 @@
       ],
       "reference": "Controlled Gretag Macbeth Judge II lightbox; comparison among four watches and two sessions.",
       "protocol": "RGB and white outputs were recorded under simulated daylight D65, illuminant A and cool-white fluorescent light.",
-      "finding": "Significant between-watch differences occurred under all three illuminants; repeated measurements also differed for most watch/channel combinations.",
+      "finding": "Repeated measurements of the same watch differed for most watch/channel combinations. White and RGB outputs also differed between watches.",
       "limitations": "Four units. This establishes variability, not traceable absolute illuminance accuracy. Despite the title, the tested watches are all Spectrum Pro.",
       "sourceLocator": "Abstract; Methods: illumination conditions and procedure; Results.",
       "setting": "Laboratory",
-      "evidenceType": "Repeatability study",
+      "evidenceType": "Within-unit and between-unit comparison",
       "url": "https://openaccess.city.ac.uk/id/eprint/25801/",
       "access": "Full text",
       "status": "Peer reviewed",
@@ -883,7 +931,17 @@
           "sourceUrl": "https://openaccess.city.ac.uk/id/eprint/25801/",
           "sourceLocator": "Abstract; Methods: illumination conditions and procedure; Results."
         }
-      }
+      },
+      "findings": [
+        {
+          "text": "Repeated measurements of the same watch differed for most watch/channel combinations.",
+          "field": "finding"
+        },
+        {
+          "text": "White and RGB outputs also differed between watches.",
+          "field": "between-units"
+        }
+      ]
     },
     {
       "id": "webler-2021",
@@ -907,7 +965,7 @@
       ],
       "reference": "Reference spectra; LMT Pocket-Lux 2 for angular-response measurements.",
       "protocol": "Prototype tests examined spectral reconstruction, angular response and intensity linearity; a separate survey assessed wearability.",
-      "finding": "Measured angular mismatch was 2.07%. Spectral reconstruction and intensity response depended on the tested signal and source conditions.",
+      "finding": "The measured directional-response index was 2.07%. Photopic response linearity was examined under 2700 K and 6500 K illumination.",
       "limitations": "Prototype and conference paper. Spectral recovery demonstrations do not establish arbitrary-spectrum reconstruction or a separately validated melanopic EDI output.",
       "sourceLocator": "Sections 2.1 and 3.1.1–3.1.3; Figures 1–4.",
       "setting": "Laboratory",
@@ -928,7 +986,17 @@
           "sourceUrl": "https://infoscience.epfl.ch/server/api/core/bitstreams/39b60a11-96de-4c57-9208-55f51290ab92/content",
           "sourceLocator": "Sections 2.1 and 3.1.1–3.1.3; Figures 1–4."
         }
-      }
+      },
+      "findings": [
+        {
+          "text": "The measured directional-response index was 2.07%.",
+          "field": "Angular response"
+        },
+        {
+          "text": "Photopic response linearity was examined under 2700 K and 6500 K illumination.",
+          "field": "Dynamic range"
+        }
+      ]
     },
     {
       "id": "wen-2021",
@@ -949,8 +1017,8 @@
         "Illuminance"
       ],
       "reference": "Konica Minolta T-10 illuminance meter.",
-      "protocol": "Fifteen first-generation units were tested in 28 light environments spanning 50–38,000 lx, with repeated measurements. A separate participant study compared device records with questionnaires.",
-      "finding": "Controlled light tests reported a maximum relative error of 2.23% and high within- and between-unit consistency.",
+      "protocol": "Fifteen Clouclips underwent repeated measurements at different light intensities. The study also included a separate week-long wear phase.",
+      "finding": "Within the tested measurement limit, maximum relative illuminance error was 2.23%; intra-unit and inter-unit illuminance coefficients were both 1.00.",
       "limitations": "Questionnaires are not a traceable illuminance reference. Results apply to the first-generation units and tested environments.",
       "sourceLocator": "Methods: Validation of Clouclip; light-intensity validation results.",
       "setting": "Laboratory + field",
@@ -1126,15 +1194,17 @@
       ],
       "deviceMetrics": {
         "Kronowise": [
-          "Illuminance"
+          "Illuminance",
+          "Angular response"
         ]
       },
       "metrics": [
+        "Angular response",
         "Illuminance"
       ],
       "reference": "Ocean Optics spectroradiometer with CC-3 cosine corrector; CIE S 026 calculations from reference spectra.",
       "protocol": "Commercial lamps and sunlight were compared with three-channel Kronowise readings; separate calibration relationships were developed for natural and two artificial-light classes.",
-      "finding": "Source-specific transformations improved correspondence with reference visible and circadian-light estimates relative to raw outputs.",
+      "finding": "Source-dependent infrared correction improved agreement between Kronowise and the reference spectroradiometer; the corrected photopic regression had a slope of 0.994 and correlation of 0.997.",
       "limitations": "Results depend on the source classifier and fitted calibration. The paper’s circadian channel is not automatically interchangeable with every modern melanopic EDI implementation.",
       "sourceLocator": "Methods: calibration; Results: light-source classification and calibrated visible/circadian measurements.",
       "setting": "Laboratory",
@@ -1178,7 +1248,7 @@
       ],
       "reference": "Lux meter and UV sensor; models unresolved in the inspected abstract.",
       "protocol": "The paper reports indoor/outdoor device calibration in addition to 14-day recordings in 55 adults and comparisons with activity questionnaires.",
-      "finding": "An original calibration component is reported alongside the exposure study; numerical sensor agreement has not been extracted from the accessible abstract.",
+      "finding": "Actiwatch Spectrum illuminance correlated with a reference lux meter across the tested locations (R = 0.99).",
       "limitations": "Abstract-level calibration record. The observational refractive-error comparisons do not themselves validate the sensor; quantitative accuracy requires full-text extraction.",
       "sourceLocator": "Publisher abstract, Methods: calibration against a lux meter and UV sensor.",
       "setting": "Laboratory + field",
@@ -1293,13 +1363,13 @@
       "metrics": [
         "Illuminance"
       ],
-      "reference": "Side-by-side comparison among 48 Actiwatch Spectrum units.",
+      "reference": "Forty-eight Actiwatch Spectrum units measured side by side; white-channel response also compared with a calibrated photometer.",
       "protocol": "RGB and white outputs were compared under different light sources to develop a field-calibration procedure.",
-      "finding": "The study documents between-unit response variation and proposes corrections based on concurrent measurements.",
+      "finding": "Light responses differed by up to 60% between units. The authors proposed side-by-side field calibration to reduce these differences.",
       "limitations": "Agreement after field correction does not by itself establish traceable absolute accuracy. Detailed correction coefficients require the full paper.",
       "sourceLocator": "Author-deposited abstract: study aim, device model and protocol.",
       "setting": "Laboratory",
-      "evidenceType": "Between-unit calibration",
+      "evidenceType": "Between-unit comparison",
       "url": "https://vbn.aau.dk/da/publications/comparison-and-correction-of-the-light-sensor-output-from-48-wear/",
       "access": "Abstract",
       "status": "Peer reviewed",
@@ -1338,7 +1408,7 @@
       "setting": "Laboratory + field",
       "reference": "Photopic V(λ), cosine response and calibrated near-eye Daysimeter measurements for placement comparisons.",
       "protocol": "Optical characterization and field comparisons: 12 adults over 65 wore Daysimeters at four body locations and a wrist Actiwatch; five days analyzed.",
-      "finding": "Daysimeters performed better photometrically than Actiwatch Spectrum. Wrist measurements differed from near-cornea exposure.",
+      "finding": "Six Daysimeter-D units and six Actiwatch Spectrum units were compared with a calibrated photometer under five light sources; Daysimeter-D showed closer photopic agreement.",
       "limitations": "Neither device qualified as a laboratory-grade photometer. Field evidence is from older adults; circadian light and stimulus are model-specific quantities, not CIE melanopic EDI.",
       "access": "Full text",
       "notes": "Five of seven days analyzed. Placement comparisons used Daysimeters; Actiwatch remained at the wrist.",

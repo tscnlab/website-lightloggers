@@ -6,9 +6,15 @@ project:
   render:
     - index.qmd
     - evidence.qmd
+    - source.qmd
   resources:
     - assets/site.css
     - assets/app.js
+    - assets/source-reader.js
+    - assets/vendor/pdfjs/**
+    - sources/**
+    - data/source-evidence.json
+    - source.qmd
     - assets/tscn-logo.png
     - assets/favicon.png
     - assets/social-preview.png

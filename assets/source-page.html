@@ -1,0 +1,21 @@
+<div class="reader-shell">
+<header class="reader-header"><a href="index.html">← Inventory</a><a href="evidence.html#ai-assistance">About these sources</a></header>
+<main id="source-main">
+  <div class="source-heading"><p id="source-citation"></p><h1 id="source-title">Source passages</h1><a id="source-original" target="_blank" rel="noopener noreferrer">Original paper ↗</a></div>
+  <div class="source-layout">
+    <aside class="passage-sidebar"><h2>Passages</h2><nav id="passage-list" aria-label="Source passages"></nav><p class="source-license" id="source-license"></p></aside>
+    <section class="source-workspace" aria-label="Source reader">
+      <div class="passage-context"><h2 id="passage-title"></h2><p id="passage-location"></p><blockquote id="passage-quote" hidden></blockquote><a id="passage-original" target="_blank" rel="noopener noreferrer">Read this section at the source ↗</a></div>
+      <div class="pdf-tools"><label class="button file-button">Open PDF from computer<input type="file" id="local-pdf" accept="application/pdf,.pdf"></label><a class="text-link" id="source-pdf" target="_blank" rel="noopener noreferrer" hidden>Original PDF ↗</a><span class="file-help">Stays in your browser.</span></div>
+      <p id="pdf-status" class="pdf-status" role="status" aria-live="polite"></p>
+      <div id="pdf-reader" hidden>
+        <div class="pdf-toolbar"><button id="page-prev" class="button" aria-label="Previous PDF page">←</button><label>Page <input id="page-number" type="number" min="1" value="1" aria-label="PDF page number"></label><span id="page-total"></span><button id="page-next" class="button" aria-label="Next PDF page">→</button><label class="zoom-label">Zoom <select id="pdf-zoom"><option value="fit">Fit width</option><option value="1">100%</option><option value="1.5">150%</option><option value="2">200%</option></select></label><button id="jump-passage" class="text-link">Back to passage</button></div>
+        <div class="pdf-scroll" id="pdf-scroll"><div id="pdf-page" class="pdf-page"><canvas id="pdf-canvas" aria-label="PDF page"></canvas><div id="pdf-highlights" aria-hidden="true"></div></div></div>
+      </div>
+      <div id="source-no-pdf" class="source-no-pdf"><p>Use the section link above to read the source. A PDF copy can also be opened here.</p></div>
+    </section>
+  </div>
+</main>
+<script id="source-data" type="application/json">@@SOURCE_DATA@@</script>
+<script src="assets/source-reader.js" type="module"></script>
+</div>

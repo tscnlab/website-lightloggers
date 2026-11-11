@@ -42,6 +42,7 @@ def validate_library(library):
 
 def build_site():
     library = json.loads((ROOT / "data/library.json").read_text(encoding="utf-8"))
+    library["evidence"] = json.loads((ROOT / "data/source-evidence.json").read_text(encoding="utf-8"))
     config = json.loads((ROOT / "site-config.json").read_text(encoding="utf-8"))
     validate_library(library)
     studies, devices = library["studies"], library["devices"]
@@ -50,7 +51,7 @@ def build_site():
         writer = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
         writer.writeheader()
         for study in studies:
-            row = {k: "; ".join(v) if isinstance(v, list) else json.dumps(v, ensure_ascii=False) if isinstance(v, dict) else v for k, v in study.items()}
+            row = {k: "; ".join(v) if isinstance(v, list) and all(isinstance(item, str) for item in v) else json.dumps(v, ensure_ascii=False) if isinstance(v, (dict, list)) else v for k, v in study.items()}
             writer.writerow(row)
     bib = ["% Citation metadata from the curated inventory. Consult each DOI for complete author/journal metadata.\n"]
     for s in studies:

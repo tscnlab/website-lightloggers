@@ -30,7 +30,7 @@ test('validation sorting follows matching studies after a measurement filter', (
   const pairs=search({metric:'Melanopic EDI'});
   const devices=[...new Set(pairs.map(p=>p.device))];
   const sorted=sortDevices(devices,pairs,'most');
-  assert.deepEqual(sorted.slice(0,2).map(d=>d.name),['ActLumus','SpectraWear']);
+  assert.deepEqual(sorted.slice(0,3).map(d=>d.name),['ActLumus','lido','SpectraWear']);
   for(const device of sorted) {
     const expected=library.studies.filter(s=>s.deviceMetrics[device.name]?.includes('Melanopic EDI'));
     assert.equal(new Set(pairs.filter(p=>p.device===device).map(p=>p.study.id)).size,expected.length);
@@ -198,3 +198,6 @@ test('developer coding is explicit per device and unknown is not independent', (
   assert.equal(fig['Actiwatch Spectrum'].category,'Unclear');
   assert.equal(library.studies.find(s=>s.id==='kore-2026').developerRelationship['LYS Button'].category,'Independent');
 });
+
+// These source checks also run in the GitHub Pages build.
+require('./source-evidence.cjs');

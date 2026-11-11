@@ -13,7 +13,7 @@ python -m pip install -r requirements.txt
 QUARTO_PYTHON=.venv/bin/python quarto render
 ```
 
-Quarto executes `index.qmd` and `evidence.qmd` using the versioned records in `data/library.json`. It writes the directory to `_site/lightloggers/`. The post-render script adds the resources landing page at `_site/index.html`.
+Quarto executes `index.qmd`, `evidence.qmd` and `source.qmd` using the versioned records in `data/library.json`. It writes the directory to `_site/lightloggers/`. The post-render script adds the resources landing page at `_site/index.html`.
 
 Serve `_site` with a static server to preview the full URL structure. All links, styles, data downloads and journal logos work under `/lightloggers/`.
 
@@ -25,7 +25,7 @@ The original `lightloggers.tscnlab.org` address forwards to `https://resources.t
 
 ## Update the directory
 
-Edit `data/library.json` and re-render. Device outputs and examined measurements are stored separately. The three indexed measurements are photopic illuminance, melanopic EDI and angle dependence. The interface groups devices by manufacturer and can sort by validation count or device name.
+Edit `data/library.json` and re-render. Device outputs and examined measurements are stored separately. The combined metric columns cover photopic illuminance and melanopic EDI. Properties cover accuracy, measurement range and angle dependence. Comparisons during wear and within/between units are included. The interface groups devices by manufacturer and can sort by validation count or device name.
 
 The submission form prepares email to the address in `site-config.json`. Suggested papers are reviewed before inclusion.
 
@@ -42,7 +42,7 @@ This optional artwork step needs Playwright and Chrome. Normal site builds use t
 ## Verification and downloads
 
 ```sh
-node --test tests/filtering.test.cjs
+node --test tests/*.test.cjs
 node tests/browser.cjs
 python scripts/package.py
 ```
@@ -50,3 +50,11 @@ python scripts/package.py
 Browser checks use Playwright and Chrome; `PLAYWRIGHT_MODULE`, `CHROME_PATH` and `BASE_URL` can override their defaults. Screenshots and the browser report are written to `preview/`. The package contains the Quarto source, rendered HTML, data and assets.
 
 The directory offers CSV and BibTeX downloads. Search records and extraction notes remain in `data/` so the literature inventory can be maintained reproducibly.
+
+## Source reader
+
+`data/source-evidence.json` maps claims, device models and measurements to short quotations, section links and PDF coordinates. Each coordinate is tied to the SHA-256 of the inspected PDF edition. The reader renders an unchanged original PDF with a separate highlight overlay; another edition is shown without those highlights. Local files stay in the browser.
+
+The reader uses the vendored Mozilla PDF.js distribution. Normal Quarto builds need no PDF extraction software or network access. To index a newly selected passage, install PyMuPDF and use `scripts/index-source-pdf.py`; inspect the rendered highlight before committing it. Keep abstract-only locators labelled and never infer missing page numbers.
+
+Only PDFs with redistribution permission are included under `sources/`; authors, original URLs and licences are in the source manifest. Other originals are linked or opened locally. PDF.js is Apache-2.0, version recorded in `assets/vendor/pdfjs/VERSION`.

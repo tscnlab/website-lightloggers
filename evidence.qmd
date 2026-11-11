@@ -65,19 +65,29 @@ print(f'<p class="audit-stamp">Literature checked {esc(updated)} · '
 
 ## Using the directory
 
-Browse devices by manufacturer, or sort by most validations, fewest validations or device name. Search for a device, author, title or DOI. The measurement and device-type filters narrow the results.
+Browse devices by manufacturer, or sort by number of studies or device name. Search for a device, author, title or DOI. The measurement and device-type filters narrow the results.
 
-Each square represents one validation study. Orange hatching identifies developer involvement. Open a device to see its papers, study summaries and source links.
+Each square represents one study, including reference comparisons, comparisons during wear and repeatability studies. Squares wrap after five. Orange hatching identifies developer involvement. Open a device to see its papers and summaries.
 
-**Device outputs** shows confirmed photopic illuminance and melanopic EDI features. **Examined in studies** shows the measurements tested in the matching papers: photopic illuminance, melanopic EDI and angle dependence.
+For **photopic illuminance** and **melanopic EDI**, a green check means the measurement was examined in a matching study. An orange dot means the device provides that output but it was not examined in those studies. Hover over a symbol, or select it, to see the relevant papers.
+
+The three property columns identify tests of **accuracy** against a reference instrument, **measurement range** (linearity, detection limits or saturation), and **angle dependence**. The source links specify which measurement and model were tested. A check marks a test, not a passing grade.
 
 ## The collection
 
-The directory brings together research publications and preprints that directly test wearable light loggers. Devices are grouped by manufacturer or research developer, with commercial models and research devices identified separately. LYS and LYS Button share one entry.
+The directory includes laboratory characterisation, comparisons with reference instruments, cross-device comparisons during wear, and comparisons within or between units of the same model. Devices are grouped by manufacturer or research developer, with commercial models and research devices identified separately. LYS and LYS Button share one entry.
 
 Papers were found through Europe PMC, searches for named devices and reference lists. Each entry links to the original publication, its DOI and PubMed where available.
 
 Use **Submit a validation** to suggest a paper or correction by email.
+
+## AI assistance
+
+OpenAI Codex assisted with literature searches, extracting and organising study information, drafting summaries, and building this website. The summaries and source selections are AI-assisted and have not all received independent human review.
+
+**Source** links beside findings and methods open the relevant passage. The reader shows short quotations and section links, with highlighted passages in available PDFs. Highlights are annotations added by this inventory; the original PDFs are unchanged. Abstract-based entries are labelled, and further full texts will allow more precise links and highlights.
+
+Please send corrections or additional papers to [manuel.spitschan@tum.de](mailto:manuel.spitschan@tum.de).
 
 ## Source and downloads
 
@@ -120,7 +130,7 @@ for study in sorted(studies, key=lambda item: (-item["year"], item["authors"])):
         print(f'<div><dt>{esc(label)}</dt><dd>{esc(value)}</dd></div>')
     print('</dl>')
     doi = esc(study["doi"])
-    print(f'<p class="citation-link"><a href="https://doi.org/{doi}">DOI: {doi}</a></p>')
+    print(f'<p class="citation-link"><a href="source.html?study={identifier}">Source passages ↗</a> · <a href="https://doi.org/{doi}">DOI: {doi}</a></p>')
     if study.get("pubmedUrl"):
         print(f'<p class="citation-link"><a href="{esc(study["pubmedUrl"])}">PubMed record ↗</a></p>')
     if study.get("fullTextUrl"):

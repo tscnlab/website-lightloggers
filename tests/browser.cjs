@@ -134,9 +134,10 @@ async function main() {
       }
       assert.equal(await page.locator('.output-sources').count(), 0);
       const spectra=page.locator('#device-spectrawear > summary');
-      assert.equal(await spectra.locator('.feature[data-metric="Illuminance"] .confirmed-check').count(),1);
-      assert.equal(await spectra.locator('.examined[data-metric="Illuminance"] .confirmed-check').count(),0);
-      assert.equal(await spectra.locator('.examined[data-metric="Melanopic EDI"] .confirmed-check').count(),1);
+      assert.equal(await spectra.locator('.metric[data-metric="Illuminance"] .confirmed-check').count(),1);
+      assert.equal(await page.locator('.list-heading').count(),1);
+      assert.equal(await page.locator('.family-heading .coverage-grid').count(),0);
+      assert.equal(await spectra.locator('.metric[data-metric="Melanopic EDI"] .confirmed-check').count(),1);
       assert.equal(await spectra.locator('.evidence-square').count(),library.studies.filter(s=>s.devices.includes('SpectraWear')).length);
       assert.equal(await page.locator('#device-higgins-wrist').count(),0);
 
@@ -162,7 +163,7 @@ async function main() {
       await page.locator('#sort').selectOption('most');
       assert.deepEqual(await order(),expected('most'));
       assert.equal(new URL(page.url()).searchParams.get('sort'),'most');
-      assert.equal(await page.locator('#results > .family-heading').count(),1);
+      assert.equal(await page.locator('#results > .family-heading').count(),0);
       assert.equal(await page.locator('#results > .device-record .device-maker').count(),library.devices.length);
       await assertNoHorizontalOverflow(page);
       await page.screenshot({path:path.join(preview,'sorted-preview.png'),fullPage:false});

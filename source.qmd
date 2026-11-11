@@ -1,0 +1,17 @@
+---
+pagetitle: "Source passages · Light Logger Inventory"
+description: "Read the passages behind the wearable light logger inventory."
+---
+
+```{python}
+#| output: asis
+import html, json
+from pathlib import Path
+
+library = json.loads(Path('data/library.json').read_text())
+evidence = json.loads(Path('data/source-evidence.json').read_text())
+data = {'studies': [{k:s[k] for k in ['id','title','authors','year','doi','url']} for s in library['studies']], 'evidence':evidence}
+encoded = json.dumps(data, ensure_ascii=False).replace('<', r'\u003c').replace('>', r'\u003e').replace('&', r'\u0026')
+fragment = Path('assets/source-page.html').read_text().replace('@@SOURCE_DATA@@',encoded)
+print('```{=html}\n'+fragment+'\n```')
+```

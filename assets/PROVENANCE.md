@@ -54,3 +54,9 @@ The following original assets were downloaded from the journals' or servers' own
 | `venues/medrxiv.png` | [Official medRxiv homepage logo](https://www.medrxiv.org/sites/default/files/medRxiv_homepage_logo.png), linked from [medRxiv](https://www.medrxiv.org/) |
 
 Journal and server marks remain subject to their owners' rights.
+
+## PDF source reader
+
+Mozilla PDF.js 6.5.438 is vendored from the official `pdfjs-dist` npm distribution, with its Apache-2.0 licence, worker, fonts and WebAssembly support. The source code is maintained at https://github.com/mozilla/pdf.js.
+
+The original paper PDFs in `../sources/` are unchanged copies. Author, DOI, source URL, licence, SHA-256 and page count are recorded in `../data/source-evidence.json` and `../data/library.json`. Highlights are separate website annotations, not modifications to the PDFs. Non-redistributed author manuscripts can be opened from the reader’s computer; the OSA paper is loaded from its author repository.

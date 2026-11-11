@@ -1,0 +1,86 @@
+[
+  {
+    "study": "ishihara-2025",
+    "authors": "Ishihara et al.",
+    "year": 2025,
+    "title": "Performance of wearable light sensors for measuring photopic and melanopic illuminance under laboratory and free-living conditions",
+    "doi": "10.1093/sleep/zsaf358"
+  },
+  {
+    "study": "stevenson-2025",
+    "authors": "Stevenson, Suppiah & Driller",
+    "year": 2025,
+    "title": "Research note: The validity and reliability of a novel wearable sensor in measuring light exposure in an indoor and outdoor environment",
+    "doi": "10.1177/14771535251338582"
+  },
+  {
+    "study": "mohammadian-2024",
+    "authors": "Mohammadian et al.",
+    "year": 2024,
+    "title": "A Wrist-Worn Internet of Things Sensor Node for Wearable Equivalent Daylight Illuminance Monitoring",
+    "doi": "10.1109/JIOT.2024.3355330"
+  },
+  {
+    "study": "bhandari-2020",
+    "authors": "Bhandari & Ostrin",
+    "year": 2020,
+    "title": "Validation of the Clouclip and utility in measuring viewing distance in adults",
+    "doi": "10.1111/opo.12735"
+  },
+  {
+    "study": "price-2017",
+    "authors": "Price, Lyachev & Khazova",
+    "year": 2017,
+    "title": "Optical performance characterization of light-logging actigraphy dosimeters",
+    "doi": "10.1364/JOSAA.34.000545"
+  },
+  {
+    "study": "markvart-2015",
+    "authors": "Markvart et al.",
+    "year": 2015,
+    "title": "Comparison and Correction of the Light Sensor Output from 48 Wearable Light Exposure Devices by Using a Side-by-Side Field Calibration Method",
+    "doi": "10.1080/15502724.2015.1020948"
+  },
+  {
+    "study": "figueiro-2013",
+    "authors": "Figueiro, Hamner, Bierman & Rea",
+    "year": 2013,
+    "title": "Comparisons of three practical field devices used to measure personal light exposures and activity levels",
+    "doi": "10.1177/1477153512450453"
+  },
+  {
+    "study": "wen-2021",
+    "authors": "Wen et al.",
+    "year": 2021,
+    "title": "The Clouclip, a wearable device for measuring near-work and outdoor time: validation and comparison of objective measures with questionnaire estimates",
+    "doi": "10.1111/aos.14785"
+  },
+  {
+    "study": "joyce-2020",
+    "authors": "Joyce, Zele, Feigl & Adhikari",
+    "year": 2020,
+    "title": "The accuracy of artificial and natural light measurements by actigraphs",
+    "doi": "10.1111/jsr.12963"
+  },
+  {
+    "study": "ostrin-2017",
+    "authors": "Ostrin",
+    "year": 2017,
+    "title": "Objectively Measured Light Exposure in Emmetropic and Myopic Adults",
+    "doi": "10.1097/OPX.0000000000001013"
+  },
+  {
+    "study": "price-2012",
+    "authors": "Price, Khazova & O’Hagan",
+    "year": 2012,
+    "title": "Performance assessment of commercial circadian personal exposure devices",
+    "doi": "10.1177/1477153511433171"
+  },
+  {
+    "study": "bierman-2005",
+    "authors": "Bierman, Klein & Rea",
+    "year": 2005,
+    "title": "The Daysimeter: a device for measuring optical radiation as a stimulus for the human circadian system",
+    "doi": "10.1088/0957-0233/16/11/023"
+  }
+]

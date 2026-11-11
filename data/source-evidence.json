@@ -1,0 +1,2066 @@
+{
+  "version": 1,
+  "updated": "2026-11-11",
+  "studies": {
+    "gemici-2026": {
+      "document": {
+        "url": "https://arxiv.org/abs/2606.20719",
+        "pdfUrl": "https://arxiv.org/pdf/2606.20719",
+        "sha256": "20e320e6e986a712ea3ab42224ab4b5aa79020f3f47e380eb0b9b0ce4c3e03f6",
+        "pages": 32,
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pdfPath": "sources/gemici-2026.pdf"
+      },
+      "passages": [
+        {
+          "id": "setup",
+          "label": "Protocol and reference",
+          "locator": "Methods · Measurement setup · PDF p. 7",
+          "fields": [
+            "protocol",
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "ActTrust2",
+            "ActLumus"
+          ],
+          "quote": "All devices were positioned at fixed offsets",
+          "pdf": {
+            "page": 7,
+            "rects": [
+              [
+                0.115645,
+                0.252683,
+                0.773714,
+                0.015486
+              ]
+            ]
+          },
+          "url": "https://arxiv.org/pdf/2606.20719#page=7"
+        },
+        {
+          "id": "photopic",
+          "label": "Reference comparison",
+          "locator": "Results · Reference agreement · PDF p. 12",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "ActTrust2",
+            "ActLumus"
+          ],
+          "scope": "Photopic illuminance against spectral reference instruments",
+          "quote": "Both wearable light loggers showed strong agreement",
+          "pdf": {
+            "page": 12,
+            "rects": [
+              [
+                0.115645,
+                0.473378,
+                0.772283,
+                0.015486
+              ]
+            ]
+          },
+          "url": "https://arxiv.org/pdf/2606.20719#page=12"
+        },
+        {
+          "id": "melanopic",
+          "label": "Melanopic EDI",
+          "locator": "Results · ActLumus mEDI · PDF p. 12",
+          "fields": [],
+          "metrics": [
+            "Melanopic EDI"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "ActLumus"
+          ],
+          "scope": "Melanopic EDI against spectral reference instruments",
+          "quote": "For the ActLumus device, mEDI bias was not uniform",
+          "pdf": {
+            "page": 12,
+            "rects": [
+              [
+                0.115645,
+                0.665044,
+                0.773476,
+                0.015486
+              ]
+            ]
+          },
+          "url": "https://arxiv.org/pdf/2606.20719#page=12"
+        }
+      ]
+    },
+    "kore-2026": {
+      "document": {
+        "url": "https://www.nature.com/articles/s44323-026-00088-y",
+        "pdfUrl": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385892.1/PMC13385892.1.pdf",
+        "sha256": "82b36b72e2bb7ce6dd48d0c27f91583d013ebb40223480ce2f368b9ebe7fef66",
+        "pages": 16,
+        "license": "CC BY-NC-ND 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "pdfPath": "sources/kore-2026.pdf"
+      },
+      "passages": [
+        {
+          "id": "setup",
+          "label": "Protocol and reference",
+          "locator": "Methods · Experimental setup · PDF p. 10",
+          "fields": [
+            "protocol",
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "LYS Button",
+            "Blue Iris Speck v1.0",
+            "Actiwatch Spectrum Plus"
+          ],
+          "quote": "A calibrated Gigahertz-Optik BTS256 spectroradiometer was used as",
+          "pdf": {
+            "page": 10,
+            "rects": [
+              [
+                0.514285,
+                0.765689,
+                0.428649,
+                0.147065
+              ]
+            ]
+          },
+          "url": "https://www.nature.com/articles/s44323-026-00088-y#Sec11-content:~:text=A%20calibrated%20Gigahertz-Optik%20BTS256%20spectroradiometer%20was%20used%20as"
+        },
+        {
+          "id": "photopic",
+          "label": "Photopic illuminance",
+          "locator": "Discussion · Photometric performance · PDF p. 8",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "LYS Button",
+            "Blue Iris Speck v1.0",
+            "Actiwatch Spectrum Plus"
+          ],
+          "scope": "Photopic illuminance under LED and daylight",
+          "quote": "Button and Speck performed similarly to the reference",
+          "pdf": {
+            "page": 8,
+            "rects": [
+              [
+                0.066666,
+                0.914967,
+                0.428585,
+                0.024885
+              ]
+            ]
+          },
+          "url": "https://www.nature.com/articles/s44323-026-00088-y#Sec10-content:~:text=Button%20and%20Speck%20performed%20similarly%20to%20the%20reference"
+        },
+        {
+          "id": "melanopic",
+          "label": "Melanopic EDI",
+          "locator": "Results · Melanopic equivalent daylight illuminance · PDF p. 6",
+          "fields": [],
+          "metrics": [
+            "Melanopic EDI"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "LYS Button",
+            "Blue Iris Speck v1.0"
+          ],
+          "scope": "Melanopic EDI under controlled LED lighting",
+          "quote": "To evaluate the performance of wearable dosimeters in",
+          "pdf": {
+            "page": 6,
+            "rects": [
+              [
+                0.514285,
+                0.061531,
+                0.428749,
+                0.106421
+              ]
+            ]
+          },
+          "url": "https://www.nature.com/articles/s44323-026-00088-y#Sec2-content:~:text=To%20evaluate%20the%20performance%20of%20wearable%20dosimeters%20in"
+        },
+        {
+          "id": "angle",
+          "label": "Angle dependence",
+          "locator": "Results · Directional response index · PDF p. 7",
+          "fields": [],
+          "metrics": [
+            "Angular response"
+          ],
+          "properties": [
+            "Angular response"
+          ],
+          "devices": [
+            "LYS Button",
+            "Blue Iris Speck v1.0",
+            "Actiwatch Spectrum Plus"
+          ],
+          "scope": "Photopic illuminance; two planes for LYS and Speck, one for Actiwatch",
+          "quote": "azimuthal planes, except for the Actiwatch, which recorded",
+          "pdf": {
+            "page": 7,
+            "rects": [
+              [
+                0.066665,
+                0.467598,
+                0.428657,
+                0.147235
+              ]
+            ]
+          },
+          "url": "https://www.nature.com/articles/s44323-026-00088-y#Sec2-content:~:text=azimuthal%20planes%2C%20except%20for%20the%20Actiwatch%2C%20which%20recorded"
+        }
+      ]
+    },
+    "pilehchiha-2026": {
+      "document": {
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.06.26364836v1",
+        "pdfUrl": "https://www.medrxiv.org/content/medrxiv/early/2026/10/07/2026.10.06.26364836.full.pdf",
+        "sha256": "b7de57ca4e6960f60a2803b9bcaa7c2261eeb14e965665060a599b67bcaa0ccf",
+        "pages": 53,
+        "license": "CC BY-NC-ND 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "pdfPath": "sources/pilehchiha-2026.pdf"
+      },
+      "passages": [
+        {
+          "id": "setup",
+          "label": "Protocol and reference",
+          "locator": "Methods · Experimental set-ups · PDF p. 27",
+          "fields": [
+            "protocol",
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "ActLumus",
+            "lido",
+            "OcuWEAR"
+          ],
+          "quote": "To evaluate agreement across representative wearable measurement",
+          "pdf": {
+            "page": 27,
+            "rects": [
+              [
+                0.062073,
+                0.643242,
+                0.823619,
+                0.015779
+              ]
+            ]
+          },
+          "url": "https://www.medrxiv.org/content/medrxiv/early/2026/10/07/2026.10.06.26364836.full.pdf#page=27"
+        },
+        {
+          "id": "comparison",
+          "label": "Photopic and melanopic comparison",
+          "locator": "Discussion · Device comparisons · PDF p. 22",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance",
+            "Melanopic EDI"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "ActLumus",
+            "lido",
+            "OcuWEAR"
+          ],
+          "scope": "Photopic illuminance and melanopic EDI against CSS-45; tested conditions differ by model",
+          "quote": "performance is dependent on both illuminance level",
+          "pdf": {
+            "page": 22,
+            "rects": [
+              [
+                0.062073,
+                0.505266,
+                0.823627,
+                0.015779
+              ]
+            ]
+          },
+          "url": "https://www.medrxiv.org/content/medrxiv/early/2026/10/07/2026.10.06.26364836.full.pdf#page=22"
+        }
+      ]
+    },
+    "sah-2026": {
+      "document": {
+        "url": "https://www.nature.com/articles/s44323-026-00113-0",
+        "pdfUrl": "https://www.nature.com/articles/s44323-026-00113-0.pdf",
+        "sha256": "31dd1f730ce3d105866ad14919fa2b090837a7a036ec95c4bee9dfb6641c125c",
+        "pages": 11,
+        "license": "CC BY-NC-ND 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "pdfPath": "sources/sah-2026.pdf"
+      },
+      "passages": [
+        {
+          "id": "protocol",
+          "label": "Simultaneous wear",
+          "locator": "Methods · Participants and protocol · PDF p. 7",
+          "fields": [
+            "protocol"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "VEET",
+            "Clouclip (version not reported)",
+            "Actiwatch (model not reported)",
+            "ActLumus",
+            "GENEActiv"
+          ],
+          "quote": "Following screening, eligible participants were instructed to wear",
+          "pdf": {
+            "page": 7,
+            "rects": [
+              [
+                0.514285,
+                0.62985,
+                0.42859,
+                0.093294
+              ]
+            ]
+          },
+          "url": "https://www.nature.com/articles/s44323-026-00113-0#Sec9-content:~:text=Following%20screening%2C%20eligible%20participants%20were%20instructed%20to%20wear"
+        },
+        {
+          "id": "devices",
+          "label": "Devices compared",
+          "locator": "Methods · Sensors · PDF p. 7",
+          "fields": [
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "VEET",
+            "Clouclip (version not reported)",
+            "Actiwatch (model not reported)",
+            "ActLumus",
+            "GENEActiv"
+          ],
+          "quote": "Five wearable sensors were evaluated, two spectacle-mounted devices,",
+          "pdf": {
+            "page": 7,
+            "rects": [
+              [
+                0.514285,
+                0.819882,
+                0.428689,
+                0.119969
+              ]
+            ]
+          },
+          "url": "https://www.nature.com/articles/s44323-026-00113-0#Sec9-content:~:text=Five%20wearable%20sensors%20were%20evaluated%2C%20two%20spectacle-mounted%20devices%2C"
+        },
+        {
+          "id": "comparison",
+          "label": "Comparison during wear",
+          "locator": "Discussion · Ambient illumination · PDF p. 6",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [],
+          "devices": [
+            "VEET",
+            "Clouclip (version not reported)",
+            "Actiwatch (model not reported)",
+            "ActLumus",
+            "GENEActiv"
+          ],
+          "scope": "Agreement between five worn devices across illuminance bins",
+          "quote": "sensors demonstrated strong agreement in the highest illumination",
+          "pdf": {
+            "page": 6,
+            "rects": [
+              [
+                0.066667,
+                0.805908,
+                0.428797,
+                0.133944
+              ]
+            ]
+          },
+          "url": "https://www.nature.com/articles/s44323-026-00113-0#Sec8-content:~:text=sensors%20demonstrated%20strong%20agreement%20in%20the%20highest%20illumination"
+        }
+      ]
+    },
+    "sarkar-2025": {
+      "document": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11976500/",
+        "pdfUrl": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11976500.1/PMC11976500.1.pdf",
+        "sha256": "382d53a787961ecdd409774b15d657e342b1d01c1b8309a086c3cf73c3d0d8e7",
+        "pages": 14,
+        "license": "CC BY-NC-ND 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "pdfPath": "sources/sarkar-2025.pdf"
+      },
+      "passages": [
+        {
+          "id": "setup",
+          "label": "Protocol and reference",
+          "locator": "Methods · Ambient illumination · PDF p. 3",
+          "fields": [
+            "protocol",
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "Vivior Mark 3+",
+            "Clouclip (second generation)"
+          ],
+          "quote": "Ambient illumination was measured with Vivior and Clouclip",
+          "pdf": {
+            "page": 3,
+            "rects": [
+              [
+                0.096825,
+                0.384067,
+                0.391247,
+                0.015364
+              ],
+              [
+                0.076667,
+                0.399405,
+                0.05848,
+                0.015364
+              ]
+            ]
+          },
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11976500/#opo13457-sec-0010:~:text=Ambient%20illumination%20was%20measured%20with%20Vivior%20and%20Clouclip"
+        },
+        {
+          "id": "photopic",
+          "label": "Photopic accuracy",
+          "locator": "Results · Ambient illumination; Figures 6–7 · PDF p. 5",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "Vivior Mark 3+",
+            "Clouclip (second generation)"
+          ],
+          "scope": "Photopic illuminance against calibrated CL-200A",
+          "quote": "There was a linear trend observed between the",
+          "pdf": {
+            "page": 5,
+            "rects": [
+              [
+                0.515465,
+                0.2767,
+                0.411487,
+                0.291451
+              ]
+            ]
+          },
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11976500/#opo13457-sec-0018:~:text=There%20was%20a%20linear%20trend%20observed%20between%20the"
+        }
+      ]
+    },
+    "mcdowell-2024": {
+      "document": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11562817/",
+        "pdfUrl": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11562817.1/PMC11562817.1.pdf",
+        "sha256": "8a7254d2ef8d08d6abe96f564b5d3c3bfb02afe879d032180148f7f45d333c54",
+        "pages": 15,
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pdfPath": "sources/mcdowell-2024.pdf"
+      },
+      "passages": [
+        {
+          "id": "setup",
+          "label": "Calibration and test set",
+          "locator": "Methods · Multichannel sensor calibration · PDF p. 12",
+          "fields": [
+            "protocol",
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "SpectraWear"
+          ],
+          "quote": "The prototype is based on an open-access human",
+          "pdf": {
+            "page": 12,
+            "rects": [
+              [
+                0.511904,
+                0.351173,
+                0.343612,
+                0.018377
+              ]
+            ]
+          },
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11562817/#Par34:~:text=The%20prototype%20is%20based%20on%20an%20open-access%20human"
+        },
+        {
+          "id": "melanopic",
+          "label": "Melanopic EDI",
+          "locator": "Results · SpectraWear validation; Figure 2 · PDF p. 6",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Melanopic EDI"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "SpectraWear"
+          ],
+          "scope": "Species-specific melanopic EDI against spectral measurements; human results included",
+          "quote": "light exposures, we generated a set of narrow-",
+          "pdf": {
+            "page": 6,
+            "rects": [
+              [
+                0.139423,
+                0.396656,
+                0.330851,
+                0.018377
+              ]
+            ]
+          },
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11562817/#Par17:~:text=light%20exposures%2C%20we%20generated%20a%20set%20of%20narrow-"
+        }
+      ]
+    },
+    "stampfli-2023": {
+      "document": {
+        "url": "https://journals.sagepub.com/doi/10.1177/14771535221147140",
+        "pdfUrl": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10353031.1/PMC10353031.1.pdf",
+        "sha256": "6a9a12f2fa9ab95952d534b2ef158fa6512eaa060b99817d6385a5bddc02ce2e",
+        "pages": 13,
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pdfPath": "sources/stampfli-2023.pdf"
+      },
+      "passages": [
+        {
+          "id": "setup",
+          "label": "Calibration and tests",
+          "locator": "2.7 · Initial measurements · PDF p. 8",
+          "fields": [
+            "protocol",
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "lido"
+          ],
+          "quote": "Several lidos were tested with regards to their spectral",
+          "pdf": {
+            "page": 8,
+            "rects": [
+              [
+                0.087294,
+                0.761422,
+                0.404625,
+                0.124982
+              ]
+            ]
+          },
+          "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10353031.1/PMC10353031.1.pdf#page=8"
+        },
+        {
+          "id": "accuracy",
+          "label": "Photopic and melanopic accuracy",
+          "locator": "3.1 · Spectral and geometric properties · PDF p. 9",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance",
+            "Melanopic EDI"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "lido"
+          ],
+          "scope": "Photopic illuminance and all five α-opic EDIs under white light sources",
+          "quote": "found that the deviations of",
+          "pdf": {
+            "page": 9,
+            "rects": [
+              [
+                0.513239,
+                0.633611,
+                0.404666,
+                0.250422
+              ]
+            ]
+          },
+          "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10353031.1/PMC10353031.1.pdf#page=9"
+        },
+        {
+          "id": "angle",
+          "label": "Angle dependence",
+          "locator": "3.1 · Figure 9 · PDF p. 10",
+          "fields": [],
+          "metrics": [
+            "Angular response"
+          ],
+          "properties": [
+            "Angular response"
+          ],
+          "devices": [
+            "lido"
+          ],
+          "scope": "Relative sensor response versus angle, left/right plane",
+          "quote": "angular response in comparison with a cosine",
+          "pdf": {
+            "page": 10,
+            "rects": [
+              [
+                0.087302,
+                0.463938,
+                0.404666,
+                0.071222
+              ]
+            ]
+          },
+          "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10353031.1/PMC10353031.1.pdf#page=10"
+        }
+      ]
+    },
+    "dhakal-2022": {
+      "document": {
+        "url": "https://openaccess.city.ac.uk/id/eprint/29252/",
+        "pdfUrl": "https://openaccess.city.ac.uk/id/eprint/29252/1/Manuscript%20%28Dhakal%202022%29.pdf",
+        "sha256": "4336d64f83629681571f324e8c9e1350505dd3dcbe397f7e724d2fc2caed7a74",
+        "pages": 19,
+        "license": "Author manuscript · City repository",
+        "licenseUrl": "https://openaccess.city.ac.uk/id/eprint/29252/"
+      },
+      "passages": [
+        {
+          "id": "setup",
+          "label": "Protocol and reference",
+          "locator": "Methods · Phase 1 · PDF p. 6",
+          "fields": [
+            "protocol",
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "MyLyt"
+          ],
+          "quote": "validating the trackers against a factory",
+          "pdf": {
+            "page": 6,
+            "rects": [
+              [
+                0.117686,
+                0.20548,
+                0.76838,
+                0.013939
+              ]
+            ]
+          },
+          "url": "https://openaccess.city.ac.uk/id/eprint/29252/1/Manuscript%20%28Dhakal%202022%29.pdf#page=6"
+        },
+        {
+          "id": "photopic",
+          "label": "Photopic comparison and repeatability",
+          "locator": "Results · Phase 1 validation · PDF p. 10",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "MyLyt"
+          ],
+          "scope": "Photopic illuminance versus LX1330B; within-unit and between-unit comparisons",
+          "quote": "The intra-test validation exhibited an insignificant difference",
+          "pdf": {
+            "page": 10,
+            "rects": [
+              [
+                0.147098,
+                0.278056,
+                0.739323,
+                0.013939
+              ]
+            ]
+          },
+          "url": "https://openaccess.city.ac.uk/id/eprint/29252/1/Manuscript%20%28Dhakal%202022%29.pdf#page=10"
+        }
+      ]
+    },
+    "bhandari-2021": {
+      "document": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8587946/",
+        "pdfUrl": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8587946.1/PMC8587946.1.pdf",
+        "sha256": "8fa7ba6d21749c0b78c913219acdab3ba1b7f62f483315c321b848d273f54153",
+        "pages": 13,
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pdfPath": "sources/bhandari-2021.pdf"
+      },
+      "passages": [
+        {
+          "id": "protocol",
+          "label": "Simultaneous wear",
+          "locator": "2.3 · Procedures · PDF p. 4",
+          "fields": [
+            "protocol",
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "Clouclip (version not reported)",
+            "Actiwatch Spectrum Plus"
+          ],
+          "quote": "Following baseline measures, participants were asked to wear",
+          "pdf": {
+            "page": 4,
+            "rects": [
+              [
+                0.280283,
+                0.591023,
+                0.662175,
+                0.146028
+              ]
+            ]
+          },
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8587946/#sec2dot3-sensors-21-07096:~:text=Following%20baseline%20measures%2C%20participants%20were%20asked%20to%20wear"
+        },
+        {
+          "id": "comparison",
+          "label": "Comparison during wear",
+          "locator": "3.1 · Light exposure; Figure 3 · PDF p. 7",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [],
+          "devices": [
+            "Clouclip (version not reported)",
+            "Actiwatch Spectrum Plus"
+          ],
+          "scope": "Mean daily illuminance from wrist Actiwatch and spectacle-mounted Clouclip",
+          "quote": "Clouclip-measured daily light exposure for weekdays was 299",
+          "pdf": {
+            "page": 7,
+            "rects": [
+              [
+                0.280283,
+                0.484173,
+                0.662174,
+                0.117514
+              ]
+            ]
+          },
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8587946/#sec3dot1-sensors-21-07096:~:text=Clouclip-measured%20daily%20light%20exposure%20for%20weekdays%20was%20299"
+        }
+      ]
+    },
+    "falck-2021": {
+      "document": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7903008/",
+        "pdfUrl": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7903008.1/PMC7903008.1.pdf",
+        "sha256": "5294c070777e0c595f1fd3bbf1b10e69c100a278b113cd1eb623bc20e6d08329",
+        "pages": 9,
+        "license": "CC BY-NC 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "pdfPath": "sources/falck-2021.pdf"
+      },
+      "passages": [
+        {
+          "id": "setup",
+          "label": "Reference light meter",
+          "locator": "Methods · Procedure · PDF p. 3",
+          "fields": [
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "MotionWatch 8"
+          ],
+          "quote": "For each light scenario, the event marker time",
+          "pdf": {
+            "page": 3,
+            "rects": [
+              [
+                0.52344,
+                0.324971,
+                0.382889,
+                0.238789
+              ]
+            ]
+          },
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7903008/#sec0020:~:text=For%20each%20light%20scenario%2C%20the%20event%20marker%20time"
+        },
+        {
+          "id": "protocol",
+          "label": "Test procedure",
+          "locator": "Methods · Procedure · PDF p. 3",
+          "fields": [
+            "protocol"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "MotionWatch 8"
+          ],
+          "quote": "We used four MW8 devices to measure light",
+          "pdf": {
+            "page": 3,
+            "rects": [
+              [
+                0.52344,
+                0.131793,
+                0.382889,
+                0.190495
+              ]
+            ]
+          },
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7903008/#sec0020:~:text=We%20used%20four%20MW8%20devices%20to%20measure%20light"
+        },
+        {
+          "id": "photopic",
+          "label": "Photopic comparison",
+          "locator": "Results · Table 3 and Figure 1 · PDF p. 4",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "MotionWatch 8"
+          ],
+          "scope": "Photopic illuminance against LT40, with and without sleeves",
+          "quote": "Differences in lux by condition and by device",
+          "pdf": {
+            "page": 4,
+            "rects": [
+              [
+                0.523436,
+                0.728765,
+                0.382887,
+                0.206593
+              ]
+            ]
+          },
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7903008/#sec0030:~:text=Differences%20in%20lux%20by%20condition%20and%20by%20device"
+        }
+      ]
+    },
+    "howell-2021": {
+      "document": {
+        "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/opo.12860",
+        "pdfUrl": "https://www.pure.ed.ac.uk/ws/portalfiles/portal/336537321/Ophthalmic_Physiologic_Optic_2021_Howell_Reliability_and_validity_of_the_Actiwatch_and_Clouclip_for_measuring.pdf",
+        "sha256": "ac31465cc86e082051f51d97511a43f5244d7edcf176a7e70e67b1b617bcb9c7",
+        "pages": 13,
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pdfPath": "sources/howell-2021.pdf"
+      },
+      "passages": [
+        {
+          "id": "setup",
+          "label": "Reference comparison",
+          "locator": "Data analysis · Photometer comparison · PDF p. 6",
+          "fields": [
+            "protocol",
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "Actiwatch 2",
+            "Clouclip (second generation)"
+          ],
+          "quote": "The agreement between measures recorded by the wearable",
+          "pdf": {
+            "page": 6,
+            "rects": [
+              [
+                0.458637,
+                0.906472,
+                0.029425,
+                0.014456
+              ],
+              [
+                0.076656,
+                0.921811,
+                0.40783,
+                0.014456
+              ]
+            ]
+          },
+          "url": "https://www.pure.ed.ac.uk/ws/portalfiles/portal/336537321/Ophthalmic_Physiologic_Optic_2021_Howell_Reliability_and_validity_of_the_Actiwatch_and_Clouclip_for_measuring.pdf#page=6"
+        },
+        {
+          "id": "photopic",
+          "label": "Photopic agreement",
+          "locator": "Results · Figures 4–5 · PDF p. 7",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "Actiwatch 2",
+            "Clouclip (second generation)"
+          ],
+          "scope": "Photopic illuminance against Hagner-S2",
+          "quote": "The mean differences between the Actiwatch",
+          "pdf": {
+            "page": 7,
+            "rects": [
+              [
+                0.515387,
+                0.062873,
+                0.411465,
+                0.198514
+              ]
+            ]
+          },
+          "url": "https://www.pure.ed.ac.uk/ws/portalfiles/portal/336537321/Ophthalmic_Physiologic_Optic_2021_Howell_Reliability_and_validity_of_the_Actiwatch_and_Clouclip_for_measuring.pdf#page=7"
+        }
+      ]
+    },
+    "mohamed-2021": {
+      "document": {
+        "url": "https://research.monash.edu/en/publications/wearable-light-spectral-sensor-optimized-for-measuring-daily-%CE%B1-op/",
+        "pdfUrl": "https://researchmgt.monash.edu/ws/portalfiles/portal/349085607/349060469_oa.pdf",
+        "sha256": "9fa2c5d969e5e74b1038f770f97c710b2b62be9ac2705800ebdd77c68f9da8f2",
+        "pages": 16,
+        "license": "OSA Open Access Publishing Agreement",
+        "licenseUrl": "https://doi.org/10.1364/OE.431794",
+        "pdfPath": "https://researchmgt.monash.edu/ws/portalfiles/portal/349085607/349060469_oa.pdf"
+      },
+      "passages": [
+        {
+          "id": "accuracy",
+          "label": "Photopic and melanopic accuracy",
+          "locator": "4.1 · Table 2 · PDF p. 12",
+          "fields": [
+            "protocol",
+            "reference",
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance",
+            "Melanopic EDI"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "Mohamed et al. spectrophotometer"
+          ],
+          "scope": "Photopic illuminance and α-opic EDIs against CL-500A",
+          "quote": "Irradiances were measured under identical conditions",
+          "pdf": {
+            "page": 12,
+            "rects": [
+              [
+                0.190639,
+                0.18438,
+                0.621026,
+                0.223907
+              ]
+            ]
+          },
+          "url": "https://researchmgt.monash.edu/ws/portalfiles/portal/349085607/349060469_oa.pdf#page=12"
+        },
+        {
+          "id": "angle",
+          "label": "Angle dependence",
+          "locator": "2.2 · Directional response; Table 1 · PDF p. 5",
+          "fields": [],
+          "metrics": [
+            "Angular response"
+          ],
+          "properties": [
+            "Angular response"
+          ],
+          "devices": [
+            "Mohamed et al. spectrophotometer"
+          ],
+          "scope": "Sensor response to a 532-nm beam",
+          "quote": "The directional response of the device",
+          "pdf": {
+            "page": 5,
+            "rects": [
+              [
+                0.191176,
+                0.296562,
+                0.617651,
+                0.027674
+              ]
+            ]
+          },
+          "url": "https://researchmgt.monash.edu/ws/portalfiles/portal/349085607/349060469_oa.pdf#page=5"
+        },
+        {
+          "id": "range",
+          "label": "Measurement range",
+          "locator": "4.3 · Dynamic range · PDF p. 14",
+          "fields": [],
+          "metrics": [],
+          "properties": [
+            "Dynamic range"
+          ],
+          "devices": [
+            "Mohamed et al. spectrophotometer"
+          ],
+          "scope": "Photopic measurement range and saturation control",
+          "quote": "Measurements from three different light environments",
+          "pdf": {
+            "page": 14,
+            "rects": [
+              [
+                0.19059,
+                0.729087,
+                0.6188,
+                0.148433
+              ]
+            ]
+          },
+          "url": "https://researchmgt.monash.edu/ws/portalfiles/portal/349085607/349060469_oa.pdf#page=14"
+        },
+        {
+          "id": "repeatability",
+          "label": "Within-unit and between-unit repeatability",
+          "locator": "4.2 · Repeatability of measurements · PDF p. 13",
+          "fields": [
+            "repeatability"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "Mohamed et al. spectrophotometer"
+          ],
+          "quote": "Two forms of repeatability investigations were",
+          "pdf": {
+            "page": 13,
+            "rects": [
+              [
+                0.190672,
+                0.617376,
+                0.621004,
+                0.148434
+              ]
+            ]
+          },
+          "url": "https://researchmgt.monash.edu/ws/portalfiles/portal/349085607/349060469_oa.pdf#page=13"
+        }
+      ]
+    },
+    "nagra-2021": {
+      "document": {
+        "url": "https://openaccess.city.ac.uk/id/eprint/25801/",
+        "pdfUrl": "https://openaccess.city.ac.uk/id/eprint/25801/1/Final%20manuscript%20Actiwatch.pdf",
+        "sha256": "b4138bc7d2a148df8ec18144aa7debee2f18e05e1c95397b4d31fb026b8ed4a8",
+        "pages": 14,
+        "license": "Author manuscript · City repository",
+        "licenseUrl": "https://openaccess.city.ac.uk/id/eprint/25801/"
+      },
+      "passages": [
+        {
+          "id": "protocol",
+          "label": "Repeated measurements",
+          "locator": "Statistical analysis · PDF p. 5",
+          "fields": [
+            "protocol",
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "Actiwatch Spectrum Pro"
+          ],
+          "quote": "differences between runs 1 and 2",
+          "pdf": {
+            "page": 5,
+            "rects": [
+              [
+                0.121743,
+                0.201179,
+                0.298099,
+                0.015921
+              ]
+            ]
+          },
+          "url": "https://openaccess.city.ac.uk/id/eprint/25801/1/Final%20manuscript%20Actiwatch.pdf#page=5"
+        },
+        {
+          "id": "comparison",
+          "label": "Within-unit repeatability",
+          "locator": "Results · Intra-watch differences; Tables 1–2 · PDF p. 6",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [],
+          "devices": [
+            "Actiwatch Spectrum Pro"
+          ],
+          "scope": "Repeated measurements of four Actiwatch Spectrum Pro units",
+          "quote": "Large differences in bias were noted",
+          "pdf": {
+            "page": 6,
+            "rects": [
+              [
+                0.386218,
+                0.814086,
+                0.324971,
+                0.015921
+              ]
+            ]
+          },
+          "url": "https://openaccess.city.ac.uk/id/eprint/25801/1/Final%20manuscript%20Actiwatch.pdf#page=6"
+        },
+        {
+          "id": "between-units",
+          "label": "Between-unit comparison",
+          "locator": "Results · Inter-watch differences · PDF p. 9",
+          "quote": "significant inter-watch difference was noted for white",
+          "url": "https://openaccess.city.ac.uk/id/eprint/25801/1/Final%20manuscript%20Actiwatch.pdf#page=9",
+          "fields": [
+            "between-units"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [],
+          "devices": [
+            "Actiwatch Spectrum Pro"
+          ],
+          "pdf": {
+            "page": 9,
+            "rects": [
+              [
+                0.121743,
+                0.543552,
+                0.467244,
+                0.015921
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "webler-2021": {
+      "document": {
+        "url": "https://infoscience.epfl.ch/server/api/core/bitstreams/39b60a11-96de-4c57-9208-55f51290ab92/content",
+        "pdfUrl": "https://infoscience.epfl.ch/server/api/core/bitstreams/39b60a11-96de-4c57-9208-55f51290ab92/content",
+        "sha256": "9485a3ef43492cf63fffb656639373ce2ff3d90acd7e64aff28448edb021584a",
+        "pages": 7,
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "pdfPath": "sources/webler-2021.pdf"
+      },
+      "passages": [
+        {
+          "id": "setup",
+          "label": "Test protocol",
+          "locator": "3.1 · Performance criteria · PDF p. 4",
+          "fields": [
+            "protocol",
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "Spectrace"
+          ],
+          "quote": "In order to evaluate the performance of the device",
+          "pdf": {
+            "page": 4,
+            "rects": [
+              [
+                0.119124,
+                0.722681,
+                0.766733,
+                0.167834
+              ]
+            ]
+          },
+          "url": "https://infoscience.epfl.ch/server/api/core/bitstreams/39b60a11-96de-4c57-9208-55f51290ab92/content#page=4"
+        },
+        {
+          "id": "angle",
+          "label": "Angle dependence",
+          "locator": "3.1.2 · Directional response · PDF p. 5",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Angular response"
+          ],
+          "properties": [
+            "Angular response"
+          ],
+          "devices": [
+            "Spectrace"
+          ],
+          "scope": "Photopic illuminance versus angle; LMT pocket lux 2 reference",
+          "quote": "The directional response of the sensor is evaluated",
+          "pdf": {
+            "page": 5,
+            "rects": [
+              [
+                0.119062,
+                0.55306,
+                0.766786,
+                0.137933
+              ]
+            ]
+          },
+          "url": "https://infoscience.epfl.ch/server/api/core/bitstreams/39b60a11-96de-4c57-9208-55f51290ab92/content#page=5"
+        },
+        {
+          "id": "range",
+          "label": "Photopic linearity",
+          "locator": "3.1.3 · Dynamic response · PDF p. 6",
+          "fields": [],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Dynamic range"
+          ],
+          "devices": [
+            "Spectrace"
+          ],
+          "scope": "Photopic response linearity under 2700 K and 6500 K illumination",
+          "quote": "where Y(X) is the measured Spectrace illuminance",
+          "pdf": {
+            "page": 6,
+            "rects": [
+              [
+                0.398307,
+                0.17247,
+                0.129244,
+                0.092406
+              ],
+              [
+                0.119111,
+                0.234596,
+                0.766623,
+                0.085724
+              ]
+            ]
+          },
+          "url": "https://infoscience.epfl.ch/server/api/core/bitstreams/39b60a11-96de-4c57-9208-55f51290ab92/content#page=6"
+        }
+      ]
+    },
+    "stone-2020": {
+      "document": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7445795/",
+        "pdfUrl": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7445795.1/PMC7445795.1.pdf",
+        "sha256": "db035cd17ddf3cace6416ecf0f7715cd6ee3f49ebc57835e9e5325e58d7128d3",
+        "pages": 10,
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pdfPath": "sources/stone-2020.pdf"
+      },
+      "passages": [
+        {
+          "id": "setup",
+          "label": "Protocol and reference",
+          "locator": "2.1 · Devices · PDF p. 2",
+          "fields": [
+            "protocol",
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "GENEActiv Original"
+          ],
+          "quote": "Ten GENEActiv Original devices (Activinsights, Cambridgeshire, UK) were",
+          "pdf": {
+            "page": 2,
+            "rects": [
+              [
+                0.12802,
+                0.346563,
+                0.743415,
+                0.124091
+              ]
+            ]
+          },
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7445795/#sec2dot1-clockssleep-02-00012:~:text=Ten%20GENEActiv%20Original%20devices%20%28Activinsights%2C%20Cambridgeshire%2C%20UK%29%20were"
+        },
+        {
+          "id": "range",
+          "label": "Photopic linearity and low-light response",
+          "locator": "3.1 · Linearity · PDF p. 5",
+          "fields": [],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Dynamic range"
+          ],
+          "devices": [
+            "GENEActiv Original"
+          ],
+          "scope": "Photopic response linearity and low-light detection",
+          "quote": "GENEActiv output in lux was compared to the",
+          "pdf": {
+            "page": 5,
+            "rects": [
+              [
+                0.12802,
+                0.158389,
+                0.745501,
+                0.15632
+              ]
+            ]
+          },
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7445795/#sec3dot1-clockssleep-02-00012:~:text=GENEActiv%20output%20in%20lux%20was%20compared%20to%20the"
+        },
+        {
+          "id": "accuracy",
+          "label": "Photopic agreement",
+          "locator": "4 · Discussion · PDF p. 7",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "GENEActiv Original"
+          ],
+          "scope": "Photopic illuminance across light spectra; sensitivity to infrared",
+          "quote": "In this report, we tested the accuracy of",
+          "pdf": {
+            "page": 7,
+            "rects": [
+              [
+                0.128571,
+                0.873428,
+                0.744941,
+                0.043943
+              ]
+            ]
+          },
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7445795/#sec4-clockssleep-02-00012:~:text=In%20this%20report%2C%20we%20tested%20the%20accuracy%20of"
+        }
+      ]
+    },
+    "arguelles-prieto-2019": {
+      "document": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6607467/",
+        "pdfUrl": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6607467.1/PMC6607467.1.pdf",
+        "sha256": "b85d8cb98adad187cf69308cefb93a0dd3587ffb5d7128ba09e76f4dc907f3ca",
+        "pages": 10,
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "pdfPath": "sources/arguelles-prieto-2019.pdf"
+      },
+      "passages": [
+        {
+          "id": "setup",
+          "label": "Calibration reference",
+          "locator": "Methods · Lighting assessment · PDF p. 4",
+          "fields": [
+            "protocol",
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "Kronowise"
+          ],
+          "quote": "ACM light sensors were calibrated by a visible-near",
+          "pdf": {
+            "page": 4,
+            "rects": [
+              [
+                0.075562,
+                0.826365,
+                0.414487,
+                0.089327
+              ]
+            ]
+          },
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6607467/#sec5:~:text=ACM%20light%20sensors%20were%20calibrated%20by%20a%20visible-near"
+        },
+        {
+          "id": "photopic",
+          "label": "Photopic agreement after correction",
+          "locator": "Results · Table 1 · PDF p. 6",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "Kronowise"
+          ],
+          "scope": "Photopic illuminance with source-dependent infrared correction",
+          "quote": "When the IR/Full light ratio for visible light,",
+          "pdf": {
+            "page": 6,
+            "rects": [
+              [
+                0.510128,
+                0.476996,
+                0.414487,
+                0.041582
+              ]
+            ]
+          },
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6607467/#sec8:~:text=When%20the%20IR%2FFull%20light%20ratio%20for%20visible%20light%2C"
+        },
+        {
+          "id": "angle",
+          "label": "Angle dependence",
+          "locator": "Results · Figure 5 · PDF p. 6",
+          "fields": [],
+          "metrics": [
+            "Angular response"
+          ],
+          "properties": [
+            "Angular response"
+          ],
+          "devices": [
+            "Kronowise"
+          ],
+          "scope": "Relative light-sensor response versus incident angle",
+          "quote": "About ACM device’s stability based on the incident",
+          "pdf": {
+            "page": 6,
+            "rects": [
+              [
+                0.510128,
+                0.756246,
+                0.414487,
+                0.070976
+              ]
+            ]
+          },
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6607467/#sec8:~:text=About%20ACM%20device%E2%80%99s%20stability%20based%20on%20the%20incident"
+        }
+      ]
+    },
+    "ishihara-2025": {
+      "document": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13396946/"
+      },
+      "passages": [
+        {
+          "id": "setup",
+          "label": "Protocol and reference",
+          "locator": "Methods · Laboratory testing",
+          "fields": [
+            "protocol",
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "ActLumus",
+            "GENEActiv",
+            "ActiGraph wGT3X-BT",
+            "LYS Button"
+          ],
+          "quote": "We conducted studies under a wide range of",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13396946/#sec8:~:text=We%20conducted%20studies%20under%20a%20wide%20range%20of"
+        },
+        {
+          "id": "photopic",
+          "label": "Photopic accuracy",
+          "locator": "Results · Accuracy",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "ActLumus",
+            "GENEActiv",
+            "ActiGraph wGT3X-BT",
+            "LYS Button"
+          ],
+          "scope": "Photopic illuminance against a criterion spectrometer",
+          "quote": "The agreement of each light sensor with the",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13396946/#sec13:~:text=The%20agreement%20of%20each%20light%20sensor%20with%20the"
+        },
+        {
+          "id": "range",
+          "label": "Detection, linearity and saturation",
+          "locator": "Results · Photopic illuminance",
+          "fields": [],
+          "metrics": [],
+          "properties": [
+            "Dynamic range"
+          ],
+          "devices": [
+            "ActLumus",
+            "GENEActiv",
+            "ActiGraph wGT3X-BT",
+            "LYS Button"
+          ],
+          "scope": "Photopic detection threshold, linearity and saturation",
+          "quote": "We first describe the performance of each wearable",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13396946/#sec12:~:text=We%20first%20describe%20the%20performance%20of%20each%20wearable"
+        }
+      ]
+    },
+    "stevenson-2025": {
+      "document": {
+        "url": "https://journals.sagepub.com/doi/10.1177/14771535251338582"
+      },
+      "passages": [
+        {
+          "id": "comparison",
+          "label": "Photopic comparison and repeatability",
+          "locator": "Abstract · Methods and Results",
+          "fields": [
+            "protocol",
+            "reference",
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "LYS Button"
+          ],
+          "scope": "Photopic illuminance and between-unit repeatability",
+          "quote": "Two light buttons and a DLM were tested",
+          "url": "https://journals.sagepub.com/doi/abs/10.1177/14771535251338582#:~:text=Two%20light%20buttons%20and%20a%20DLM%20were%20tested"
+        },
+        {
+          "id": "outputs",
+          "label": "Device outputs",
+          "locator": "Introduction · LYS light button",
+          "fields": [
+            "output"
+          ],
+          "metrics": [
+            "Illuminance",
+            "Melanopic EDI"
+          ],
+          "properties": [],
+          "devices": [
+            "LYS Button"
+          ],
+          "quote": "photopic illuminance in lux, and also melanopic",
+          "url": "https://journals.sagepub.com/doi/citedby/10.1177/14771535251338582#:~:text=photopic%20illuminance%20in%20lux%2C%20and%20also%20melanopic"
+        }
+      ]
+    },
+    "mohammadian-2024": {
+      "document": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11100858/"
+      },
+      "passages": [
+        {
+          "id": "setup",
+          "label": "Calibration reference",
+          "locator": "II-D · Calibration",
+          "fields": [
+            "protocol",
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "SpectraWear"
+          ],
+          "quote": "The sensor’s raw output is in",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11100858/#sec2d:~:text=The%20sensor%E2%80%99s%20raw%20output%20is%20in"
+        },
+        {
+          "id": "accuracy",
+          "label": "Photopic and melanopic accuracy",
+          "locator": "IV-B · Sensor accuracy; Figure 6",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance",
+            "Melanopic EDI"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "SpectraWear"
+          ],
+          "scope": "Photopic illuminance and melanopic EDI, thirteen devices",
+          "quote": "The accuracies of the estimated -opic",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11100858/#sec4b:~:text=The%20accuracies%20of%20the%20estimated%20-opic"
+        },
+        {
+          "id": "range",
+          "label": "Sensor linearity",
+          "locator": "III-B · Sensor accuracy",
+          "fields": [],
+          "metrics": [],
+          "properties": [
+            "Dynamic range"
+          ],
+          "devices": [
+            "SpectraWear"
+          ],
+          "scope": "Raw sensor-channel response to optical power",
+          "quote": "To test the accuracy of the",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11100858/#sec3b:~:text=To%20test%20the%20accuracy%20of%20the"
+        },
+        {
+          "id": "angle",
+          "label": "Angle dependence",
+          "locator": "IV-C · Directional response; Figure 7",
+          "fields": [],
+          "metrics": [
+            "Angular response"
+          ],
+          "properties": [
+            "Angular response"
+          ],
+          "devices": [
+            "SpectraWear"
+          ],
+          "scope": "Melanopic EDI versus incident angle",
+          "quote": "As expected for the optical design",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11100858/#sec4c:~:text=As%20expected%20for%20the%20optical%20design"
+        }
+      ]
+    },
+    "bhandari-2020": {
+      "document": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7606561/"
+      },
+      "passages": [
+        {
+          "id": "setup",
+          "label": "Reference comparison",
+          "locator": "Methods · Ambient illumination",
+          "fields": [
+            "protocol",
+            "reference"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "Clouclip (second generation)"
+          ],
+          "quote": "To assess ambient illumination measurements by the Clouclip,",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7606561/#P17:~:text=To%20assess%20ambient%20illumination%20measurements%20by%20the%20Clouclip%2C"
+        },
+        {
+          "id": "photopic",
+          "label": "Photopic agreement",
+          "locator": "Results · Ambient illumination; Figure 7",
+          "fields": [
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "Clouclip (second generation)"
+          ],
+          "scope": "Photopic illuminance against LX1330B",
+          "quote": "Light intensities measured for indoor and outdoor conditions",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7606561/#P31:~:text=Light%20intensities%20measured%20for%20indoor%20and%20outdoor%20conditions"
+        }
+      ]
+    },
+    "price-2017": {
+      "document": {
+        "url": "https://opg.optica.org/josaa/abstract.cfm?uri=josaa-34-4-545"
+      },
+      "passages": [
+        {
+          "id": "setup",
+          "label": "Devices and test protocol",
+          "locator": "Tables 1–4",
+          "fields": [
+            "protocol",
+            "reference",
+            "finding"
+          ],
+          "metrics": [],
+          "properties": [],
+          "devices": [
+            "MotionWatch 8",
+            "ActTrust",
+            "GENEActiv Original",
+            "Actiwatch 2"
+          ],
+          "quote": "Make, Model, Abbreviation, Present Manufacturer",
+          "url": "https://opg.optica.org/josaa/abstract.cfm?uri=josaa-34-4-545#articleTables"
+        },
+        {
+          "id": "angle",
+          "label": "Angle dependence",
+          "locator": "Table 3 · Directional response",
+          "fields": [],
+          "metrics": [
+            "Angular response"
+          ],
+          "properties": [
+            "Angular response"
+          ],
+          "devices": [
+            "MotionWatch 8",
+            "ActTrust",
+            "GENEActiv Original",
+            "Actiwatch 2"
+          ],
+          "scope": "Sensor-channel directional response to a 532-nm beam",
+          "quote": "Average Cosine Response Error",
+          "url": "https://opg.optica.org/josaa/abstract.cfm?uri=josaa-34-4-545#articleTables"
+        },
+        {
+          "id": "range",
+          "label": "Measurement range",
+          "locator": "Table 4 · Dynamic range",
+          "fields": [],
+          "metrics": [],
+          "properties": [
+            "Dynamic range"
+          ],
+          "devices": [
+            "MotionWatch 8",
+            "ActTrust",
+            "GENEActiv Original",
+            "Actiwatch 2"
+          ],
+          "scope": "Measured linear response range and resolution, by channel",
+          "quote": "Dynamic Performances of the Devices",
+          "url": "https://opg.optica.org/josaa/abstract.cfm?uri=josaa-34-4-545#articleTables"
+        }
+      ]
+    },
+    "markvart-2015": {
+      "document": {
+        "url": "https://vbn.aau.dk/da/publications/comparison-and-correction-of-the-light-sensor-output-from-48-wear/"
+      },
+      "passages": [
+        {
+          "id": "comparison",
+          "label": "Comparison of 48 units",
+          "locator": "Abstract · Field calibration and between-unit variability",
+          "fields": [
+            "protocol",
+            "reference",
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [],
+          "devices": [
+            "Actiwatch Spectrum"
+          ],
+          "scope": "Between-unit variation under common light sources",
+          "quote": "We tested 48 Actiwatch devices side by side",
+          "url": "https://www.tandfonline.com/doi/abs/10.1080/15502724.2015.1020948#:~:text=We%20tested%2048%20Actiwatch%20devices%20side%20by%20side"
+        }
+      ]
+    },
+    "figueiro-2013": {
+      "document": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3892948/"
+      },
+      "passages": [
+        {
+          "id": "accuracy",
+          "label": "Photopic reference comparison",
+          "locator": "Performance comparison · Table 1",
+          "fields": [
+            "protocol",
+            "reference",
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "Daysimeter-D",
+            "Actiwatch Spectrum"
+          ],
+          "scope": "Photopic illuminance: six Daysimeter-D and six Actiwatch Spectrum units",
+          "quote": "Given their similar form factors, six samples each",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3892948/#P16:~:text=Given%20their%20similar%20form%20factors%2C%20six%20samples%20each"
+        },
+        {
+          "id": "angle",
+          "label": "Angle dependence",
+          "locator": "Performance comparison · Figure 4",
+          "fields": [],
+          "metrics": [
+            "Angular response"
+          ],
+          "properties": [
+            "Angular response"
+          ],
+          "devices": [
+            "Daysimeter-S",
+            "Daysimeter-D",
+            "Actiwatch Spectrum"
+          ],
+          "scope": "RGB-channel directional response; Daysimeter and Actiwatch Spectrum",
+          "quote": "The spatial response of a photometric instrument is",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3892948/#P12:~:text=The%20spatial%20response%20of%20a%20photometric%20instrument%20is"
+        },
+        {
+          "id": "range",
+          "label": "Response linearity",
+          "locator": "Performance comparison · Figure 5",
+          "fields": [],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Dynamic range"
+          ],
+          "devices": [
+            "Daysimeter-S",
+            "Daysimeter-D",
+            "Actiwatch Spectrum"
+          ],
+          "scope": "Both Daysimeter versions and Actiwatch Spectrum; 532-nm illumination",
+          "quote": "Finally, the absolute response of a photometric device",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3892948/#P13:~:text=Finally%2C%20the%20absolute%20response%20of%20a%20photometric%20device"
+        }
+      ]
+    },
+    "wen-2021": {
+      "document": {
+        "url": "https://onlinelibrary.wiley.com/doi/10.1111/aos.14785"
+      },
+      "passages": [
+        {
+          "id": "comparison",
+          "label": "Photopic comparison",
+          "locator": "Abstract · Methods and Results",
+          "fields": [
+            "protocol",
+            "reference",
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Accuracy"
+          ],
+          "devices": [
+            "Clouclip (first generation)"
+          ],
+          "scope": "Photopic illuminance error and repeatability, fifteen units",
+          "quote": "Fifteen Clouclips were selected to measure different distances",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33729708/#:~:text=Fifteen%20Clouclips%20were%20selected%20to%20measure%20different%20distances"
+        }
+      ]
+    },
+    "joyce-2020": {
+      "document": {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31860938/"
+      },
+      "passages": [
+        {
+          "id": "comparison",
+          "label": "Photopic comparison",
+          "locator": "Abstract · Methods and Results",
+          "fields": [
+            "protocol",
+            "reference",
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [
+            "Accuracy",
+            "Dynamic range"
+          ],
+          "devices": [
+            "GENEActiv Original",
+            "Actiwatch 2"
+          ],
+          "scope": "Photopic reference comparison, saturation and neutral-density filters",
+          "quote": "Under ~30,000 lux sunlight, the GENEActiv readily saturates",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31860938/#:~:text=Under%20~30%2C000%20lux%20sunlight%2C%20the%20GENEActiv%20readily%20saturates"
+        }
+      ]
+    },
+    "ostrin-2017": {
+      "document": {
+        "url": "https://doi.org/10.1097/OPX.0000000000001013"
+      },
+      "passages": [
+        {
+          "id": "comparison",
+          "label": "Photopic comparison",
+          "locator": "Abstract · Methods and Results",
+          "fields": [
+            "protocol",
+            "reference",
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [],
+          "devices": [
+            "Actiwatch Spectrum"
+          ],
+          "scope": "Photopic reference comparison; reported correlation",
+          "quote": "Ambient illumination measures from the Actiwatch correlated",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27811524/#:~:text=Ambient%20illumination%20measures%20from%20the%20Actiwatch%20correlated"
+        }
+      ]
+    },
+    "price-2012": {
+      "document": {
+        "url": "https://doi.org/10.1177/1477153511433171"
+      },
+      "passages": [
+        {
+          "id": "abstract",
+          "label": "Device characterisation",
+          "locator": "Abstract",
+          "fields": [
+            "protocol",
+            "reference",
+            "finding"
+          ],
+          "metrics": [
+            "Angular response"
+          ],
+          "properties": [
+            "Angular response",
+            "Dynamic range"
+          ],
+          "devices": [
+            "Actiwatch Spectrum"
+          ],
+          "scope": "Spectral, directional and dynamic response of sixteen Actiwatch Spectrum units",
+          "url": "https://journals.sagepub.com/doi/abs/10.1177/1477153511433171#:~:text=We%20assessed%20the%20performance%20of%2016%20Actiwatch",
+          "quote": "We assessed the performance of 16 Actiwatch"
+        }
+      ]
+    },
+    "bierman-2005": {
+      "document": {
+        "url": "https://doi.org/10.1088/0957-0233/16/11/023"
+      },
+      "passages": [
+        {
+          "id": "paper",
+          "label": "Daysimeter development",
+          "locator": "Source article · Section 3.1.3",
+          "fields": [
+            "protocol",
+            "reference",
+            "finding"
+          ],
+          "metrics": [
+            "Illuminance"
+          ],
+          "properties": [],
+          "devices": [
+            "Daysimeter (2005 prototype)"
+          ],
+          "url": "https://doi.org/10.1088/0957-0233/16/11/023"
+        }
+      ]
+    }
+  }
+}

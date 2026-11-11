@@ -1,0 +1,52 @@
+PDFs needed for additional source highlights
+
+These papers remain in the inventory. Available HTML sections and abstracts are linked; PDF copies will let us add page highlights.
+
+Ishihara et al. (2025)
+Performance of wearable light sensors for measuring photopic and melanopic illuminance under laboratory and free-living conditions
+https://doi.org/10.1093/sleep/zsaf358
+
+Stevenson, Suppiah & Driller (2025)
+Research note: The validity and reliability of a novel wearable sensor in measuring light exposure in an indoor and outdoor environment
+https://doi.org/10.1177/14771535251338582
+
+Mohammadian et al. (2024)
+A Wrist-Worn Internet of Things Sensor Node for Wearable Equivalent Daylight Illuminance Monitoring
+https://doi.org/10.1109/JIOT.2024.3355330
+
+Bhandari & Ostrin (2020)
+Validation of the Clouclip and utility in measuring viewing distance in adults
+https://doi.org/10.1111/opo.12735
+
+Price, Lyachev & Khazova (2017)
+Optical performance characterization of light-logging actigraphy dosimeters
+https://doi.org/10.1364/JOSAA.34.000545
+
+Markvart et al. (2015)
+Comparison and Correction of the Light Sensor Output from 48 Wearable Light Exposure Devices by Using a Side-by-Side Field Calibration Method
+https://doi.org/10.1080/15502724.2015.1020948
+
+Figueiro, Hamner, Bierman & Rea (2013)
+Comparisons of three practical field devices used to measure personal light exposures and activity levels
+https://doi.org/10.1177/1477153512450453
+
+Wen et al. (2021)
+The Clouclip, a wearable device for measuring near-work and outdoor time: validation and comparison of objective measures with questionnaire estimates
+https://doi.org/10.1111/aos.14785
+
+Joyce, Zele, Feigl & Adhikari (2020)
+The accuracy of artificial and natural light measurements by actigraphs
+https://doi.org/10.1111/jsr.12963
+
+Ostrin (2017)
+Objectively Measured Light Exposure in Emmetropic and Myopic Adults
+https://doi.org/10.1097/OPX.0000000000001013
+
+Price, Khazova & O’Hagan (2012)
+Performance assessment of commercial circadian personal exposure devices
+https://doi.org/10.1177/1477153511433171
+
+Bierman, Klein & Rea (2005)
+The Daysimeter: a device for measuring optical radiation as a stimulus for the human circadian system
+https://doi.org/10.1088/0957-0233/16/11/023
+
