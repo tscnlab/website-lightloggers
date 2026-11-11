@@ -23,9 +23,7 @@ The source artwork, colours and aspect ratio are preserved. The logo and institu
 
 ## Favicon
 
-`favicon.png` is the unchanged 363 × 363 pixel TSCN unit mark reused from Lightloggers. The upstream Join website records that the user supplied it on 25 September 2026.
-
-- SHA-256: `655bcfebe4c9844e7ee746e8636cafa2c3f0c63b09aa8fed60589c63bdcd8006`
+`favicon-lightbulb.png` and `favicon.png` (64 × 64) and `apple-touch-icon.png` (180 × 180) display the lightbulb symbol from the official ENLIGHT logo above. `../scripts/render-favicons.cjs` extracts the 108 × 108 region beginning at (8, 2) and resizes it without redrawing the artwork. The original `enlight-logo.png` remains unchanged. The distinct browser-icon filename refreshes the earlier TSCN favicon.
 
 ## Social preview
 

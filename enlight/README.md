@@ -32,7 +32,7 @@ The parent `tscnlab/website-lightloggers` repository renders this subproject aft
 
 Authoritative sources: [ENLIGHT statement](https://enlight-statement.org/) and [Spitschan et al. (2023)](https://doi.org/10.1016/j.ebiom.2023.104889). `data/checklist.json` records the source commit, SHA-256 hashes, item-to-form-field mapping, and helper descriptions. Item IDs such as A1.1 are stable wizard IDs; the official PDF numbers sections only.
 
-The official PDFs are unchanged and retain their specific CC-BY-NC-ND notice. See `sources/README.md` for provenance and the paper's item-count discrepancy. Helper descriptions are concise application guidance; the original E&E document remains linked for detail. PDF-lib and fontkit licences are in `assets/vendor/`; font attribution is in `assets/fonts/`. The official ENLIGHT logo heads the page, with a smaller TSCN Unit logo and an AI disclosure in the footer. The TSCN logo/favicon are reused unchanged from the Lightloggers site. Asset sources and checksums are in `assets/PROVENANCE.md`.
+The official PDFs are unchanged and retain their specific CC-BY-NC-ND notice. See `sources/README.md` for provenance and the paper's item-count discrepancy. Helper descriptions are concise application guidance; the original E&E document remains linked for detail. PDF-lib and fontkit licences are in `assets/vendor/`; font attribution is in `assets/fonts/`. The official ENLIGHT logo heads the page, with a smaller TSCN Unit logo and an AI disclosure in the footer. The TSCN logo is reused unchanged from the Lightloggers site. The browser and touch icons use the ENLIGHT lightbulb. Asset sources and checksums are in `assets/PROVENANCE.md`.
 
 ## Verification
 
@@ -56,3 +56,5 @@ node scripts/render-social-preview.cjs
 Use Georgia and Arial fonts to reproduce the checked-in typography; Liberation Serif and Liberation Sans are fallbacks. `SHARP_MODULE` can point to a preinstalled Sharp module. Ordinary Quarto builds use the checked-in PNG and require no additional image dependencies. The source archive includes the layout and rendering script.
 
 The image follows [LinkedIn's website-sharing requirements](https://www.linkedin.com/help/linkedin/answer/a521928/make-your-website-shareable-on-linkedin). Existing cached shares can be refreshed with LinkedIn's [Post Inspector](https://www.linkedin.com/post-inspector/).
+
+Regenerate the lightbulb browser and touch icons with `node scripts/render-favicons.cjs` (the same Sharp dependency). The browser uses `assets/favicon-lightbulb.png`; its distinct filename avoids reusing the previous favicon from cache.

@@ -37,7 +37,8 @@ format:
     html-math-method: plain
     include-in-header:
       text: |
-        <link rel="icon" type="image/png" href="assets/favicon.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-lightbulb.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
         <link rel="canonical" href="https://resources.tscnlab.org/enlight/">
         <meta property="og:url" content="https://resources.tscnlab.org/enlight/">
         <meta property="og:type" content="website">
