@@ -87,7 +87,7 @@ Use **Submit a validation** to suggest a paper or correction by email.
 
 OpenAI Codex assisted with literature searches, extracting and organising study information, drafting summaries, and building this website. The summaries and source selections are AI-assisted and have not all received independent human review.
 
-**Source** links beside findings and methods open an embedded reader with the relevant passage highlighted in the available PDFs.
+**Read source section** links beside findings and methods open an embedded reader with the relevant passage highlighted in the available PDFs.
 
 Please send corrections or additional papers to [manuel.spitschan@tum.de](mailto:manuel.spitschan@tum.de).
 
@@ -133,7 +133,7 @@ for study in sorted(studies, key=lambda item: (-item["year"], item["authors"])):
         print(f'<div><dt>{esc(label)}</dt><dd>{esc(value)}</dd></div>')
     print('</dl>')
     doi = esc(study["doi"])
-    print(f'<p class="citation-link"><a href="source.html?study={identifier}" aria-haspopup="dialog">Read source</a> · <a href="https://doi.org/{doi}">DOI: {doi}</a></p>')
+    print(f'<p class="citation-link"><a class="source-section-link" href="source.html?study={identifier}" aria-haspopup="dialog">Read source section</a> · <a href="https://doi.org/{doi}">DOI: {doi}</a></p>')
     if study.get("pubmedUrl"):
         print(f'<p class="citation-link"><a href="{esc(study["pubmedUrl"])}">PubMed record ↗</a></p>')
     if study.get("fullTextUrl"):

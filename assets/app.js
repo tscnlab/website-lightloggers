@@ -81,11 +81,11 @@
     links.push(`<a href="https://doi.org/${escape(study.doi)}" target="_blank" rel="noopener noreferrer">DOI ↗</a>`);
     return links.join('');
   }
-  function passageLink(study,device,field,label='Source') {
+  function passageLink(study,device,field,label='Read source section') {
     let passages=sourcePassages(evidence,study.id,device?.name,field);
     if(!passages.length)passages=sourcePassages(evidence,study.id,null,field);
     if(!passages.length)return '';
-    return ` <a class="claim-source" aria-haspopup="dialog" href="source.html?study=${encodeURIComponent(study.id)}&amp;passage=${encodeURIComponent(passages[0].id)}" title="${escape(passages.map(p=>p.locator).join('; '))}">${label}</a>`;
+    return ` <a class="claim-source source-section-link" aria-haspopup="dialog" href="source.html?study=${encodeURIComponent(study.id)}&amp;passage=${encodeURIComponent(passages[0].id)}" title="${escape(passages.map(p=>p.locator).join('; '))}">${label}</a>`;
   }
   function studyRecord(study,device=null,pairs=null) {
     const key = device ? `${device.id}-${study.id}` : study.id;
@@ -97,7 +97,7 @@
 
     const matching = pairs ? unique(pairs.filter(p=>p.study.id===study.id).map(p=>p.device.name)) : study.devices;
     const findings=study.findings?.length?study.findings:[{text:study.finding,field:'finding'}];
-    return `<article class="study-record" id="${escape(key)}"><div class="study-main">${venueDisplay(study)}<p class="study-meta"><span>${escape(study.authors)} · ${study.year}</span><span>${escape(study.evidenceType)}</span>${study.status!=='Peer reviewed'?`<span class="status-preprint">${escape(study.status)}</span>`:''}</p><h3><a href="${escape(study.url)}" target="_blank" rel="noopener noreferrer">${escape(study.title)}</a></h3>${device && relationship(study,device.name).category!=='Unclear'?`<p class="relationship-label"><span class="evidence-square ${relationshipClass(relationship(study,device.name).category)}" aria-hidden="true"></span> ${escape(relationship(study,device.name).category)}</p>`:''}${device?'':`<p class="study-devices">Devices: ${study.devices.map(escape).join(' · ')}</p>`}${state.metric && !device && matching.length<study.devices.length?`<p class="study-devices matching-devices">Matching this measurement: ${matching.map(escape).join(' · ')}</p>`:''}<div class="study-links">${sourceLinks(study)}<a aria-haspopup="dialog" href="source.html?study=${encodeURIComponent(study.id)}">Read source</a></div><details class="study-detail"><summary>Study details</summary><div class="study-details">${findings.map(f=>`<p>${escape(f.text)}${passageLink(study,device,f.field || 'finding')}</p>`).join('')}<dl class="details-grid">${fields.map(([label,value,field])=>`<dt>${escape(label)}</dt><dd>${escape(value)}${field?passageLink(study,device,field):''}</dd>`).join('')}</dl></div></details></div></article>`;
+    return `<article class="study-record" id="${escape(key)}"><div class="study-main">${venueDisplay(study)}<p class="study-meta"><span>${escape(study.authors)} · ${study.year}</span><span>${escape(study.evidenceType)}</span>${study.status!=='Peer reviewed'?`<span class="status-preprint">${escape(study.status)}</span>`:''}</p><h3><a href="${escape(study.url)}" target="_blank" rel="noopener noreferrer">${escape(study.title)}</a></h3>${device && relationship(study,device.name).category!=='Unclear'?`<p class="relationship-label"><span class="evidence-square ${relationshipClass(relationship(study,device.name).category)}" aria-hidden="true"></span> ${escape(relationship(study,device.name).category)}</p>`:''}${device?'':`<p class="study-devices">Devices: ${study.devices.map(escape).join(' · ')}</p>`}${state.metric && !device && matching.length<study.devices.length?`<p class="study-devices matching-devices">Matching this measurement: ${matching.map(escape).join(' · ')}</p>`:''}<div class="study-links"><a class="source-section-link" aria-haspopup="dialog" href="source.html?study=${encodeURIComponent(study.id)}">Read source section</a>${sourceLinks(study)}</div><details class="study-detail"><summary>Study details</summary><div class="study-details">${findings.map(f=>`<p>${escape(f.text)}${passageLink(study,device,f.field || 'finding')}</p>`).join('')}<dl class="details-grid">${fields.map(([label,value,field])=>`<dt>${escape(label)}</dt><dd>${escape(value)}${field?passageLink(study,device,field):''}</dd>`).join('')}</dl></div></details></div></article>`;
   }
   function deviceRecord(device,pairs) {
     const studies=unique(pairs.filter(p=>p.device.id===device.id).map(p=>p.study)).sort(studySort);
@@ -159,7 +159,7 @@
     $('#evidence-title').textContent=`${device.name} · ${label}`;
     $('#evidence-content').innerHTML=`<p class="evidence-meaning">${result.status==='output'?'This output is described in the literature; no examination is indexed in the matching studies.':'Examined in the following studies. A check indicates that a test was performed; it does not rate the result.'}</p>${result.studies.map(s=>{
       const passages=sourcePassages(evidence,s.id,device.name,key);
-      return `<article class="indicator-study"><h3>${escape(s.authors)} (${s.year})</h3><p>${escape(s.title)}</p>${passages.map(p=>`<a aria-haspopup="dialog" href="source.html?study=${encodeURIComponent(s.id)}&amp;passage=${encodeURIComponent(p.id)}">${escape(p.scope || p.label)} · ${escape(p.locator)}</a>`).join('') || `<a aria-haspopup="dialog" href="source.html?study=${encodeURIComponent(s.id)}">Read source</a>`}</article>`;
+      return `<article class="indicator-study"><h3>${escape(s.authors)} (${s.year})</h3><p>${escape(s.title)}</p>${passages.map(p=>`<div class="indicator-passage"><p>${escape(p.scope || p.label)} · ${escape(p.locator)}</p><a class="source-section-link" aria-haspopup="dialog" href="source.html?study=${encodeURIComponent(s.id)}&amp;passage=${encodeURIComponent(p.id)}">Read source section</a></div>`).join('') || `<a class="source-section-link" aria-haspopup="dialog" href="source.html?study=${encodeURIComponent(s.id)}">Read source section</a>`}</article>`;
     }).join('')}`;
     $('#evidence-dialog').showModal();document.body.style.overflow='hidden';
   }
