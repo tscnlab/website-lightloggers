@@ -11,7 +11,7 @@ project:
     - index.qmd
 
 website:
-  title: "ENLIGHT Checklist Wizard · TSCN Lab"
+  title: "Translational Sensory & Circadian Neuroscience Unit"
   site-url: https://resources.tscnlab.org/enlight/
   image: assets/social-preview.png
   image-alt: "ENLIGHT lightbulb icon and Checklist Wizard: complete the reporting checklist and download your PDF."
