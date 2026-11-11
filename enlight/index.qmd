@@ -12,6 +12,7 @@ twitter-card:
 #| output: asis
 # Reproduce the interface from the versioned checklist and local assets.
 from pathlib import Path
+from html import escape as escape_html
 import json
 import zipfile
 
@@ -30,6 +31,8 @@ with zipfile.ZipFile(root / "assets/enlight-source.zip", "w", zipfile.ZIP_DEFLAT
         if path.is_file():
             bundle.write(path, Path("enlight") / path.relative_to(root))
 template = (root / "assets/wizard.html").read_text()
+template = template.replace("{{ENLIGHT_CITATION}}", escape_html(checklist["meta"]["citation"]))
+template = template.replace("{{ENLIGHT_DOI}}", escape_html(checklist["meta"]["doi"]))
 payload = json.dumps(checklist, ensure_ascii=False).replace("</", "<\\/")
 html = template.replace("<!-- CHECKLIST_DATA -->", '<script id="checklist-data" type="application/json">' + payload + '</script>')
 print("```{=html}\n" + html + "\n```")

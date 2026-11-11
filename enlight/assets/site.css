@@ -7,3 +7,11 @@
 @media print{@page{size:A4;margin:16mm}body{font-family:Arial,sans-serif;font-size:10pt;color:#000}.site-header,.page-intro,.workspace-bar,.sidebar,.step-actions,.footer,.export-panel,.toast,dialog,.skip-link{display:none!important}.shell{width:100%}.wizard-layout{display:block;padding:0}.step-header h2{font-family:Arial,sans-serif;font-size:20pt}.review-row{break-inside:avoid}.review-group{break-after:avoid}.review-row button{font-family:Arial,sans-serif;text-decoration:none}.review-status{color:#333}.review-detail{font-size:9pt!important}.notice{background:none}}
 
 @media(max-width:760px){.sidebar-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:14px 0 0;padding:10px 0 0}.sidebar-actions .text-button{font-size:10px}}
+
+/* Persistent citation reminder above the checklist. */
+.citation-callout{margin:0 0 26px;padding:18px 22px;border:1px solid #ead080;border-left:4px solid #d7b74d;border-radius:3px;background:#fff6ce;color:var(--text)}
+.citation-callout h2{font:600 14px/1.5 var(--sans);margin:0 0 7px;color:var(--ink)}
+.citation-reference{font-size:12px;line-height:1.75;overflow-wrap:anywhere}
+.citation-reference a{font-weight:600;white-space:normal}
+@media(max-width:760px){.citation-callout{padding:15px 16px;margin-bottom:22px}.citation-callout h2{font-size:13px}.citation-reference{font-size:12px}}
+@media print{.citation-callout{display:none!important}}
