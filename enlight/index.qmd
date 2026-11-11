@@ -1,0 +1,32 @@
+---
+pagetitle: "ENLIGHT checklist wizard"
+description: "Work through the ENLIGHT reporting checklist and download a completed PDF. Your draft stays in your browser."
+---
+
+```{python}
+#| label: build-wizard
+#| output: asis
+# Reproduce the interface from the versioned checklist and local assets.
+from pathlib import Path
+import json
+import zipfile
+
+root = Path.cwd()
+checklist = json.loads((root / "data/checklist.json").read_text())
+assert len(checklist["items"]) == 24
+assert len({item["id"] for item in checklist["items"]}) == 24
+assert sum(item["essential"] for item in checklist["items"]) == 9
+# Bundle the complete reproducible source, excluding local drafts and QA output.
+with zipfile.ZipFile(root / "assets/enlight-source.zip", "w", zipfile.ZIP_DEFLATED) as bundle:
+    paths = [root / p for p in ["index.qmd", "_quarto.yml", "README.md", "requirements.txt", ".gitignore"]]
+    for directory in ["assets", "data", "scripts", "tests"]:
+        paths.extend(p for p in (root / directory).rglob("*") if p.is_file() and "__pycache__" not in p.parts and p.suffix != ".zip")
+    paths.extend(p for p in (root / "sources").iterdir() if p.suffix == ".pdf" or p.name in ["README.md", "LICENSE"])
+    for path in sorted(set(paths)):
+        if path.is_file():
+            bundle.write(path, Path("enlight") / path.relative_to(root))
+template = (root / "assets/wizard.html").read_text()
+payload = json.dumps(checklist, ensure_ascii=False).replace("</", "<\\/")
+html = template.replace("<!-- CHECKLIST_DATA -->", '<script id="checklist-data" type="application/json">' + payload + '</script>')
+print("```{=html}\n" + html + "\n```")
+```

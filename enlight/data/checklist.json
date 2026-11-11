@@ -1,0 +1,509 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "name": "ENLIGHT Checklist",
+    "version": "1.0.2",
+    "releaseDate": "2023-10-16",
+    "verifiedDate": "2026-11-11",
+    "website": "https://enlight-statement.org/",
+    "doi": "10.1016/j.ebiom.2023.104889",
+    "citation": "Spitschan M, Kervezee L, Lok R, McGlashan E, Najjar RP; ENLIGHT Consortium. ENLIGHT: A consensus checklist for reporting laboratory-based studies on the non-visual effects of light in humans. EBioMedicine. 2023;98:104889.",
+    "checklistPath": "sources/ENLIGHT_Checklist_Release_1.0.2_20231016.pdf",
+    "explanationPath": "sources/ENLIGHT_EE_Release_1.0.2_20231016.pdf",
+    "checklistUrl": "https://github.com/ENLIGHT-Project/ENLIGHT-Checklist/blob/06ee653046cffe833753028c2b4bc71cdb6a711b/1.0.2/ENLIGHT_Checklist_Release_1.0.2_20231016.pdf",
+    "explanationUrl": "https://github.com/ENLIGHT-Project/ENLIGHT-Checklist/blob/06ee653046cffe833753028c2b4bc71cdb6a711b/1.0.2/ENLIGHT_E%26E_Release_1.0.2_20231016.pdf",
+    "sourceCommit": "06ee653046cffe833753028c2b4bc71cdb6a711b",
+    "license": "CC-BY-NC-ND",
+    "licenseNote": "Both official PDFs state CC-BY-NC-ND without a version. The repository also has a GNU GPL v3 root LICENSE. The specific notice in the PDFs is preserved.",
+    "itemCount": 25,
+    "locationRowCount": 24,
+    "locationRowsWithoutNotApplicable": 9,
+    "idsNote": "Item-level IDs are stable wizard identifiers; the official checklist numbers sections only.",
+    "essentialCountNote": "The paper says nine essential items but marks ten in Table 2 when the separate light-source selection is included. This wizard preserves the nine location rows without a Not applicable checkbox and treats light-source selection separately.",
+    "sha256": {
+      "ENLIGHT_Checklist_Release_1.0.2_20231016.pdf": "80c495fe2dd71615373404a4b0805fb67ecfe84682bb3fa3c7480551ef35ab5e",
+      "ENLIGHT_EE_Release_1.0.2_20231016.pdf": "0dc434d2d420de2170fa21c705de1e205493eb5eb0d7a5751c68c3a4cf53a323"
+    }
+  },
+  "instructions": {
+    "location": "Enter the page, figure, or table number where the information appears in your manuscript.",
+    "notAvailable": "Use Not available when the information was not collected, measured, or cannot be provided.",
+    "notApplicable": "Use Not applicable only when the item is irrelevant to your study after consulting the Explanation & Elaboration document.",
+    "essential": "This item applies to all studies; Not applicable is not offered in the official checklist.",
+    "scope": "A reporting checklist for human laboratory studies of non-visual responses to light. It does not assess study quality."
+  },
+  "sections": [
+    {
+      "id": "A1",
+      "label": "A.1.",
+      "title": "Protocol-level characteristics",
+      "group": "Study characteristics",
+      "description": "Describe the setting, timing, and light exposure before the experiment."
+    },
+    {
+      "id": "A2",
+      "label": "A.2.",
+      "title": "Measurement-level characteristics",
+      "group": "Study characteristics",
+      "description": "Identify where and how light was measured."
+    },
+    {
+      "id": "A3",
+      "label": "A.3.",
+      "title": "Participant-level characteristics",
+      "group": "Study characteristics",
+      "description": "Report relevant participant characteristics and timing."
+    },
+    {
+      "id": "B1",
+      "label": "B.1.",
+      "title": "Light source type(s)",
+      "group": "Light characteristics",
+      "description": "Include background illumination and every experimental light source."
+    },
+    {
+      "id": "B2",
+      "label": "B.2.",
+      "title": "Light level characteristics",
+      "group": "Light characteristics",
+      "description": "Identify where the light measurements are reported in your manuscript."
+    },
+    {
+      "id": "B3",
+      "label": "B.3.",
+      "title": "Colour characteristics",
+      "group": "Light characteristics",
+      "description": "Report the spectral and colour quantities relevant to your sources."
+    },
+    {
+      "id": "B4",
+      "label": "B.4.",
+      "title": "Temporal and spatial characteristics",
+      "group": "Light characteristics",
+      "description": "Describe stimulus position, timing, and size."
+    }
+  ],
+  "items": [
+    {
+      "id": "A1.1",
+      "section": "A1",
+      "title": "Description of experimental setting",
+      "description": "Include room geometry, windows, participant position, and relevant environmental conditions.",
+      "essential": true,
+      "eePages": [
+        1
+      ],
+      "pdf": {
+        "location": "Description of experimental setting",
+        "notAvailable": "Check Box1",
+        "notApplicable": null
+      }
+    },
+    {
+      "id": "A1.2",
+      "section": "A1",
+      "title": "Timeline of experiment (including timing and duration of light)",
+      "description": "Include key study events and the timing and duration of light exposure.",
+      "essential": true,
+      "eePages": [
+        1
+      ],
+      "pdf": {
+        "location": "Timeline of experiment including timing and duration of light",
+        "notAvailable": "Check Box2",
+        "notApplicable": null
+      }
+    },
+    {
+      "id": "A1.3",
+      "section": "A1",
+      "title": "Pre-laboratory sleep-wake/rest-activity behaviour",
+      "description": "Include instructions, inclusion criteria, measurements, and observation periods before participants entered the laboratory.",
+      "essential": false,
+      "eePages": [
+        2
+      ],
+      "pdf": {
+        "location": "Prelaboratory sleepwakerestactivity behaviour",
+        "notAvailable": "Check Box3",
+        "notApplicable": "Check Box6"
+      }
+    },
+    {
+      "id": "A1.4",
+      "section": "A1",
+      "title": "Pre-laboratory light exposure",
+      "description": "Include light exposure instructions, controls, and any measurements before laboratory admission.",
+      "essential": false,
+      "eePages": [
+        2
+      ],
+      "pdf": {
+        "location": "Prelaboratory light exposure",
+        "notAvailable": "Check Box4",
+        "notApplicable": "Check Box7"
+      }
+    },
+    {
+      "id": "A1.5",
+      "section": "A1",
+      "title": "Immediate prior light exposure (in laboratory)",
+      "description": "Describe laboratory lighting before the experimental exposure, including dim-light or dark-adaptation conditions.",
+      "essential": false,
+      "eePages": [
+        2
+      ],
+      "pdf": {
+        "location": "Immediate prior light exposure in laboratory",
+        "notAvailable": "Check Box5",
+        "notApplicable": "Check Box8"
+      }
+    },
+    {
+      "id": "A2.1",
+      "section": "A2",
+      "title": "Measurement plane (e.g., horizontal or vertical)",
+      "description": "Specify the measurement plane for the light quantities you report.",
+      "essential": true,
+      "eePages": [
+        2
+      ],
+      "pdf": {
+        "location": "Measurement plane eg horizontal or vertical",
+        "notAvailable": "Check Box9",
+        "notApplicable": null
+      }
+    },
+    {
+      "id": "A2.2",
+      "section": "A2",
+      "title": "Measurement viewpoint and location",
+      "description": "Specify sensor position and direction for each relevant measurement or light condition.",
+      "essential": true,
+      "eePages": [
+        2
+      ],
+      "pdf": {
+        "location": "Measurement viewpoint and location",
+        "notAvailable": "Check Box10",
+        "notApplicable": null
+      }
+    },
+    {
+      "id": "A2.3",
+      "section": "A2",
+      "title": "Type, make and manufacturer of the measurement instrument",
+      "description": "Identify each instrument, its model, and manufacturer.",
+      "essential": true,
+      "eePages": [
+        2
+      ],
+      "pdf": {
+        "location": "Type make and manufacturer of the measurement instrument",
+        "notAvailable": "Check Box11",
+        "notApplicable": null
+      }
+    },
+    {
+      "id": "A2.4",
+      "section": "A2",
+      "title": "Calibration status of the instrument",
+      "description": "Include calibration timing, type, and provider when available.",
+      "essential": false,
+      "eePages": [
+        3
+      ],
+      "pdf": {
+        "location": "Calibration status of the instrument",
+        "notAvailable": "Check Box12",
+        "notApplicable": "Check Box13"
+      }
+    },
+    {
+      "id": "A3.1",
+      "section": "A3",
+      "title": "Ocular health and functioning",
+      "description": "Include relevant ocular criteria, assessments, and use of glasses or contact lenses.",
+      "essential": true,
+      "eePages": [
+        3
+      ],
+      "pdf": {
+        "location": "Ocular health and functioning",
+        "notAvailable": "Check Box14",
+        "notApplicable": null
+      }
+    },
+    {
+      "id": "A3.2",
+      "section": "A3",
+      "title": "Pupil size and/or dilation",
+      "description": "Report pupil measurements or control, including any pharmacological dilation.",
+      "essential": false,
+      "eePages": [
+        3
+      ],
+      "pdf": {
+        "location": "Pupil size andor dilation",
+        "notAvailable": "Check Box15",
+        "notApplicable": "Check Box17"
+      }
+    },
+    {
+      "id": "A3.3",
+      "section": "A3",
+      "title": "Relative time (e.g. to circadian phase or sleep)",
+      "description": "Describe exposure timing relative to participants’ sleep or circadian phase.",
+      "essential": false,
+      "eePages": [
+        3
+      ],
+      "pdf": {
+        "location": "Relative time eg to circadian phase or sleep",
+        "notAvailable": "Check Box16",
+        "notApplicable": "Check Box18"
+      }
+    },
+    {
+      "id": "B1.2",
+      "section": "B1",
+      "title": "Type, make and manufacturer of the light source",
+      "description": "Identify each source, its model, and manufacturer.",
+      "essential": true,
+      "eePages": [
+        4
+      ],
+      "pdf": {
+        "location": "Type make and manufacturer of the light source",
+        "notAvailable": "Check Box26",
+        "notApplicable": null
+      }
+    },
+    {
+      "id": "B1.3",
+      "section": "B1",
+      "title": "Use of wearable filtering apparatus (e.g., blue-blocking glasses)",
+      "description": "Describe wearable filters and their effects on light amount or spectrum.",
+      "essential": false,
+      "eePages": [
+        4
+      ],
+      "pdf": {
+        "location": "Use of wearable filtering apparatus eg blueblocking glasses",
+        "notAvailable": "Check Box27",
+        "notApplicable": "Check Box28"
+      }
+    },
+    {
+      "id": "B2.1",
+      "section": "B2",
+      "title": "Illuminance (lux) and/or luminance (cd/m²)",
+      "description": "Report photometric light levels for the experimental conditions.",
+      "essential": true,
+      "eePages": [
+        5
+      ],
+      "pdf": {
+        "location": "Illuminance",
+        "notAvailable": "Check Box29",
+        "notApplicable": null
+      }
+    },
+    {
+      "id": "B2.2",
+      "section": "B2",
+      "title": "Spectral irradiance and/or radiance distribution",
+      "description": "Identify the reported wavelength-resolved light measurements.",
+      "essential": false,
+      "eePages": [
+        5
+      ],
+      "pdf": {
+        "location": "Spectral irradiance andor radiance distribution",
+        "notAvailable": "Check Box30",
+        "notApplicable": "Check Box33"
+      }
+    },
+    {
+      "id": "B2.3",
+      "section": "B2",
+      "title": "α−opic irradiance and/or radiance (including melanopic)",
+      "description": "Report photoreceptor-weighted irradiance or radiance, including melanopic quantities.",
+      "essential": false,
+      "eePages": [
+        5
+      ],
+      "pdf": {
+        "location": "fill_20",
+        "notAvailable": "Check Box31",
+        "notApplicable": "Check Box34"
+      }
+    },
+    {
+      "id": "B2.4",
+      "section": "B2",
+      "title": "α−opic equivalent daylight illuminance and/or luminance (EDI/EDL, including melanopic)",
+      "description": "Report equivalent D65 daylight quantities, including melanopic values.",
+      "essential": false,
+      "eePages": [
+        5
+      ],
+      "pdf": {
+        "location": "fill_23",
+        "notAvailable": "Check Box32",
+        "notApplicable": "Check Box35"
+      }
+    },
+    {
+      "id": "B3.1",
+      "section": "B3",
+      "title": "Peak wavelength and bandwidth",
+      "description": "Primarily relevant to monochromatic or narrowband sources; identify peak wavelength and spectral width.",
+      "essential": false,
+      "eePages": [
+        5
+      ],
+      "pdf": {
+        "location": "Peak wavelength",
+        "notAvailable": "Check Box36",
+        "notApplicable": "Check Box39"
+      }
+    },
+    {
+      "id": "B3.2",
+      "section": "B3",
+      "title": "Colour appearance quantities (any)",
+      "description": "Examples include chromaticity coordinates and correlated colour temperature.",
+      "essential": false,
+      "eePages": [
+        5
+      ],
+      "pdf": {
+        "location": "Colour quantities any",
+        "notAvailable": "Check Box37",
+        "notApplicable": "Check Box40"
+      }
+    },
+    {
+      "id": "B3.3",
+      "section": "B3",
+      "title": "Colour rendering metrics (any)",
+      "description": "Identify colour-rendering metrics reported for the source, such as the Colour Fidelity Index.",
+      "essential": false,
+      "eePages": [
+        5
+      ],
+      "pdf": {
+        "location": "Colour rendition metrics any",
+        "notAvailable": "Check Box38",
+        "notApplicable": "Check Box41"
+      }
+    },
+    {
+      "id": "B4.1",
+      "section": "B4",
+      "title": "Location of stimulus and viewing distance",
+      "description": "Specify stimulus position and distance relative to the participant.",
+      "essential": true,
+      "eePages": [
+        6
+      ],
+      "pdf": {
+        "location": "Location of stimulus",
+        "notAvailable": "Check Box42",
+        "notApplicable": null
+      }
+    },
+    {
+      "id": "B4.2",
+      "section": "B4",
+      "title": "Temporal pattern (including flash frequency and waveform)",
+      "description": "Include recurring timing, flash frequency, waveform, or dynamic dimming and tuning.",
+      "essential": false,
+      "eePages": [
+        6
+      ],
+      "pdf": {
+        "location": "Temporal pattern including flash frequency and waveform",
+        "notAvailable": "Check Box43",
+        "notApplicable": "Check Box45"
+      }
+    },
+    {
+      "id": "B4.3",
+      "section": "B4",
+      "title": "Relative or absolute size of the stimulus",
+      "description": "Report stimulus size or shape, including size relative to the visual field.",
+      "essential": false,
+      "eePages": [
+        6
+      ],
+      "pdf": {
+        "location": "Relative or absolute size of the stimulus",
+        "notAvailable": "Check Box44",
+        "notApplicable": "Check Box46"
+      }
+    }
+  ],
+  "lightSources": {
+    "id": "B1.1",
+    "title": "Light source type(s)",
+    "description": "Select all relevant sources, including background room illumination alongside an experimental device.",
+    "eePages": [
+      3,
+      4
+    ],
+    "selectionRequired": true,
+    "otherField": "Other",
+    "spectrumMultiple": true,
+    "spectrumNote": "Select every spectral type used across the study’s sources or conditions."
+  },
+  "lightSourceTypes": [
+    {
+      "id": "room",
+      "title": "Room illumination (overhead or other)",
+      "pdfField": "Check Box23"
+    },
+    {
+      "id": "emissive",
+      "title": "Emissive surfaces including displays (incl. light therapy devices)",
+      "pdfField": "Check Box22"
+    },
+    {
+      "id": "wearable",
+      "title": "Wearable light emitting glasses",
+      "pdfField": "Check Box19"
+    },
+    {
+      "id": "ganzfeld",
+      "title": "Ganzfeld exposure",
+      "pdfField": "Check Box20"
+    },
+    {
+      "id": "other",
+      "title": "Other",
+      "pdfField": "Check Box21"
+    }
+  ],
+  "spectrumTypes": [
+    {
+      "id": "polychromatic",
+      "title": "Polychromatic light",
+      "pdfField": "Check Box24"
+    },
+    {
+      "id": "narrowband",
+      "title": "Monochromatic or narrowband light",
+      "pdfField": "Check Box25"
+    }
+  ],
+  "generalFields": {
+    "authors": "Author names",
+    "title": "Manuscript title",
+    "date": "Date"
+  },
+  "notes": {
+    "lightLevel": "Luminance and radiance metrics are mainly relevant for emissive surfaces.",
+    "colour": "Peak wavelength and bandwidth are most relevant for monochromatic or narrowband light sources."
+  }
+}

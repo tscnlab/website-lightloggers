@@ -1,0 +1,999 @@
+{
+  "source": "ENLIGHT_Checklist_Release_1.0.2_20231016.pdf",
+  "sha256": "80c495fe2dd71615373404a4b0805fb67ecfe84682bb3fa3c7480551ef35ab5e",
+  "fieldCount": 76,
+  "mappedFields": [
+    "Author names",
+    "Manuscript title",
+    "Date",
+    "Other",
+    "Check Box23",
+    "Check Box22",
+    "Check Box19",
+    "Check Box20",
+    "Check Box21",
+    "Check Box24",
+    "Check Box25",
+    "Description of experimental setting",
+    "Check Box1",
+    "Timeline of experiment including timing and duration of light",
+    "Check Box2",
+    "Prelaboratory sleepwakerestactivity behaviour",
+    "Check Box3",
+    "Check Box6",
+    "Prelaboratory light exposure",
+    "Check Box4",
+    "Check Box7",
+    "Immediate prior light exposure in laboratory",
+    "Check Box5",
+    "Check Box8",
+    "Measurement plane eg horizontal or vertical",
+    "Check Box9",
+    "Measurement viewpoint and location",
+    "Check Box10",
+    "Type make and manufacturer of the measurement instrument",
+    "Check Box11",
+    "Calibration status of the instrument",
+    "Check Box12",
+    "Check Box13",
+    "Ocular health and functioning",
+    "Check Box14",
+    "Pupil size andor dilation",
+    "Check Box15",
+    "Check Box17",
+    "Relative time eg to circadian phase or sleep",
+    "Check Box16",
+    "Check Box18",
+    "Type make and manufacturer of the light source",
+    "Check Box26",
+    "Use of wearable filtering apparatus eg blueblocking glasses",
+    "Check Box27",
+    "Check Box28",
+    "Illuminance",
+    "Check Box29",
+    "Spectral irradiance andor radiance distribution",
+    "Check Box30",
+    "Check Box33",
+    "fill_20",
+    "Check Box31",
+    "Check Box34",
+    "fill_23",
+    "Check Box32",
+    "Check Box35",
+    "Peak wavelength",
+    "Check Box36",
+    "Check Box39",
+    "Colour quantities any",
+    "Check Box37",
+    "Check Box40",
+    "Colour rendition metrics any",
+    "Check Box38",
+    "Check Box41",
+    "Location of stimulus",
+    "Check Box42",
+    "Temporal pattern including flash frequency and waveform",
+    "Check Box43",
+    "Check Box45",
+    "Relative or absolute size of the stimulus",
+    "Check Box44",
+    "Check Box46"
+  ],
+  "excludedPushButtons": [
+    "Reset",
+    "Button3"
+  ],
+  "widgets": [
+    {
+      "page": 1,
+      "name": "Description of experimental setting",
+      "type": "/Tx",
+      "rect": [
+        307.636,
+        373.611,
+        426.556,
+        389.811
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Timeline of experiment including timing and duration of light",
+      "type": "/Tx",
+      "rect": [
+        307.636,
+        356.072,
+        426.556,
+        372.272
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Prelaboratory sleepwakerestactivity behaviour",
+      "type": "/Tx",
+      "rect": [
+        307.636,
+        338.745,
+        426.556,
+        354.945
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Prelaboratory light exposure",
+      "type": "/Tx",
+      "rect": [
+        307.636,
+        321.007,
+        426.556,
+        337.207
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Immediate prior light exposure in laboratory",
+      "type": "/Tx",
+      "rect": [
+        307.636,
+        303.324,
+        426.556,
+        319.524
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Measurement plane eg horizontal or vertical",
+      "type": "/Tx",
+      "rect": [
+        307.636,
+        259.305,
+        426.556,
+        275.505
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Measurement viewpoint and location",
+      "type": "/Tx",
+      "rect": [
+        307.636,
+        241.596,
+        426.556,
+        257.796
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Type make and manufacturer of the measurement instrument",
+      "type": "/Tx",
+      "rect": [
+        307.636,
+        224.185,
+        426.556,
+        240.385
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Calibration status of the instrument",
+      "type": "/Tx",
+      "rect": [
+        307.636,
+        206.876,
+        426.556,
+        223.076
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Ocular health and functioning",
+      "type": "/Tx",
+      "rect": [
+        307.636,
+        162.675,
+        426.556,
+        178.875
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Pupil size andor dilation",
+      "type": "/Tx",
+      "rect": [
+        307.636,
+        144.658,
+        426.556,
+        160.858
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Relative time eg to circadian phase or sleep",
+      "type": "/Tx",
+      "rect": [
+        307.636,
+        127.302,
+        426.556,
+        143.502
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box1",
+      "type": "/Btn",
+      "rect": [
+        459.809,
+        375.484,
+        472.263,
+        387.938
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box2",
+      "type": "/Btn",
+      "rect": [
+        459.809,
+        357.945,
+        472.263,
+        370.399
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box3",
+      "type": "/Btn",
+      "rect": [
+        459.809,
+        340.618,
+        472.263,
+        353.072
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box4",
+      "type": "/Btn",
+      "rect": [
+        459.809,
+        322.88,
+        472.263,
+        335.334
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box5",
+      "type": "/Btn",
+      "rect": [
+        459.809,
+        305.197,
+        472.263,
+        317.651
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box6",
+      "type": "/Btn",
+      "rect": [
+        536.991,
+        340.618,
+        549.445,
+        353.072
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box7",
+      "type": "/Btn",
+      "rect": [
+        536.991,
+        322.88,
+        549.445,
+        335.334
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box8",
+      "type": "/Btn",
+      "rect": [
+        536.991,
+        305.197,
+        549.445,
+        317.65
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box9",
+      "type": "/Btn",
+      "rect": [
+        459.809,
+        261.178,
+        472.263,
+        273.632
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box10",
+      "type": "/Btn",
+      "rect": [
+        459.809,
+        243.47,
+        472.263,
+        255.923
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box11",
+      "type": "/Btn",
+      "rect": [
+        459.809,
+        226.058,
+        472.263,
+        238.512
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box12",
+      "type": "/Btn",
+      "rect": [
+        459.809,
+        208.75,
+        472.263,
+        221.203
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box13",
+      "type": "/Btn",
+      "rect": [
+        536.991,
+        208.75,
+        549.445,
+        221.203
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box14",
+      "type": "/Btn",
+      "rect": [
+        459.809,
+        164.548,
+        472.263,
+        177.002
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box15",
+      "type": "/Btn",
+      "rect": [
+        459.809,
+        146.532,
+        472.263,
+        158.985
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box16",
+      "type": "/Btn",
+      "rect": [
+        459.809,
+        129.175,
+        472.263,
+        141.629
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box17",
+      "type": "/Btn",
+      "rect": [
+        536.991,
+        146.532,
+        549.445,
+        158.985
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Check Box18",
+      "type": "/Btn",
+      "rect": [
+        536.991,
+        129.175,
+        549.445,
+        141.629
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Author names",
+      "type": "/Tx",
+      "rect": [
+        117.928,
+        507.155,
+        520.147,
+        530.028
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Manuscript title",
+      "type": "/Tx",
+      "rect": [
+        117.928,
+        483.082,
+        520.147,
+        505.955
+      ],
+      "flags": 0
+    },
+    {
+      "page": 1,
+      "name": "Date",
+      "type": "/Tx",
+      "rect": [
+        117.928,
+        459.682,
+        520.147,
+        481.682
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Other",
+      "type": "/Tx",
+      "rect": [
+        454.64,
+        677.201,
+        579.485,
+        695.701
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Type make and manufacturer of the light source",
+      "type": "/Tx",
+      "rect": [
+        309.36,
+        539.251,
+        428.28,
+        555.571
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Use of wearable filtering apparatus eg blueblocking glasses",
+      "type": "/Tx",
+      "rect": [
+        309.36,
+        521.851,
+        428.28,
+        538.171
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Spectral irradiance andor radiance distribution",
+      "type": "/Tx",
+      "rect": [
+        309.36,
+        459.996,
+        428.28,
+        476.316
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "fill_20",
+      "type": "/Tx",
+      "rect": [
+        309.36,
+        442.476,
+        428.28,
+        458.796
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "fill_23",
+      "type": "/Tx",
+      "rect": [
+        309.36,
+        419.175,
+        428.28,
+        441.375
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Colour quantities any",
+      "type": "/Tx",
+      "rect": [
+        309.36,
+        344.72,
+        428.28,
+        361.04
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Colour rendition metrics any",
+      "type": "/Tx",
+      "rect": [
+        309.36,
+        327.2,
+        428.28,
+        343.52
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Temporal pattern including flash frequency and waveform",
+      "type": "/Tx",
+      "rect": [
+        309.36,
+        254.836,
+        428.28,
+        271.156
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Relative or absolute size of the stimulus",
+      "type": "/Tx",
+      "rect": [
+        309.36,
+        237.316,
+        428.28,
+        253.636
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box19",
+      "type": "/Btn",
+      "rect": [
+        292.725,
+        658.33,
+        305.178,
+        670.783
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box20",
+      "type": "/Btn",
+      "rect": [
+        386.683,
+        658.33,
+        399.136,
+        670.783
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box21",
+      "type": "/Btn",
+      "rect": [
+        510.719,
+        658.33,
+        523.173,
+        670.783
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box22",
+      "type": "/Btn",
+      "rect": [
+        186.319,
+        658.33,
+        198.772,
+        670.783
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box23",
+      "type": "/Btn",
+      "rect": [
+        67.2641,
+        658.33,
+        79.7177,
+        670.783
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box24",
+      "type": "/Btn",
+      "rect": [
+        147.846,
+        619.42,
+        160.3,
+        631.874
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box25",
+      "type": "/Btn",
+      "rect": [
+        395.337,
+        619.42,
+        407.791,
+        631.874
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box26",
+      "type": "/Btn",
+      "rect": [
+        460.991,
+        541.184,
+        473.445,
+        553.637
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box27",
+      "type": "/Btn",
+      "rect": [
+        460.991,
+        523.784,
+        473.445,
+        536.238
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box28",
+      "type": "/Btn",
+      "rect": [
+        537.409,
+        523.784,
+        549.863,
+        536.238
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box29",
+      "type": "/Btn",
+      "rect": [
+        460.991,
+        479.221,
+        473.445,
+        491.675
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box30",
+      "type": "/Btn",
+      "rect": [
+        460.991,
+        461.929,
+        473.445,
+        474.383
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box31",
+      "type": "/Btn",
+      "rect": [
+        460.991,
+        444.409,
+        473.445,
+        456.863
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box32",
+      "type": "/Btn",
+      "rect": [
+        460.991,
+        424.048,
+        473.445,
+        436.502
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box33",
+      "type": "/Btn",
+      "rect": [
+        537.409,
+        461.929,
+        549.863,
+        474.383
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box34",
+      "type": "/Btn",
+      "rect": [
+        537.409,
+        444.409,
+        549.863,
+        456.863
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box35",
+      "type": "/Btn",
+      "rect": [
+        537.409,
+        424.048,
+        549.863,
+        436.502
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box36",
+      "type": "/Btn",
+      "rect": [
+        460.991,
+        363.512,
+        473.445,
+        375.965
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box37",
+      "type": "/Btn",
+      "rect": [
+        460.991,
+        346.548,
+        473.445,
+        359.002
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box38",
+      "type": "/Btn",
+      "rect": [
+        460.991,
+        329.221,
+        473.445,
+        341.674
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box39",
+      "type": "/Btn",
+      "rect": [
+        537.409,
+        363.512,
+        549.863,
+        375.965
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box40",
+      "type": "/Btn",
+      "rect": [
+        537.409,
+        346.548,
+        549.863,
+        359.002
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box41",
+      "type": "/Btn",
+      "rect": [
+        537.409,
+        329.221,
+        549.863,
+        341.674
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box42",
+      "type": "/Btn",
+      "rect": [
+        460.991,
+        274.328,
+        473.445,
+        286.781
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box43",
+      "type": "/Btn",
+      "rect": [
+        460.991,
+        256.769,
+        473.445,
+        269.223
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box44",
+      "type": "/Btn",
+      "rect": [
+        460.991,
+        239.25,
+        473.445,
+        251.703
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box45",
+      "type": "/Btn",
+      "rect": [
+        537.409,
+        256.769,
+        549.863,
+        269.223
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Check Box46",
+      "type": "/Btn",
+      "rect": [
+        537.409,
+        239.25,
+        549.863,
+        251.703
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Illuminance",
+      "type": "/Tx",
+      "rect": [
+        309.36,
+        477.288,
+        428.28,
+        493.608
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Peak wavelength",
+      "type": "/Tx",
+      "rect": [
+        309.36,
+        362.704,
+        428.28,
+        379.024
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Location of stimulus",
+      "type": "/Tx",
+      "rect": [
+        309.36,
+        272.394,
+        428.28,
+        288.714
+      ],
+      "flags": 0
+    },
+    {
+      "page": 2,
+      "name": "Reset",
+      "type": "/Btn",
+      "rect": [
+        154.014,
+        170.335,
+        342.087,
+        201.826
+      ],
+      "flags": 65536
+    },
+    {
+      "page": 2,
+      "name": "Button3",
+      "type": "/Btn",
+      "rect": [
+        352.724,
+        170.399,
+        441.306,
+        201.89
+      ],
+      "flags": 65536
+    }
+  ]
+}

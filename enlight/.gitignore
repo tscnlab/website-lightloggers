@@ -1,0 +1,10 @@
+_site/
+.quarto/
+.venv/
+__pycache__/
+output/
+tmp/
+preview/
+assets/enlight-source.zip
+
+/.quarto/

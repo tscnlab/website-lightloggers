@@ -58,3 +58,21 @@ The directory offers CSV and BibTeX downloads. Search records and extraction not
 The reader uses the vendored Mozilla PDF.js distribution. Normal Quarto builds need no PDF extraction software or network access. To index a newly selected passage, install PyMuPDF and use `scripts/index-source-pdf.py`; inspect the rendered highlight before committing it. Keep abstract-only locators labelled and never infer missing page numbers.
 
 Only PDFs with redistribution permission are included under `sources/`; authors, original URLs and licences are in the source manifest. Other originals are linked or opened locally. PDF.js is Apache-2.0, version recorded in `assets/vendor/pdfjs/VERSION`.
+
+## ENLIGHT wizard
+
+The `enlight/` directory is an independent Quarto project published at
+<https://resources.tscnlab.org/enlight/>. Its data, browser code and reproducible
+source are kept separate from the light logger inventory.
+
+To rebuild both resources locally:
+
+```sh
+quarto render
+python scripts/build-enlight.py
+```
+
+The integration script renders ENLIGHT and copies its output into `_site/enlight/`
+after the root project has rendered `_site/lightloggers/`. The existing GitHub
+Pages workflow publishes the combined `_site/` directory. No DNS changes are
+needed. See `enlight/README.md` for the checklist provenance and PDF export checks.

@@ -1,4 +1,4 @@
-name: Render and deploy the literature directory
+name: Render and deploy TSCN resources
 on:
   push:
     branches: [main]
@@ -38,7 +38,11 @@ jobs:
           version: '1.6.43'
       - uses: actions/configure-pages@v5
       - run: quarto render
+      - name: Render ENLIGHT wizard
+        run: python scripts/build-enlight.py
       - run: node --test tests/filtering.test.cjs
+      - name: Verify ENLIGHT draft and PDF export
+        run: node --test enlight/tests/state.test.mjs enlight/tests/pdf-export.test.cjs
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

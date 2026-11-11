@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+  resources:
+    - assets/**
+    - data/checklist.json
+    - sources/*.pdf
+    - sources/README.md
+    - index.qmd
+
+website:
+  title: "ENLIGHT checklist wizard · TSCN Lab"
+  site-url: https://resources.tscnlab.org/enlight/
+  search: false
+
+lang: en
+jupyter: python3
+format:
+  html:
+    theme: none
+    minimal: true
+    css: assets/site.css
+    page-layout: full
+    toc: false
+    anchor-sections: false
+    html-math-method: plain
+    include-in-header:
+      text: |
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+        <link rel="canonical" href="https://resources.tscnlab.org/enlight/">
+execute:
+  echo: false
+  warning: false
+  error: false
+  cache: false
+  freeze: false
+  daemon: false
