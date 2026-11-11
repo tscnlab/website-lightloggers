@@ -1,6 +1,10 @@
 ---
 pagetitle: "ENLIGHT Checklist Wizard"
-description: "Work through the ENLIGHT reporting checklist and download a completed PDF. Your draft stays in your browser."
+description: "Complete the 25-item ENLIGHT reporting checklist with step-by-step guidance and download your completed PDF."
+open-graph:
+  title: "ENLIGHT Checklist Wizard"
+twitter-card:
+  title: "ENLIGHT Checklist Wizard"
 ---
 
 ```{python}

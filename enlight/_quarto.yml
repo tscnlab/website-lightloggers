@@ -13,6 +13,15 @@ project:
 website:
   title: "ENLIGHT Checklist Wizard · TSCN Lab"
   site-url: https://resources.tscnlab.org/enlight/
+  image: assets/social-preview.png
+  image-alt: "ENLIGHT lightbulb icon and Checklist Wizard: complete the reporting checklist and download your PDF."
+  open-graph:
+    locale: en_GB
+    site-name: "ENLIGHT Checklist Wizard"
+    image-width: 1200
+    image-height: 630
+  twitter-card:
+    card-style: summary_large_image
   search: false
 
 lang: en
@@ -30,6 +39,9 @@ format:
       text: |
         <link rel="icon" type="image/png" href="assets/favicon.png">
         <link rel="canonical" href="https://resources.tscnlab.org/enlight/">
+        <meta property="og:url" content="https://resources.tscnlab.org/enlight/">
+        <meta property="og:type" content="website">
+        <meta property="og:image:type" content="image/png">
 execute:
   echo: false
   warning: false

@@ -26,3 +26,9 @@ The source artwork, colours and aspect ratio are preserved. The logo and institu
 `favicon.png` is the unchanged 363 × 363 pixel TSCN unit mark reused from Lightloggers. The upstream Join website records that the user supplied it on 25 September 2026.
 
 - SHA-256: `655bcfebe4c9844e7ee746e8636cafa2c3f0c63b09aa8fed60589c63bdcd8006`
+
+## Social preview
+
+`social-preview.svg` is the locally authored vector composition for the ENLIGHT Checklist Wizard. It displays the lightbulb region of `enlight-logo.png` through an SVG viewport; the original logo file is unchanged. The TSCN Unit mark is reused unchanged. The checklist/document drawing is schematic, not an altered source PDF.
+
+`social-preview.png` is rendered from that layout with `../scripts/render-social-preview.cjs` and Sharp 0.35.5, at 1200 × 630 pixels. Georgia and Arial reproduce the website typography. No AI-generated raster artwork is used.

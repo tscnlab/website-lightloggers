@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">ENLIGHT Checklist Wizard</title>
+  <desc id="description">ENLIGHT lightbulb icon, Checklist Wizard title, a reporting checklist illustration and a small TSCN Unit logo.</desc>
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <!-- Clip the official logo to its lightbulb symbol; do not redraw it. -->
+  <svg x="54" y="36" width="114" height="111" viewBox="2 1 116 113" overflow="hidden">
+    <image width="481" height="113" xlink:href="enlight-logo.png"/>
+  </svg>
+  <text x="64" y="214" fill="#073b4b" font-family="Georgia, 'Liberation Serif', serif" font-size="65">ENLIGHT</text>
+  <text x="64" y="294" fill="#073b4b" font-family="Georgia, 'Liberation Serif', serif" font-size="65">Checklist Wizard</text>
+  <rect x="66" y="323" width="59" height="3" fill="#d7a580"/>
+  <g fill="#54686e" font-family="Arial, 'Liberation Sans', sans-serif" font-size="26">
+    <text x="64" y="376">Complete the reporting checklist.</text>
+    <text x="64" y="414">Download your PDF.</text>
+  </g>
+  <text x="64" y="474" fill="#355f54" font-family="Arial, 'Liberation Sans', sans-serif" font-size="17" letter-spacing=".3">25 ITEMS · STEP-BY-STEP GUIDANCE</text>
+  <rect x="743" y="62" width="393" height="427" rx="4" fill="#edf3f0"/>
+  <rect x="823" y="105" width="269" height="333" rx="3" fill="#f7faf8" stroke="#cbd8d2"/>
+  <rect x="795" y="88" width="269" height="333" rx="3" fill="#ffffff" stroke="#b4c8bf"/>
+  <text x="821" y="132" fill="#073b4b" font-family="Arial, 'Liberation Sans', sans-serif" font-weight="700" font-size="15" letter-spacing="1">REPORTING CHECKLIST</text>
+  <path d="M821 151 H1038" stroke="#d6dfdc"/>
+  <g fill="none" stroke="#4b8173" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="821" y="178" width="25" height="25" rx="2" fill="#edf3f0" stroke="#b4c8bf" stroke-width="1"/>
+    <path d="M827 190 l5 5 9-11"/>
+    <rect x="821" y="238" width="25" height="25" rx="2" fill="#edf3f0" stroke="#b4c8bf" stroke-width="1"/>
+    <path d="M827 250 l5 5 9-11"/>
+    <rect x="821" y="298" width="25" height="25" rx="2" fill="#edf3f0" stroke="#b4c8bf" stroke-width="1"/>
+    <path d="M827 310 l5 5 9-11"/>
+  </g>
+  <g fill="#dbe5e0">
+    <rect x="863" y="181" width="171" height="7" rx="2"/>
+    <rect x="863" y="196" width="128" height="5" rx="2"/>
+    <rect x="863" y="241" width="148" height="7" rx="2"/>
+    <rect x="863" y="256" width="170" height="5" rx="2"/>
+    <rect x="863" y="301" width="166" height="7" rx="2"/>
+    <rect x="863" y="316" width="112" height="5" rx="2"/>
+  </g>
+  <path d="M821 350 H1038" stroke="#d6dfdc"/>
+  <text x="821" y="381" fill="#54686e" font-family="Arial, 'Liberation Sans', sans-serif" font-size="13">ENLIGHT v1.0.2</text>
+  <rect x="987" y="371" width="117" height="62" rx="3" fill="#073b4b"/>
+  <path d="M1008 387 v24 m-6-7 6 7 6-7 M1000 417 h16" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1029" y="409" fill="#ffffff" font-family="Arial, 'Liberation Sans', sans-serif" font-weight="700" font-size="23">PDF</text>
+  <path d="M64 528 H1136" stroke="#d6dfdc"/>
+  <image x="64" y="556" width="246" height="47" xlink:href="tscn-logo.png"/>
+  <text x="1136" y="586" text-anchor="end" fill="#073b4b" font-family="Arial, 'Liberation Sans', sans-serif" font-size="24">resources.tscnlab.org/enlight</text>
+</svg>

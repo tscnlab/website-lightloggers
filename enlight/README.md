@@ -41,3 +41,18 @@ node --test tests/*.test.*
 ```
 
 PDF tests generate a clearly labelled fictional completed example and blank draft under `output/pdf/`, plus a long Unicode stress case under `tmp/pdfs/`. Tests inspect the canonical AcroForm values and widget appearances, all status branches, unsupported glyph errors, long text, and draft validation. The downloadable example JSON can be imported in the wizard. Browser QA covers desktop/mobile, form navigation, draft import/export, cancellation, and completed PDF download. Source PDFs are independently mapped by `data/build-checklist.py` (requires PyMuPDF).
+
+## Social preview
+
+The page supplies Open Graph metadata for LinkedIn and other link-sharing services, plus a large-image Twitter/X card. The social title is **ENLIGHT Checklist Wizard**, with an absolute canonical URL and a 1200 × 630 PNG at `assets/social-preview.png`.
+
+The preview uses only the lightbulb symbol from the official ENLIGHT logo, with the smaller TSCN Unit logo in the footer. The document illustration is schematic. The deterministic vector layout is in `assets/social-preview.svg`; both original logos remain unchanged. To regenerate the PNG:
+
+```sh
+npm install --no-save sharp@0.35.5
+node scripts/render-social-preview.cjs
+```
+
+Use Georgia and Arial fonts to reproduce the checked-in typography; Liberation Serif and Liberation Sans are fallbacks. `SHARP_MODULE` can point to a preinstalled Sharp module. Ordinary Quarto builds use the checked-in PNG and require no additional image dependencies. The source archive includes the layout and rendering script.
+
+The image follows [LinkedIn's website-sharing requirements](https://www.linkedin.com/help/linkedin/answer/a521928/make-your-website-shareable-on-linkedin). Existing cached shares can be refreshed with LinkedIn's [Post Inspector](https://www.linkedin.com/post-inspector/).
