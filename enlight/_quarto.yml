@@ -6,6 +6,7 @@ project:
   resources:
     - assets/**
     - data/checklist.json
+    - data/context.json
     - sources/*.pdf
     - sources/README.md
     - index.qmd

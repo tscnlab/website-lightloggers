@@ -1,0 +1,23 @@
+{
+  "verifiedDate": "2026-11-11",
+  "cieTechnicalNote": {
+    "identifier": "CIE TN 016:2026",
+    "citation": "CIE. (2026). A comprehensive checklist for reporting light characteristics in laboratory-based human studies using light as an intervention. CIE TN 016:2026.",
+    "doi": "10.25039/TN.016.2026",
+    "publicationUrl": "https://cie.co.at/publications/comprehensive-checklist-reporting-light-characteristics-laboratory-based-human-studies",
+    "pdfUrl": "https://files.cie.co.at/Pubs/TN/CIE_TN_016_2026.pdf",
+    "announcementUrl": "https://cie.co.at/news/new-cie-technical-note-published-comprehensive-checklist-reporting-light-characteristics"
+  },
+  "endorsements": {
+    "sourceUrl": "https://enlight-statement.org/#endorsing-organisations",
+    "organisations": [
+      {"name": "Society for Research on Biological Rhythms", "abbreviation": "SRBR", "url": "https://srbr.org/"},
+      {"name": "Sleep Research Society", "abbreviation": "SRS", "url": "https://sleepresearchsociety.org/"},
+      {"name": "Society for Light Treatment and Biological Rhythms", "abbreviation": "SLTBR", "url": "https://sltbr.org/"},
+      {"name": "Australasian Chronobiology Society", "abbreviation": "ACS", "url": "https://australasianchronobiologysociety.org/"},
+      {"name": "Center for Environmental Therapeutics", "abbreviation": "CET", "url": "https://cet.org/"},
+      {"name": "Circadian Mental Health Network", "abbreviation": "CMHN", "url": "https://www.circadianmentalhealth.org/"},
+      {"name": "VELUX Stiftung", "abbreviation": "", "url": "https://veluxstiftung.ch/"}
+    ]
+  }
+}

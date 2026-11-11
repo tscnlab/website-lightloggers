@@ -24,5 +24,15 @@
 .citation-downloads{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
 .citation-downloads>a{display:inline-flex;align-items:center;gap:7px;min-height:30px;padding:3px 9px;border:1px solid #c6ad64;border-radius:3px;background:#fffaf0;text-decoration:none;font-weight:600}
 .citation-downloads>a:hover{background:#ffedaa}
+.citation-related{margin-top:16px;padding-top:14px;border-top:1px solid #ead080}
+.citation-related-label{font-size:12px;font-weight:600;color:var(--ink);margin-bottom:6px}
+.citation-document{display:inline-flex;align-items:center;min-height:30px;font-weight:600}
+.endorsements{border-top:1px solid var(--line);padding:26px 0 30px}
+.endorsements h2{font:400 23px/1.3 var(--serif);margin-bottom:9px}
+.endorsements p{font-size:12px;color:var(--muted);max-width:760px}
+.endorsement-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 32px;list-style:none;margin:18px 0 0;padding:0}
+.endorsement-list li{padding-left:12px;border-left:2px solid var(--line);font-size:12px;line-height:1.7}
+.endorsement-list a{display:inline-block;padding:4px 0;overflow-wrap:anywhere}
+@media(max-width:760px){.endorsement-list{grid-template-columns:1fr;gap:7px}.endorsements{padding:23px 0 26px}}
 @media(max-width:760px){.citation-callout{padding:15px 16px;margin-bottom:22px}.citation-callout summary{font-size:13px}.citation-reference{font-size:12px}}
-@media print{.citation-callout{display:none!important}}
+@media print{.citation-callout,.endorsements{display:none!important}}

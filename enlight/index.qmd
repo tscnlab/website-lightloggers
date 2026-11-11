@@ -18,6 +18,7 @@ import zipfile
 
 root = Path.cwd()
 checklist = json.loads((root / "data/checklist.json").read_text())
+context = json.loads((root / "data/context.json").read_text())
 assert len(checklist["items"]) == 24
 assert len({item["id"] for item in checklist["items"]}) == 24
 assert sum(item["essential"] for item in checklist["items"]) == 9
@@ -34,6 +35,20 @@ template = (root / "assets/wizard.html").read_text()
 template = template.replace("{{ENLIGHT_CITATION}}", escape_html(checklist["meta"]["citation"]))
 template = template.replace("{{ENLIGHT_DOI}}", escape_html(checklist["meta"]["doi"]))
 template = template.replace("{{ENLIGHT_PMID}}", escape_html(checklist["meta"]["pmid"]))
+for token, value in {
+    "CIE_CITATION": context["cieTechnicalNote"]["citation"],
+    "CIE_DOI": context["cieTechnicalNote"]["doi"],
+    "CIE_PDF_URL": context["cieTechnicalNote"]["pdfUrl"],
+    "ENDORSEMENTS_SOURCE": context["endorsements"]["sourceUrl"],
+}.items():
+    template = template.replace("{{" + token + "}}", escape_html(value))
+endorsement_links = []
+for organisation in context["endorsements"]["organisations"]:
+    label = organisation["name"]
+    if organisation["abbreviation"]:
+        label += " (" + organisation["abbreviation"] + ")"
+    endorsement_links.append('<li><a href="' + escape_html(organisation["url"]) + '" target="_blank" rel="noopener">' + escape_html(label) + '</a></li>')
+template = template.replace("<!-- ENDORSING_ORGANISATIONS -->", "\n".join(endorsement_links))
 payload = json.dumps(checklist, ensure_ascii=False).replace("</", "<\\/")
 html = template.replace("<!-- CHECKLIST_DATA -->", '<script id="checklist-data" type="application/json">' + payload + '</script>')
 print("```{=html}\n" + html + "\n```")
