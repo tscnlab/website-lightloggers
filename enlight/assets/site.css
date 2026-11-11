@@ -13,5 +13,10 @@
 .citation-callout h2{font:600 14px/1.5 var(--sans);margin:0 0 7px;color:var(--ink)}
 .citation-reference{font-size:12px;line-height:1.75;overflow-wrap:anywhere}
 .citation-reference a{font-weight:600;white-space:normal}
+.citation-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;margin-top:10px;font-size:11px}
+.citation-pubmed{display:inline-flex;align-items:center;min-height:30px;font-weight:600}
+.citation-downloads{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.citation-downloads>a{display:inline-flex;align-items:center;gap:7px;min-height:30px;padding:3px 9px;border:1px solid #c6ad64;border-radius:3px;background:#fffaf0;text-decoration:none;font-weight:600}
+.citation-downloads>a:hover{background:#ffedaa}
 @media(max-width:760px){.citation-callout{padding:15px 16px;margin-bottom:22px}.citation-callout h2{font-size:13px}.citation-reference{font-size:12px}}
 @media print{.citation-callout{display:none!important}}

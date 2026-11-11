@@ -32,6 +32,8 @@ The parent `tscnlab/website-lightloggers` repository renders this subproject aft
 
 Authoritative sources: [ENLIGHT statement](https://enlight-statement.org/) and [Spitschan et al. (2023)](https://doi.org/10.1016/j.ebiom.2023.104889). `data/checklist.json` records the source commit, SHA-256 hashes, item-to-form-field mapping, and helper descriptions. Item IDs such as A1.1 are stable wizard IDs; the official PDF numbers sections only.
 
+The citation callout links to the DOI and [PubMed record (PMID 38043137)](https://pubmed.ncbi.nlm.nih.gov/38043137/), with local RIS and BibTeX downloads in `assets/references/`. Both formats retain the five named authors and ENLIGHT Consortium collective author, using the December 2023 issue date. These files are included in the rendered site and source archive.
+
 The official PDFs are unchanged and retain their specific CC-BY-NC-ND notice. See `sources/README.md` for provenance and the paper's item-count discrepancy. Helper descriptions are concise application guidance; the original E&E document remains linked for detail. PDF-lib and fontkit licences are in `assets/vendor/`; font attribution is in `assets/fonts/`. The official ENLIGHT logo heads the page, with a smaller TSCN Unit logo and an AI disclosure in the footer. The TSCN logo is reused unchanged from the Lightloggers site. The browser and touch icons use the ENLIGHT lightbulb. Asset sources and checksums are in `assets/PROVENANCE.md`.
 
 ## Verification

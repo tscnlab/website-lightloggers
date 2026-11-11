@@ -33,6 +33,7 @@ with zipfile.ZipFile(root / "assets/enlight-source.zip", "w", zipfile.ZIP_DEFLAT
 template = (root / "assets/wizard.html").read_text()
 template = template.replace("{{ENLIGHT_CITATION}}", escape_html(checklist["meta"]["citation"]))
 template = template.replace("{{ENLIGHT_DOI}}", escape_html(checklist["meta"]["doi"]))
+template = template.replace("{{ENLIGHT_PMID}}", escape_html(checklist["meta"]["pmid"]))
 payload = json.dumps(checklist, ensure_ascii=False).replace("</", "<\\/")
 html = template.replace("<!-- CHECKLIST_DATA -->", '<script id="checklist-data" type="application/json">' + payload + '</script>')
 print("```{=html}\n" + html + "\n```")
