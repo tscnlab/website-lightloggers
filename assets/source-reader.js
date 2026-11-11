@@ -9,6 +9,10 @@ if(embedded){
 }
 const study=data.studies.find(s=>s.id===params.get('study'));
 const source=study && data.evidence.studies[study.id];
+const narrowReader=matchMedia('(max-width:780px)');
+const arrangeDetails=()=>{$('.reader-details').open=!narrowReader.matches;};
+arrangeDetails();
+narrowReader.addEventListener('change',arrangeDetails);
 let pdf=null, pdfTask=null, pdfjs=null, selected=null, pageNumber=1, matched=false, renderTask=null, renderSerial=0, loadSerial=0;
 const safeLink=value=>{try{const u=new URL(value,location.href);return ['https:','http:','file:'].includes(u.protocol)?u.href:'#';}catch{return '#';}};
 
@@ -80,6 +84,7 @@ if(!study || !source){
   $('.source-layout').hidden=true;$('#source-original').hidden=true;
 }else{
   document.title=`${study.authors} (${study.year}) · Source passages`;
+  if(embedded)window.parent.postMessage({type:'lightlogger-reader-title',title:`${study.authors} (${study.year})`},location.origin);
   $('#source-title').textContent=study.title;$('#source-citation').textContent=`${study.authors} (${study.year}) · DOI ${study.doi}`;
   $('#source-original').href=safeLink(study.url);
   $('#passage-list').innerHTML=source.passages.map(p=>`<button class="passage-option" type="button" data-passage="${escape(p.id)}" aria-current="false">${escape(p.label)}<span>${escape(p.locator)}</span></button>`).join('');

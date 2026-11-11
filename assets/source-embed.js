@@ -4,7 +4,7 @@
   const dialog=document.createElement('dialog');
   dialog.id='source-dialog';
   dialog.setAttribute('aria-labelledby','source-dialog-title');
-  dialog.innerHTML='<div class="dialog-header"><h2 id="source-dialog-title">Source paper</h2><button class="close-dialog" aria-label="Close PDF reader" autofocus>×</button></div><iframe id="source-frame" title="Source paper and highlighted passages"></iframe>';
+  dialog.innerHTML='<div class="dialog-header"><h2 id="source-dialog-title">Paper reader</h2><button class="close-dialog" aria-label="Close PDF reader" autofocus>×</button></div><iframe id="source-frame" title="Source paper and highlighted passages"></iframe>';
   document.body.append(dialog);
   const frame=dialog.querySelector('iframe');
   dialog.querySelector('button').addEventListener('click',()=>dialog.close());
@@ -14,6 +14,8 @@
     event.preventDefault();
     const url=new URL(link.href);
     url.searchParams.set('embedded','1');
+    dialog.querySelector('h2').textContent='Paper reader';
+    frame.title='Source paper and highlighted passages';
     frame.src=url.href;
     dialog.showModal();
     document.body.style.overflow='hidden';
@@ -23,6 +25,12 @@
     document.body.style.overflow=document.querySelector('dialog[open]')?'hidden':'';
   });
   window.addEventListener('message',event=>{
-    if(event.origin===location.origin && event.source===frame.contentWindow && event.data?.type==='lightlogger-reader-close')dialog.close();
+    if(event.origin!==location.origin || event.source!==frame.contentWindow)return;
+    if(event.data?.type==='lightlogger-reader-close')dialog.close();
+    if(event.data?.type==='lightlogger-reader-title' && typeof event.data.title==='string'){
+      dialog.querySelector('h2').textContent=event.data.title;
+      dialog.querySelector('h2').title=event.data.title;
+      frame.title=event.data.title+' · Paper and highlighted passages';
+    }
   });
 })();
