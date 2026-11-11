@@ -2,6 +2,11 @@ const $=selector=>document.querySelector(selector);
 const data=JSON.parse($('#source-data').textContent);
 const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const params=new URL(location.href).searchParams;
+const embedded=params.get('embedded')==='1' && window.parent!==window;
+if(embedded){
+  document.documentElement.classList.add('embedded-reader');
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();window.parent.postMessage({type:'lightlogger-reader-close'},location.origin);}});
+}
 const study=data.studies.find(s=>s.id===params.get('study'));
 const source=study && data.evidence.studies[study.id];
 let pdf=null, pdfTask=null, pdfjs=null, selected=null, pageNumber=1, matched=false, renderTask=null, renderSerial=0, loadSerial=0;
@@ -16,6 +21,7 @@ function updatePassage(id,push=false){
   selected=source.passages.find(p=>p.id===id)||source.passages[0];
   if(!selected)return;
   document.querySelectorAll('.passage-option').forEach(b=>b.setAttribute('aria-current',String(b.dataset.passage===selected.id)));
+  $('#passage-select').value=selected.id;
   $('#passage-title').textContent=selected.label;
   $('#passage-location').textContent=selected.locator;
   $('#passage-quote').hidden=!selected.quote;
@@ -44,7 +50,7 @@ async function loadPdf(bytes){
     $('#page-number').max=pdf.numPages;$('#page-total').textContent=`of ${pdf.numPages}`;
     $('#jump-passage').disabled=!matched || !selected?.pdf;
     await renderPage(true);
-  }catch(error){if(serial!==loadSerial)return;console.warn('PDF reader:',error);setStatus('This PDF could not be opened. Use the original paper link, or choose another PDF.');$('#source-no-pdf').hidden=false;}
+  }catch(error){if(serial!==loadSerial)return;console.warn('PDF reader:',error);setStatus('This PDF could not be opened. Use the original paper link, or choose another PDF.');$('#source-no-pdf').hidden=false;$('.pdf-tools').hidden=false;}
 }
 async function renderPage(jump=false){
   if(!pdf)return;
@@ -78,9 +84,10 @@ if(!study || !source){
   $('#source-original').href=safeLink(study.url);
   $('#passage-list').innerHTML=source.passages.map(p=>`<button class="passage-option" type="button" data-passage="${escape(p.id)}" aria-current="false">${escape(p.label)}<span>${escape(p.locator)}</span></button>`).join('');
   $('#passage-list').addEventListener('click',e=>{const b=e.target.closest('[data-passage]');if(b)updatePassage(b.dataset.passage,true);});
+  $('#passage-select').innerHTML=source.passages.map(p=>`<option value="${escape(p.id)}">${escape(p.label)}</option>`).join('');
+  $('#passage-select').addEventListener('change',event=>updatePassage(event.target.value,true));
   const doc=source.document;
-  $('#source-license').innerHTML=`${escape(study.authors)} (${study.year}). ${doc.license?`Source: ${doc.licenseUrl?`<a href="${escape(safeLink(doc.licenseUrl))}">${escape(doc.license)}</a>`:escape(doc.license)}. `:''}Highlights are added by this inventory; the PDF is unchanged.`;
-  if(doc.pdfUrl){$('#source-pdf').hidden=false;$('#source-pdf').href=safeLink(doc.pdfUrl);}
+  $('#source-license').innerHTML=`${escape(study.authors)} (${study.year}). ${doc.edition?`${escape(doc.edition)}. `:''}${doc.license?`${doc.licenseUrl?`<a href="${escape(safeLink(doc.licenseUrl))}" target="_blank" rel="noopener noreferrer">${escape(doc.license)}</a>`:escape(doc.license)}.`:''}`;
   updatePassage(params.get('passage'));
   if(!source.passages.length){$('#passage-title').textContent='Source paper';$('#passage-location').textContent='Full text needed to add passage highlights.';$('#passage-original').href=safeLink(study.url);}
   $('#local-pdf').addEventListener('change',async e=>{const file=e.target.files[0];if(file)await loadPdf(await file.arrayBuffer());});
@@ -91,7 +98,8 @@ if(!study || !source){
   $('#jump-passage').addEventListener('click',()=>{if(matched && selected?.pdf){pageNumber=selected.pdf.page;renderPage(true);}});
   let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{if($('#pdf-zoom').value==='fit')renderPage();},180);});
   if(doc.pdfPath){
+    $('.pdf-tools').hidden=true;
     setStatus('Loading source PDF…');
-    try{const response=await fetch(new URL(doc.pdfPath,location.href));if(!response.ok)throw Error('PDF unavailable');await loadPdf(await response.arrayBuffer());}catch{setStatus('Use the original PDF link or open a copy from your computer.');}
+    try{const response=await fetch(new URL(doc.pdfPath,location.href));if(!response.ok)throw Error('PDF unavailable');await loadPdf(await response.arrayBuffer());}catch{$('.pdf-tools').hidden=false;setStatus('Use the original paper link or open a copy from your computer.');}
   }else if(doc.sha256){setStatus('Open the original PDF from your computer to see the saved highlights.');}
 }

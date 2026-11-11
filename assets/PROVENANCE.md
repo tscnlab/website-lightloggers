@@ -59,4 +59,4 @@ Journal and server marks remain subject to their owners' rights.
 
 Mozilla PDF.js 6.5.438 is vendored from the official `pdfjs-dist` npm distribution, with its Apache-2.0 licence, worker, fonts and WebAssembly support. The source code is maintained at https://github.com/mozilla/pdf.js.
 
-The original paper PDFs in `../sources/` are unchanged copies. Author, DOI, source URL, licence, SHA-256 and page count are recorded in `../data/source-evidence.json` and `../data/library.json`. Highlights are separate website annotations, not modifications to the PDFs. Non-redistributed author manuscripts can be opened from the reader’s computer; the OSA paper is loaded from its author repository.
+The original paper PDFs in `../sources/` are unchanged copies. Author, DOI, source URL, licence, SHA-256 and page count are recorded in `../data/source-evidence.json` and `../data/library.json`. Reuse terms and original repository links are listed in `../sources/README.md`. Highlights are separate website annotations. The inventory embeds the reader and serves available PDFs from this repository; it has no download or print controls.

@@ -55,9 +55,11 @@ The directory offers CSV and BibTeX downloads. Search records and extraction not
 
 `data/source-evidence.json` maps claims, device models and measurements to short quotations, section links and PDF coordinates. Each coordinate is tied to the SHA-256 of the inspected PDF edition. The reader renders an unchanged original PDF with a separate highlight overlay; another edition is shown without those highlights. Local files stay in the browser.
 
+The inventory and About page open the reader in a modal iframe, preserving the current search and scroll position. It has page navigation, zoom and passage selection, with no download or print controls. Hosted PDFs load automatically from this repository. Public static PDF URLs remain accessible independently of the viewer.
+
 The reader uses the vendored Mozilla PDF.js distribution. Normal Quarto builds need no PDF extraction software or network access. To index a newly selected passage, install PyMuPDF and use `scripts/index-source-pdf.py`; inspect the rendered highlight before committing it. Keep abstract-only locators labelled and never infer missing page numbers.
 
-Only PDFs with redistribution permission are included under `sources/`; authors, original URLs and licences are in the source manifest. Other originals are linked or opened locally. PDF.js is Apache-2.0, version recorded in `assets/vendor/pdfjs/VERSION`.
+All 28 indexed papers have PDFs under `sources/`. Authors, original URLs, available reuse terms and the provenance of files supplied by the site owner are recorded in the source manifest and `sources/README.md`. Owner-supplied files retain their original copyright notices; their inclusion does not assert a new reuse licence. PDF.js is Apache-2.0, version recorded in `assets/vendor/pdfjs/VERSION`.
 
 ## ENLIGHT wizard
 
@@ -76,3 +78,4 @@ The integration script renders ENLIGHT and copies its output into `_site/enlight
 after the root project has rendered `_site/lightloggers/`. The existing GitHub
 Pages workflow publishes the combined `_site/` directory. No DNS changes are
 needed. See `enlight/README.md` for the checklist provenance and PDF export checks.
+

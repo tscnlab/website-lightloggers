@@ -59,7 +59,51 @@ async function main(){
    const passage=source.passages.find(p=>p.pdf);await open(sid,passage.id);
    assert.equal(await page.locator('#page-number').inputValue(),String(passage.pdf.page),sid);
    assert.equal(await page.locator('.pdf-highlight').count(),passage.pdf.rects.length,sid);
+   assert.equal(await page.locator('a[download],button[title*="Download"],#source-pdf').count(),0,sid);
+   assert(await page.locator('.pdf-tools').isHidden(),sid);
+   assert.doesNotMatch(await page.locator('#source-license').textContent(),/Highlights are|PDF is unchanged/);
   }
+ });
+ await check('Embedded PDF preserves the inventory and has no download controls',async()=>{
+  await page.goto(new URL('?view=studies&q=Ishihara',base).href);const before=page.url();
+  const link=page.locator('.study-links a[href^="source.html"]').first();await link.click();
+  const reader=page.frameLocator('#source-frame');
+  await reader.locator('#pdf-status').filter({hasText:'Highlighted passage'}).waitFor();
+  assert.equal(page.url(),before);assert.equal(context.pages().length,1);
+  assert.equal(await reader.locator('a[download],#source-pdf').count(),0);
+  assert(await reader.locator('.pdf-tools').isHidden());
+  assert(await reader.locator('.reader-header').isHidden());
+  assert(await reader.locator('#pdf-scroll').evaluate(n=>n.clientHeight>250));
+  await noOverflow();await page.screenshot({path:path.join(out,'embedded-source-reader.png')});
+  await reader.locator('#page-number').focus();await page.keyboard.press('Escape');
+  await page.waitForFunction(()=>!document.querySelector('#source-dialog').open && !document.querySelector('#source-frame').hasAttribute('src'));
+  assert.equal(await page.locator('#search').inputValue(),'Ishihara');
+  assert.equal(await page.locator('#source-frame').getAttribute('src'),null);
+  await page.setViewportSize({width:390,height:844});await link.click();
+  await reader.locator('#pdf-status').filter({hasText:'Highlighted passage'}).waitFor();await noOverflow();
+  await reader.locator('#passage-select').selectOption('photopic');
+  await reader.locator('#pdf-status').filter({hasText:'PDF page 5'}).waitFor();
+  assert(await reader.locator('#passage-list').isHidden());
+  assert(await reader.locator('html').evaluate(n=>n.scrollWidth<=innerWidth+1));
+  await page.screenshot({path:path.join(out,'embedded-source-reader-mobile.png')});
+  await page.getByRole('button',{name:'Close PDF reader'}).click();
+  await page.setViewportSize({width:1440,height:1000});
+ });
+ await check('Embedded source opens from metric references and About',async()=>{
+  await page.goto(base);await page.locator('#device-lys-button [data-evidence-key="Angular response"]').click();
+  await page.locator('#evidence-content a[href^="source.html"]').first().click();
+  await page.frameLocator('#source-frame').locator('#pdf-status').filter({hasText:'Highlighted passage'}).waitFor();
+  await page.getByRole('button',{name:'Close PDF reader'}).click();
+  assert(await page.locator('#evidence-dialog').evaluate(n=>n.open));
+  assert.equal(await page.evaluate(()=>document.body.style.overflow),'hidden');
+  await page.keyboard.press('Escape');
+  await page.waitForFunction(()=>!document.querySelector('dialog[open]') && document.body.style.overflow==='');
+  assert.equal(await page.evaluate(()=>document.body.style.overflow),'');
+  await page.goto(new URL('evidence.html',base).href);
+  await page.locator('a[href="source.html?study=stevenson-2025"]').click();
+  await page.frameLocator('#source-frame').locator('#pdf-status').filter({hasText:'Highlighted passage'}).waitFor();
+  assert(page.url().endsWith('evidence.html'));
+  await page.getByRole('button',{name:'Close PDF reader'}).click();
  });
  await check('Different PDF editions never inherit the saved highlight',async()=>{
   await open('stampfli-2023','accuracy');await page.locator('#local-pdf').setInputFiles(path.join(root,'sources/stone-2020.pdf'));
@@ -69,10 +113,10 @@ async function main(){
   await page.waitForFunction(()=>document.querySelector('#pdf-status').textContent.startsWith('Highlighted'));
   assert.equal(await page.locator('#page-number').inputValue(),'9');
  });
- await check('Abstract source and mobile PDF reader remain usable',async()=>{
-  await page.goto(new URL('source.html?study=markvart-2015',base).href);
-  assert.match(await page.locator('#passage-location').textContent(),/Abstract/);assert(await page.locator('#pdf-reader').isHidden());
-  assert.match(await page.locator('#passage-quote').textContent(),/48 Actiwatch/);
+ await check('Supplied papers and mobile PDF reader remain usable',async()=>{
+  await open('markvart-2015','comparison');
+  assert.match(await page.locator('#passage-location').textContent(),/Conclusion/);
+  assert.equal(await page.locator('#page-number').inputValue(),'17');
   await page.setViewportSize({width:390,height:844});await open('stampfli-2023','accuracy');await noOverflow();
   await page.screenshot({path:path.join(out,'source-reader-mobile.png'),fullPage:true});
   await page.setViewportSize({width:1440,height:1000});await open('pilehchiha-2026','comparison');await page.screenshot({path:path.join(out,'source-reader-pilehchiha.png')});

@@ -56,11 +56,13 @@ for study in studies:
 ```{python}
 #| label: inventory-status
 #| output: asis
+print('```{=html}')
 print(f'<p class="audit-stamp">Literature checked {esc(updated)} · '
       f'{len(studies)} studies · {len(devices)} device entries · '
       f'{counts.get("Peer reviewed", 0)} peer reviewed · '
       f'{counts.get("Preprint", 0)} preprints · '
       f'{counts.get("Conference paper", 0)} conference paper</p>')
+print('```')
 ```
 
 ## Using the directory
@@ -85,7 +87,7 @@ Use **Submit a validation** to suggest a paper or correction by email.
 
 OpenAI Codex assisted with literature searches, extracting and organising study information, drafting summaries, and building this website. The summaries and source selections are AI-assisted and have not all received independent human review.
 
-**Source** links beside findings and methods open the relevant passage. The reader shows short quotations and section links, with highlighted passages in available PDFs. Highlights are annotations added by this inventory; the original PDFs are unchanged. Abstract-based entries are labelled, and further full texts will allow more precise links and highlights.
+**Source** links beside findings and methods open an embedded reader with the relevant passage highlighted in the available PDFs.
 
 Please send corrections or additional papers to [manuel.spitschan@tum.de](mailto:manuel.spitschan@tum.de).
 
@@ -101,6 +103,7 @@ The site is built with Quarto from a shared [literature inventory](data/library.
 #| label: audit-inventory
 #| output: asis
 
+print('```{=html}')
 for study in sorted(studies, key=lambda item: (-item["year"], item["authors"])):
     source_url = study["url"]
     assert source_url.startswith("https://"), "Evidence links must use HTTPS."
@@ -130,12 +133,13 @@ for study in sorted(studies, key=lambda item: (-item["year"], item["authors"])):
         print(f'<div><dt>{esc(label)}</dt><dd>{esc(value)}</dd></div>')
     print('</dl>')
     doi = esc(study["doi"])
-    print(f'<p class="citation-link"><a href="source.html?study={identifier}">Source passages ↗</a> · <a href="https://doi.org/{doi}">DOI: {doi}</a></p>')
+    print(f'<p class="citation-link"><a href="source.html?study={identifier}" aria-haspopup="dialog">Read source</a> · <a href="https://doi.org/{doi}">DOI: {doi}</a></p>')
     if study.get("pubmedUrl"):
         print(f'<p class="citation-link"><a href="{esc(study["pubmedUrl"])}">PubMed record ↗</a></p>')
     if study.get("fullTextUrl"):
         print(f'<p class="citation-link"><a href="{esc(study["fullTextUrl"])}">Full text ↗</a></p>')
     print('</article>')
+print('```')
 ```
 
 ```{=html}

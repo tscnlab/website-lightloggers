@@ -11,6 +11,7 @@ project:
     - assets/site.css
     - assets/app.js
     - assets/source-reader.js
+    - assets/source-embed.js
     - assets/vendor/pdfjs/**
     - sources/**
     - data/source-evidence.json
@@ -62,6 +63,7 @@ format:
         <link rel="icon" type="image/png" href="assets/favicon.png">
         <meta property="og:type" content="website">
         <meta property="og:image:type" content="image/png">
+        <script src="assets/source-embed.js" defer></script>
 
 execute:
   echo: false

@@ -19,8 +19,19 @@ test('every study has source passages, and every highlighted PDF has an identity
     if(doc.pdfPath?.startsWith('sources/')){
       const bytes=fs.readFileSync(path.resolve(__dirname,'..',doc.pdfPath));
       assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),doc.sha256,study.id);
-      assert(doc.license.startsWith('CC BY'),study.id);
+      if(doc.redistribution?.basis==='user-supplied'){
+        assert(doc.redistribution.filename?.endsWith('.pdf') && doc.redistribution.date,study.id);
+        assert(doc.redistribution.url.startsWith('https://') && doc.redistribution.note,study.id);
+      }else{
+        assert(doc.license && doc.licenseUrl?.startsWith('https://'),study.id);
+      }
+      if(doc.license && !doc.license.startsWith('CC BY')){
+        assert(['repository-permission','publisher-open-access','public-domain'].includes(doc.redistribution?.basis),study.id);
+        assert(doc.redistribution.url.startsWith('https://') && doc.redistribution.note,study.id);
+      }
     }
+    assert(doc.pdfPath?.startsWith('sources/'),`${study.id}: hosted paper`);
+    assert(passages.every(p=>p.pdf),`${study.id}: passage coordinates`);
     for(const p of passages){
       assert(p.url.startsWith('https://'),p.id);
       assert(p.devices.every(d=>study.devices.includes(d)),p.id);

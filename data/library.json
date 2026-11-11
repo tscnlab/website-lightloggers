@@ -1020,7 +1020,7 @@
       "protocol": "Fifteen Clouclips underwent repeated measurements at different light intensities. The study also included a separate week-long wear phase.",
       "finding": "Within the tested measurement limit, maximum relative illuminance error was 2.23%; intra-unit and inter-unit illuminance coefficients were both 1.00.",
       "limitations": "Questionnaires are not a traceable illuminance reference. Results apply to the first-generation units and tested environments.",
-      "sourceLocator": "Methods: Validation of Clouclip; light-intensity validation results.",
+      "sourceLocator": "Results · Validation of Clouclip · PDF page 4; Methods · Validation of Clouclip · PDF page 2",
       "setting": "Laboratory + field",
       "evidenceType": "Reference comparison",
       "url": "https://onlinelibrary.wiley.com/doi/10.1111/aos.14785",
@@ -1030,8 +1030,8 @@
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/33729708/",
       "provenance": {
         "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Methods: Validation of Clouclip; light-intensity validation results."
+        "checked": "2026-11-11",
+        "sourceLocator": "Results · Validation of Clouclip · PDF page 4; Methods · Validation of Clouclip · PDF page 2"
       },
       "developerRelationship": {
         "Clouclip (first generation)": {
@@ -1064,7 +1064,7 @@
       "protocol": "Clouclip and reference sensors were aligned in indoor and outdoor locations, including shade and direct sunlight. The paper separately tested viewing distance.",
       "finding": "Illuminance was strongly correlated with the reference, but disagreement grew at high levels, particularly above 20,000 lx.",
       "limitations": "Distance performance does not establish light accuracy. Staged measurements do not reproduce continuous on-body occlusion.",
-      "sourceLocator": "Methods: Ambient illumination; Results: Figure 7.",
+      "sourceLocator": "Methods · Ambient illumination · PDF page 4; Results · Ambient illumination; Figure 7 · PDF page 8",
       "setting": "Laboratory + field",
       "evidenceType": "Reference comparison",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7606561/",
@@ -1074,8 +1074,8 @@
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/33002229/",
       "provenance": {
         "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Methods: Ambient illumination; Results: Figure 7."
+        "checked": "2026-11-11",
+        "sourceLocator": "Methods · Ambient illumination · PDF page 4; Results · Ambient illumination; Figure 7 · PDF page 8"
       },
       "developerRelationship": {
         "Clouclip (second generation)": {
@@ -1102,11 +1102,11 @@
         "Illuminance"
       ],
       "setting": "Laboratory + field",
-      "reference": "Calibrated laboratory-standard photometer.",
+      "reference": "Calibrated ILT1700 photometer (International Light Technologies).",
       "protocol": "Compared device illuminance with a photometer under white LED light and natural sunlight; also tested neutral-density filters to extend measurement range.",
-      "finding": "At about 20,000 lux LED light, GENEActiv and Actiwatch 2 recorded about 50% and 25% of reference illuminance, respectively. At about 30,000 lux sunlight, GENEActiv saturated and Actiwatch 2 recorded about 46%.",
+      "finding": "At 20,800 lx LED light, GENEActiv and Actiwatch 2 recorded 46% and 28% of reference illuminance, respectively. At about 30,000 lx sunlight, GENEActiv saturated and Actiwatch 2 recorded about 46%.",
       "limitations": "Absolute readings required correction under tested conditions. Temporal tracking does not imply absolute accuracy; reported correction factors should not be assumed universal across spectra or device versions.",
-      "access": "Abstract",
+      "access": "Full text",
       "notes": "Journal of Sleep Research 29(5), e12963. Online publication December 2019; journal issue October 2020. Primary publisher abstract also verified at https://doi.org/10.1111/jsr.12963 . Additional reported endpoints: Linearity, Dynamic range.",
       "deviceMetrics": {
         "GENEActiv Original": [
@@ -1116,10 +1116,11 @@
           "Illuminance"
         ]
       },
-      "sourceLocator": "Abstract: photometer comparison, LED/sunlight under-reading, saturation and neutral-density filters.",
+      "sourceLocator": "3. Results; Figure 2 · PDF page 3; 2.2. Protocol · PDF page 2; 3. Results; Figure 3 · PDF page 4",
       "provenance": {
         "researchFile": "data/classic-research.json",
-        "sourceLocator": "Abstract: photometer comparison, LED/sunlight under-reading, saturation and neutral-density filters."
+        "sourceLocator": "3. Results; Figure 2 · PDF page 3; 2.2. Protocol · PDF page 2; 3. Results; Figure 3 · PDF page 4",
+        "checked": "2026-11-11"
       },
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/31860938/",
       "venue": "journal-sleep-research",
@@ -1246,22 +1247,22 @@
       "metrics": [
         "Illuminance"
       ],
-      "reference": "Lux meter and UV sensor; models unresolved in the inspected abstract.",
-      "protocol": "The paper reports indoor/outdoor device calibration in addition to 14-day recordings in 55 adults and comparisons with activity questionnaires.",
-      "finding": "Actiwatch Spectrum illuminance correlated with a reference lux meter across the tested locations (R = 0.99).",
-      "limitations": "Abstract-level calibration record. The observational refractive-error comparisons do not themselves validate the sensor; quantitative accuracy requires full-text extraction.",
-      "sourceLocator": "Publisher abstract, Methods: calibration against a lux meter and UV sensor.",
+      "reference": "Calibrated Gossen Starlight lux meter and Solar Light UV sensor.",
+      "protocol": "Five Actiwatch Spectrum units were compared with reference instruments across 14 locations. The paper also included 14-day recordings in 55 adults.",
+      "finding": "Actiwatch Spectrum illuminance was closely related to reference lux-meter readings across 14 tested locations (R² = 0.99).",
+      "limitations": "The reported coefficient of determination describes association, rather than absolute measurement agreement.",
+      "sourceLocator": "Results · Device calibration · PDF page 3; Methods · Device calibration · PDF page 2",
       "setting": "Laboratory + field",
       "evidenceType": "Calibration study",
       "url": "https://doi.org/10.1097/OPX.0000000000001013",
-      "access": "Abstract",
+      "access": "Full text",
       "status": "Peer reviewed",
       "notes": "",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/27811524/",
       "provenance": {
         "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Publisher abstract, Methods: calibration against a lux meter and UV sensor."
+        "checked": "2026-11-11",
+        "sourceLocator": "Results · Device calibration · PDF page 3; Methods · Device calibration · PDF page 2"
       },
       "developerRelationship": {
         "Actiwatch Spectrum": {
@@ -1293,9 +1294,9 @@
       "reference": "Photopic and photoreceptor sensitivity functions, cosine response and reference values for dynamic characterization.",
       "protocol": "New optical tests and existing evidence were combined. This record indexes four complete-protocol models with individually identifiable spectral and angular results: MotionWatch 8, ActTrust, GENEActiv Original and Actiwatch 2.",
       "finding": "Optical characterization covers directional and spectral sensitivity, linearity, dynamic range and resolution, with a proposed assessment protocol. Results are model- and channel-specific.",
-      "limitations": "Only abstract and publisher tables were inspected. Other models discussed in the paper are omitted here to avoid counting reused evidence or assigning combined model results to individual variants.",
-      "access": "Abstract",
-      "notes": "Abstract and Tables 1–4 inspected. Indexed coverage restricted to individually identifiable spectral and angular tests. Additional reported endpoints: Linearity, Dynamic range, Resolution.",
+      "limitations": "Other models discussed in the paper are omitted here to avoid counting reused evidence or assigning combined model results to individual variants.",
+      "access": "Full text",
+      "notes": "Full paper inspected. Indexed coverage remains restricted to individually identifiable spectral and angular tests. Additional reported endpoints: linearity, dynamic range and resolution.",
       "deviceMetrics": {
         "MotionWatch 8": [
           "Angular response"
@@ -1310,10 +1311,11 @@
           "Angular response"
         ]
       },
-      "sourceLocator": "Table 1: complete-protocol models; Table 2: spectral mismatch; Table 3: cosine-response error; Table 4: dynamic performance.",
+      "sourceLocator": "Tables 1–4 · PDF page 2; Table 3 · Directional response · PDF page 8; Table 4 · Dynamic range · PDF page 9",
       "provenance": {
         "researchFile": "data/classic-research.json",
-        "sourceLocator": "Table 1: complete-protocol models; Table 2: spectral mismatch; Table 3: cosine-response error; Table 4: dynamic performance."
+        "sourceLocator": "Tables 1–4 · PDF page 2; Table 3 · Directional response · PDF page 8; Table 4 · Dynamic range · PDF page 9",
+        "checked": "2026-11-11"
       },
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/28375324/",
       "venue": "josa-a",
@@ -1363,21 +1365,21 @@
       "metrics": [
         "Illuminance"
       ],
-      "reference": "Forty-eight Actiwatch Spectrum units measured side by side; white-channel response also compared with a calibrated photometer.",
+      "reference": "Forty-eight Actiwatch Spectrum units measured side by side; white-channel response compared with a Hagner EC1-X reference photometer, checked against an LMT B510.",
       "protocol": "RGB and white outputs were compared under different light sources to develop a field-calibration procedure.",
       "finding": "Light responses differed by up to 60% between units. The authors proposed side-by-side field calibration to reduce these differences.",
-      "limitations": "Agreement after field correction does not by itself establish traceable absolute accuracy. Detailed correction coefficients require the full paper.",
-      "sourceLocator": "Author-deposited abstract: study aim, device model and protocol.",
+      "limitations": "Agreement after field correction does not by itself establish absolute accuracy under other light sources.",
+      "sourceLocator": "5. Conclusion; Figure 4 · PDF page 17; 2.2. Lighting test scenarios · PDF page 5; 5. Conclusion; Table 2 · PDF page 17",
       "setting": "Laboratory",
       "evidenceType": "Between-unit comparison",
       "url": "https://vbn.aau.dk/da/publications/comparison-and-correction-of-the-light-sensor-output-from-48-wear/",
-      "access": "Abstract",
+      "access": "Full text",
       "status": "Peer reviewed",
       "notes": "",
       "provenance": {
         "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "sourceLocator": "Author-deposited abstract: study aim, device model and protocol."
+        "checked": "2026-11-11",
+        "sourceLocator": "5. Conclusion; Figure 4 · PDF page 17; 2.2. Lighting test scenarios · PDF page 5; 5. Conclusion; Table 2 · PDF page 17"
       },
       "developerRelationship": {
         "Actiwatch Spectrum": {
@@ -1426,10 +1428,11 @@
           "Angular response"
         ]
       },
-      "sourceLocator": "§2.2.1, Figures 3–5: optical performance; §3.2–3.3, Figure 6: Daysimeter placement; Figure 7: wrist comparison.",
+      "sourceLocator": "Performance comparison · Table 1 · PDF page 7; Performance comparison · Figure 4 · PDF page 4; Performance comparison · Figure 5 · PDF page 5",
       "provenance": {
         "researchFile": "data/classic-research.json",
-        "sourceLocator": "§2.2.1, Figures 3–5: optical performance; §3.2–3.3, Figure 6: Daysimeter placement; Figure 7: wrist comparison."
+        "sourceLocator": "Performance comparison · Table 1 · PDF page 7; Performance comparison · Figure 4 · PDF page 4; Performance comparison · Figure 5 · PDF page 5",
+        "checked": "2026-11-11"
       },
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/24443644/",
       "venue": "lighting-research-technology",
@@ -1470,21 +1473,22 @@
         "Angular response"
       ],
       "setting": "Laboratory",
-      "reference": "Optical characterization; abstract does not identify all reference instruments.",
+      "reference": "Bentham DM150 scanning double-grating spectroradiometer, calibrated using a NIST-traceable tungsten-halogen reference lamp.",
       "protocol": "Sixteen Actiwatch Spectrum units were evaluated for spectral response, directional response and dynamic range.",
       "finding": "The paper reports optical performance and proposes calibration, deployment and analysis techniques for circadian studies.",
-      "limitations": "Only the abstract was inspected for this record. It supports the scope of testing, but is insufficient for a quantitative accuracy judgment.",
-      "access": "Abstract",
+      "limitations": "Results apply to the tested Actiwatch Spectrum units and sensor channels.",
+      "access": "Full text",
       "notes": "Metadata and abstract verified at the authors’ institution: https://researchportal.ukhsa.gov.uk/en/publications/performance-assessment-of-commercial-circadian-personal-exposure--2/ . Lighting Research & Technology 44(1), 17–26. Additional reported endpoints: Dynamic range.",
       "deviceMetrics": {
         "Actiwatch Spectrum": [
           "Angular response"
         ]
       },
-      "sourceLocator": "Abstract: 16 units; spectral response, directional response and dynamic range.",
+      "sourceLocator": "2. Method · PDF page 2; 3.2. Directional response; Figure 4 · PDF page 3; 3.3. Linearity; Figures 6–7 · PDF page 6",
       "provenance": {
         "researchFile": "data/classic-research.json",
-        "sourceLocator": "Abstract: 16 units; spectral response, directional response and dynamic range."
+        "sourceLocator": "2. Method · PDF page 2; 3.2. Directional response; Figure 4 · PDF page 3; 3.3. Linearity; Figures 6–7 · PDF page 6",
+        "checked": "2026-11-11"
       },
       "venue": "lighting-research-technology",
       "evidenceType": "Characterisation",
@@ -1521,14 +1525,15 @@
       "reference": "Photo Research LRS 450 Light Standard; spectral matching against the photopic response.",
       "protocol": "Two prototypes were checked for spectral response. Linearity was tested against an integrating-sphere source with an approximately illuminant-A spectrum.",
       "finding": "Photopic spectral-mismatch values were 3.8% and 5.4%. The tested response departed from linearity by a few percent across roughly 3.5 decades of irradiance.",
-      "limitations": "Partial full-text extraction from the indexed author PDF. The instrument’s higher advertised range was not tested. This record does not establish modern melanopic EDI accuracy.",
-      "access": "Partial full text",
-      "sourceLocator": "Author PDF, Section 3.1.3: Radiation measurement verification; Figure 3.",
-      "notes": "Primary passage accessible through indexed PDF text; direct download failed. Additional endpoints await complete full-text inspection.",
+      "limitations": "The instrument’s higher advertised range was not tested. This record does not establish modern melanopic EDI accuracy.",
+      "access": "Full text",
+      "sourceLocator": "3.1.3. Radiation measurement verification · PDF page 4; 3.1.3. Radiation measurement verification; Figure 3 · PDF page 4",
+      "notes": "Full paper supplied by the site owner; source passages indexed from the original published edition.",
       "provenance": {
         "audit": "data/search-audit.json",
-        "checked": "2026-11-10",
-        "inspectedSource": "https://www.lrc.rpi.edu/programs/daylighting/pdf/daysimeter2005.pdf"
+        "checked": "2026-11-11",
+        "inspectedSource": "https://www.lrc.rpi.edu/programs/daylighting/pdf/daysimeter2005.pdf",
+        "sourceLocator": "3.1.3. Radiation measurement verification · PDF page 4; 3.1.3. Radiation measurement verification; Figure 3 · PDF page 4"
       },
       "venue": "measurement-science-technology",
       "developerRelationship": {
